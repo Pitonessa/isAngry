@@ -83,31 +83,31 @@ CMakeFiles/isAngry.dir/GUI/Menu/Menu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/isAngry.dir/GUI/Menu/Menu.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/manu/CLionProjects/isAngry/GUI/Menu/Menu.cpp -o CMakeFiles/isAngry.dir/GUI/Menu/Menu.cpp.s
 
-CMakeFiles/isAngry.dir/GameObjects/Props/Star/Star.cpp.o: CMakeFiles/isAngry.dir/flags.make
-CMakeFiles/isAngry.dir/GameObjects/Props/Star/Star.cpp.o: ../GameObjects/Props/Star/Star.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/manu/CLionProjects/isAngry/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/isAngry.dir/GameObjects/Props/Star/Star.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isAngry.dir/GameObjects/Props/Star/Star.cpp.o -c /Users/manu/CLionProjects/isAngry/GameObjects/Props/Star/Star.cpp
+CMakeFiles/isAngry.dir/GameObjects/Star/Star.cpp.o: CMakeFiles/isAngry.dir/flags.make
+CMakeFiles/isAngry.dir/GameObjects/Star/Star.cpp.o: ../GameObjects/Star/Star.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/manu/CLionProjects/isAngry/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/isAngry.dir/GameObjects/Star/Star.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/isAngry.dir/GameObjects/Star/Star.cpp.o -c /Users/manu/CLionProjects/isAngry/GameObjects/Star/Star.cpp
 
-CMakeFiles/isAngry.dir/GameObjects/Props/Star/Star.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/isAngry.dir/GameObjects/Props/Star/Star.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/manu/CLionProjects/isAngry/GameObjects/Props/Star/Star.cpp > CMakeFiles/isAngry.dir/GameObjects/Props/Star/Star.cpp.i
+CMakeFiles/isAngry.dir/GameObjects/Star/Star.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/isAngry.dir/GameObjects/Star/Star.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/manu/CLionProjects/isAngry/GameObjects/Star/Star.cpp > CMakeFiles/isAngry.dir/GameObjects/Star/Star.cpp.i
 
-CMakeFiles/isAngry.dir/GameObjects/Props/Star/Star.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/isAngry.dir/GameObjects/Props/Star/Star.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/manu/CLionProjects/isAngry/GameObjects/Props/Star/Star.cpp -o CMakeFiles/isAngry.dir/GameObjects/Props/Star/Star.cpp.s
+CMakeFiles/isAngry.dir/GameObjects/Star/Star.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/isAngry.dir/GameObjects/Star/Star.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/manu/CLionProjects/isAngry/GameObjects/Star/Star.cpp -o CMakeFiles/isAngry.dir/GameObjects/Star/Star.cpp.s
 
 # Object files for target isAngry
 isAngry_OBJECTS = \
 "CMakeFiles/isAngry.dir/main.cpp.o" \
 "CMakeFiles/isAngry.dir/GUI/Menu/Menu.cpp.o" \
-"CMakeFiles/isAngry.dir/GameObjects/Props/Star/Star.cpp.o"
+"CMakeFiles/isAngry.dir/GameObjects/Star/Star.cpp.o"
 
 # External object files for target isAngry
 isAngry_EXTERNAL_OBJECTS =
 
 isAngry: CMakeFiles/isAngry.dir/main.cpp.o
 isAngry: CMakeFiles/isAngry.dir/GUI/Menu/Menu.cpp.o
-isAngry: CMakeFiles/isAngry.dir/GameObjects/Props/Star/Star.cpp.o
+isAngry: CMakeFiles/isAngry.dir/GameObjects/Star/Star.cpp.o
 isAngry: CMakeFiles/isAngry.dir/build.make
 isAngry: CMakeFiles/isAngry.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/manu/CLionProjects/isAngry/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable isAngry"

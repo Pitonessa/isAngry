@@ -6,6 +6,7 @@
 #define ISANGRY_MENU_H
 
 #include "SFML/Graphics.hpp"
+#include "../../sfml/include/SFML/Graphics/Text.hpp"
 
 class MenuItem : public sf::Text {
 public:
@@ -32,6 +33,7 @@ public:
         TOP
     };
     Menu(std::vector<MenuItem*>& list, STYLE style);
+    ~Menu();
     void draw(sf::RenderWindow& window);
     void forward();
     void backward();

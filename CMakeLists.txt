@@ -2,23 +2,27 @@ cmake_minimum_required(VERSION 3.12)
 project(isAngry)
 
 set(CMAKE_CXX_STANDARD 14)
+add_subdirectory(test)
 
-include_directories(GUI/)
-link_directories(lib/)
-link_libraries(libsfml-audio-d.2.5.1.dylib
-        libsfml-audio-d.2.5.dylib
-        libsfml-audio-d.dylib
-        libsfml-graphics-d.2.5.1.dylib
-        libsfml-graphics-d.2.5.dylib
-        libsfml-graphics-d.dylib
-        libsfml-network-d.2.5.1.dylib
-        libsfml-network-d.2.5.dylib
-        libsfml-network-d.dylib
-        libsfml-system-d.2.5.1.dylib
-        libsfml-system-d.2.5.dylib
-        libsfml-system-d.dylib
-        libsfml-window-d.2.5.1.dylib
-        libsfml-window-d.2.5.dylib
-        libsfml-window-d.dylib)
+include_directories(sfml/include)
 
-add_executable(isAngry main.cpp GUI/Menu/Menu.cpp GUI/Menu/Menu.h GameObjects/Props/Star/Star.cpp GameObjects/Props/Star/Star.h)
+link_directories(sfml/lib)
+link_libraries(libsfml-audio.2.5.1.dylib
+        libsfml-audio.2.5.dylib
+        libsfml-audio.dylib
+        libsfml-graphics.2.5.1.dylib
+        libsfml-graphics.2.5.dylib
+        libsfml-graphics.dylib
+        libsfml-network.2.5.1.dylib
+        libsfml-network.2.5.dylib
+        libsfml-network.dylib
+        libsfml-system.2.5.1.dylib
+        libsfml-system.2.5.dylib
+        libsfml-system.dylib
+        libsfml-window.2.5.1.dylib
+        libsfml-window.2.5.dylib
+        libsfml-window.dylib)
+
+add_library(isAngryTest GUI/Menu/Menu.cpp GameObjects/Star/Star.cpp)
+add_executable(isAngry main.cpp GUI/Menu/Menu.cpp GameObjects/Star/Star.cpp)
+

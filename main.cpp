@@ -1,7 +1,7 @@
 #include <iostream>
 #include "SFML/Graphics.hpp"
-#include "Menu/Menu.h"
-#include "GameObjects/Props/Star/Star.h"
+#include "GUI/Menu/Menu.h"
+#include "GameObjects/Star/Star.h"
 
 /**
  * @param gameState indica lo stato del gioco
@@ -94,7 +94,7 @@ int main() {
                     i->updateBrightness();
                 i->updatePosition();
             }
-            window.clear(sf::Color(70, 9, 150));
+            window.clear(sf::Color(19, 24, 98));
             for (auto j : stars) {
                 window.draw(*j);
             }

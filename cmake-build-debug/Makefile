@@ -123,6 +123,32 @@ isAngry/fast:
 	$(MAKE) -f CMakeFiles/isAngry.dir/build.make CMakeFiles/isAngry.dir/build
 .PHONY : isAngry/fast
 
+#=============================================================================
+# Target rules for targets named isAngryTest
+
+# Build rule for target.
+isAngryTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 isAngryTest
+.PHONY : isAngryTest
+
+# fast build rule for target.
+isAngryTest/fast:
+	$(MAKE) -f CMakeFiles/isAngryTest.dir/build.make CMakeFiles/isAngryTest.dir/build
+.PHONY : isAngryTest/fast
+
+#=============================================================================
+# Target rules for targets named test
+
+# Build rule for target.
+test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test
+.PHONY : test
+
+# fast build rule for target.
+test/fast:
+	$(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/build
+.PHONY : test/fast
+
 GUI/Menu/Menu.o: GUI/Menu/Menu.cpp.o
 
 .PHONY : GUI/Menu/Menu.o
@@ -130,6 +156,7 @@ GUI/Menu/Menu.o: GUI/Menu/Menu.cpp.o
 # target to build an object file
 GUI/Menu/Menu.cpp.o:
 	$(MAKE) -f CMakeFiles/isAngry.dir/build.make CMakeFiles/isAngry.dir/GUI/Menu/Menu.cpp.o
+	$(MAKE) -f CMakeFiles/isAngryTest.dir/build.make CMakeFiles/isAngryTest.dir/GUI/Menu/Menu.cpp.o
 .PHONY : GUI/Menu/Menu.cpp.o
 
 GUI/Menu/Menu.i: GUI/Menu/Menu.cpp.i
@@ -139,6 +166,7 @@ GUI/Menu/Menu.i: GUI/Menu/Menu.cpp.i
 # target to preprocess a source file
 GUI/Menu/Menu.cpp.i:
 	$(MAKE) -f CMakeFiles/isAngry.dir/build.make CMakeFiles/isAngry.dir/GUI/Menu/Menu.cpp.i
+	$(MAKE) -f CMakeFiles/isAngryTest.dir/build.make CMakeFiles/isAngryTest.dir/GUI/Menu/Menu.cpp.i
 .PHONY : GUI/Menu/Menu.cpp.i
 
 GUI/Menu/Menu.s: GUI/Menu/Menu.cpp.s
@@ -148,34 +176,38 @@ GUI/Menu/Menu.s: GUI/Menu/Menu.cpp.s
 # target to generate assembly for a file
 GUI/Menu/Menu.cpp.s:
 	$(MAKE) -f CMakeFiles/isAngry.dir/build.make CMakeFiles/isAngry.dir/GUI/Menu/Menu.cpp.s
+	$(MAKE) -f CMakeFiles/isAngryTest.dir/build.make CMakeFiles/isAngryTest.dir/GUI/Menu/Menu.cpp.s
 .PHONY : GUI/Menu/Menu.cpp.s
 
-GameObjects/Props/Star/Star.o: GameObjects/Props/Star/Star.cpp.o
+GameObjects/Star/Star.o: GameObjects/Star/Star.cpp.o
 
-.PHONY : GameObjects/Props/Star/Star.o
+.PHONY : GameObjects/Star/Star.o
 
 # target to build an object file
-GameObjects/Props/Star/Star.cpp.o:
-	$(MAKE) -f CMakeFiles/isAngry.dir/build.make CMakeFiles/isAngry.dir/GameObjects/Props/Star/Star.cpp.o
-.PHONY : GameObjects/Props/Star/Star.cpp.o
+GameObjects/Star/Star.cpp.o:
+	$(MAKE) -f CMakeFiles/isAngry.dir/build.make CMakeFiles/isAngry.dir/GameObjects/Star/Star.cpp.o
+	$(MAKE) -f CMakeFiles/isAngryTest.dir/build.make CMakeFiles/isAngryTest.dir/GameObjects/Star/Star.cpp.o
+.PHONY : GameObjects/Star/Star.cpp.o
 
-GameObjects/Props/Star/Star.i: GameObjects/Props/Star/Star.cpp.i
+GameObjects/Star/Star.i: GameObjects/Star/Star.cpp.i
 
-.PHONY : GameObjects/Props/Star/Star.i
+.PHONY : GameObjects/Star/Star.i
 
 # target to preprocess a source file
-GameObjects/Props/Star/Star.cpp.i:
-	$(MAKE) -f CMakeFiles/isAngry.dir/build.make CMakeFiles/isAngry.dir/GameObjects/Props/Star/Star.cpp.i
-.PHONY : GameObjects/Props/Star/Star.cpp.i
+GameObjects/Star/Star.cpp.i:
+	$(MAKE) -f CMakeFiles/isAngry.dir/build.make CMakeFiles/isAngry.dir/GameObjects/Star/Star.cpp.i
+	$(MAKE) -f CMakeFiles/isAngryTest.dir/build.make CMakeFiles/isAngryTest.dir/GameObjects/Star/Star.cpp.i
+.PHONY : GameObjects/Star/Star.cpp.i
 
-GameObjects/Props/Star/Star.s: GameObjects/Props/Star/Star.cpp.s
+GameObjects/Star/Star.s: GameObjects/Star/Star.cpp.s
 
-.PHONY : GameObjects/Props/Star/Star.s
+.PHONY : GameObjects/Star/Star.s
 
 # target to generate assembly for a file
-GameObjects/Props/Star/Star.cpp.s:
-	$(MAKE) -f CMakeFiles/isAngry.dir/build.make CMakeFiles/isAngry.dir/GameObjects/Props/Star/Star.cpp.s
-.PHONY : GameObjects/Props/Star/Star.cpp.s
+GameObjects/Star/Star.cpp.s:
+	$(MAKE) -f CMakeFiles/isAngry.dir/build.make CMakeFiles/isAngry.dir/GameObjects/Star/Star.cpp.s
+	$(MAKE) -f CMakeFiles/isAngryTest.dir/build.make CMakeFiles/isAngryTest.dir/GameObjects/Star/Star.cpp.s
+.PHONY : GameObjects/Star/Star.cpp.s
 
 main.o: main.cpp.o
 
@@ -213,12 +245,14 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... isAngry"
+	@echo "... isAngryTest"
+	@echo "... test"
 	@echo "... GUI/Menu/Menu.o"
 	@echo "... GUI/Menu/Menu.i"
 	@echo "... GUI/Menu/Menu.s"
-	@echo "... GameObjects/Props/Star/Star.o"
-	@echo "... GameObjects/Props/Star/Star.i"
-	@echo "... GameObjects/Props/Star/Star.s"
+	@echo "... GameObjects/Star/Star.o"
+	@echo "... GameObjects/Star/Star.i"
+	@echo "... GameObjects/Star/Star.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

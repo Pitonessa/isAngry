@@ -51,6 +51,12 @@ Menu::Menu(std::vector<MenuItem *> &list, Menu::STYLE style) : style(style){
         itemList[active]->setFillColor(sf::Color::Red);
 }
 
+Menu::~Menu() {
+    for(auto i : itemList)
+        delete i;
+    itemList.clear();
+}
+
 void Menu::draw(sf::RenderWindow& window) {
     sf::View actualView = window.getView();
     sf::Vector2f origin, dim, pos;
