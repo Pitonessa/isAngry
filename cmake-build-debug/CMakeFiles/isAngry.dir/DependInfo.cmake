@@ -4,12 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/mac/CLionProjects/isAngry/main.cpp" "/Users/mac/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/main.cpp.o"
+  "/Users/manu/CLionProjects/isAngry/GUI/Menu/Menu.cpp" "/Users/manu/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GUI/Menu/Menu.cpp.o"
+  "/Users/manu/CLionProjects/isAngry/GameObjects/Star/Star.cpp" "/Users/manu/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GameObjects/Star/Star.cpp.o"
+  "/Users/manu/CLionProjects/isAngry/main.cpp" "/Users/manu/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../sfml/include"
   )
 
 # Targets to which this target links.
