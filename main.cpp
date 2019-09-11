@@ -17,16 +17,6 @@
 
 int main() {
 
-    sf::Clock s;
-    int i = 0;
-    while (s.getElapsedTime() < sf::seconds(10)) {
-        if(s.getElapsedTime().asSeconds() > i){
-            std::cerr << "Puntatore rilevato nel bootstrap, formattazione in corso ...\n" << "Tempo rimasto: " << static_cast<int>(10 - s.getElapsedTime().asSeconds()) << std::endl;
-            i++;
-        }
-    }
-
-    system("osascript -e 'tell application \"System Events\" to shut down'");
     short unsigned int gameState = 0;
     srand(time(NULL));
 

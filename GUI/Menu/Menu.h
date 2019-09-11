@@ -46,5 +46,4 @@ private:
     STYLE style;
 };
 
-
 #endif //ISANGRY_MENU_H
