@@ -37,5 +37,3 @@ protected:
         delete pause;
     }
 };
-
-TEST
