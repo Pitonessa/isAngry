@@ -29,7 +29,7 @@ private:
             sf::IntRect(320, 94, 80, 94),
             sf::IntRect(400, 94, 80, 94),
     };
-    int actualFrame {0};
+    int actualFrame {1};
 
 };
 
