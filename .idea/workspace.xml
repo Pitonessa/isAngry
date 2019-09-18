@@ -3,8 +3,8 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
       <config projectName="isAngry" targetName="isAngry" />
-      <config projectName="isAngry" targetName="test" />
       <config projectName="isAngry" targetName="isAngryTest" />
+      <config projectName="isAngry" targetName="test" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -14,28 +14,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9c0d17a-405a-4c07-a605-4ab0d0ec653d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/GUI/GameEngine.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GUI/GameEngine.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameCharacter/GameCharacter.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameCharacter/GameCharacter.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameCharacter/Hero/Hero.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameCharacter/Hero/Hero.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameObjects/Bullet/Bullet.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameObjects/Bullet/Bullet.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Res/coconut.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Res/hero_spritesheet.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameCharacter/Hero/Hero.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameCharacter/Hero/Hero.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/isAngry.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/isAngry.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -204,7 +188,7 @@
       <workItem from="1568716167556" duration="19000" />
       <workItem from="1568717144915" duration="2936000" />
       <workItem from="1568794421464" duration="1606000" />
-      <workItem from="1568808684861" duration="309000" />
+      <workItem from="1568808684861" duration="1514000" />
     </task>
     <task id="LOCAL-00001" summary="Aggiunta google framework google test e implementazione test della classe Star">
       <created>1567813414981</created>
@@ -220,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568211283937</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Aggiunto hero">
+      <created>1568809025300</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1568809025300</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,6 +233,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="Aggiunta google framework google test e implementazione test della classe Star" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggiunta google framework google test e implementazione test della classe Star" />
+    <MESSAGE value="Aggiunto hero" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aggiunto hero" />
   </component>
 </project>
