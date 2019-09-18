@@ -46,7 +46,7 @@ int main() {
     int length = stars.size();
 
     auto hTexture = new sf::Texture;
-    hTexture->loadFromFile("../Res/hero_spritesheet.png");
+    hTexture->loadFromFile("../Res/enemy_spritesheet.png");
 
     Hero hero(3, *hTexture, sf::Vector2f(200, 200));
     hero.scale(sf::Vector2f(3.0f, 3.0f));
