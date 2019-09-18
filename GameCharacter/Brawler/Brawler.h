@@ -7,6 +7,7 @@
 
 
 #include "../GameCharacter.h"
+#include <cmath>
 
 
 
@@ -14,10 +15,13 @@ class Brawler: public GameCharacter {
 public:
     Brawler(float speed, sf::Texture& Texture, sf::Vector2f position);
     void attack() override;
+  void move(const GameCharacter&hero);
+
 
 
 
 };
+
 
 
 

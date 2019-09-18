@@ -49,17 +49,17 @@ int main() {
     int length = stars.size();
 
     auto hTexture = new sf::Texture;
-    hTexture->loadFromFile("../Res/hero_spritesheet.png");
 
     Hero hero(3, *hTexture, sf::Vector2f(200, 200));
-    hero.scale(sf::Vector2f(3.0f, 3.0f));
+    if(hTexture->loadFromFile("../Res/hero_spritesheet.png"))
+        hero.scale(sf::Vector2f(3.0f, 3.0f));
 
 
     auto aTexture = new sf::Texture;
     Archer archer(4, *aTexture, sf::Vector2f(300,300));
     if (aTexture->loadFromFile("../Res/hero_spritesheet.png")){
 
-        archer.scale(sf::Vector2f(-3.0f, 3.0f));
+        archer.scale(sf::Vector2f(-3.0f, -3.0f));
 
     }
 
@@ -72,10 +72,10 @@ int main() {
     }
 
     auto bTexture = new sf::Texture;
-    Brawler brawler(5, *bTexture, sf::Vector2f(400,400));
+    Brawler brawler(1, *bTexture, sf::Vector2f(400,400));
     if (bTexture->loadFromFile("../Res/hero_spritesheet.png")){
 
-        brawler.scale(sf::Vector2f(-3.0f, -3.0f));
+        brawler.scale(sf::Vector2f(-3.0f, 3.0f));
 
     }
     while (window.isOpen()) {
@@ -172,7 +172,9 @@ int main() {
             window.draw(hero);
             window.draw(archer);
             window.draw(watcher);
+            brawler.move(hero);
             window.draw(brawler);
+
 
         } else {
             window.clear(sf::Color(19, 24, 98));
