@@ -174,6 +174,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/manu/CLionProjects/isAngry/GUI/GameEngine.cpp">
+			<Option target="isAngry"/>
+		</Unit>
+		<Unit filename="/Users/manu/CLionProjects/isAngry/GUI/GameEngine.h">
+			<Option target="isAngry"/>
+		</Unit>
 		<Unit filename="/Users/manu/CLionProjects/isAngry/GUI/Menu/Menu.cpp">
 			<Option target="isAngry"/>
 			<Option target="isAngryTest"/>
@@ -181,6 +187,24 @@
 		<Unit filename="/Users/manu/CLionProjects/isAngry/GUI/Menu/Menu.h">
 			<Option target="isAngry"/>
 			<Option target="isAngryTest"/>
+		</Unit>
+		<Unit filename="/Users/manu/CLionProjects/isAngry/GameCharacter/GameCharacter.cpp">
+			<Option target="isAngry"/>
+		</Unit>
+		<Unit filename="/Users/manu/CLionProjects/isAngry/GameCharacter/GameCharacter.h">
+			<Option target="isAngry"/>
+		</Unit>
+		<Unit filename="/Users/manu/CLionProjects/isAngry/GameCharacter/Hero/Hero.cpp">
+			<Option target="isAngry"/>
+		</Unit>
+		<Unit filename="/Users/manu/CLionProjects/isAngry/GameCharacter/Hero/Hero.h">
+			<Option target="isAngry"/>
+		</Unit>
+		<Unit filename="/Users/manu/CLionProjects/isAngry/GameObjects/Bullet/Bullet.cpp">
+			<Option target="isAngry"/>
+		</Unit>
+		<Unit filename="/Users/manu/CLionProjects/isAngry/GameObjects/Bullet/Bullet.h">
+			<Option target="isAngry"/>
 		</Unit>
 		<Unit filename="/Users/manu/CLionProjects/isAngry/GameObjects/Star/Star.cpp">
 			<Option target="isAngry"/>

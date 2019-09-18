@@ -24,5 +24,5 @@ link_libraries(libsfml-audio.2.5.1.dylib
         libsfml-window.dylib)
 
 add_library(isAngryTest GUI/Menu/Menu.cpp GameObjects/Star/Star.cpp)
-add_executable(isAngry main.cpp GUI/Menu/Menu.cpp GameObjects/Star/Star.cpp)
+add_executable(isAngry main.cpp GUI/Menu/Menu.cpp GameObjects/Star/Star.cpp GameCharacter/GameCharacter.cpp GameCharacter/GameCharacter.h GameCharacter/Hero/Hero.cpp GameCharacter/Hero/Hero.h GameObjects/Bullet/Bullet.cpp GameObjects/Bullet/Bullet.h GUI/GameEngine.cpp GUI/GameEngine.h)
 

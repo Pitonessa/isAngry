@@ -149,6 +149,33 @@ test/fast:
 	$(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/build
 .PHONY : test/fast
 
+GUI/GameEngine.o: GUI/GameEngine.cpp.o
+
+.PHONY : GUI/GameEngine.o
+
+# target to build an object file
+GUI/GameEngine.cpp.o:
+	$(MAKE) -f CMakeFiles/isAngry.dir/build.make CMakeFiles/isAngry.dir/GUI/GameEngine.cpp.o
+.PHONY : GUI/GameEngine.cpp.o
+
+GUI/GameEngine.i: GUI/GameEngine.cpp.i
+
+.PHONY : GUI/GameEngine.i
+
+# target to preprocess a source file
+GUI/GameEngine.cpp.i:
+	$(MAKE) -f CMakeFiles/isAngry.dir/build.make CMakeFiles/isAngry.dir/GUI/GameEngine.cpp.i
+.PHONY : GUI/GameEngine.cpp.i
+
+GUI/GameEngine.s: GUI/GameEngine.cpp.s
+
+.PHONY : GUI/GameEngine.s
+
+# target to generate assembly for a file
+GUI/GameEngine.cpp.s:
+	$(MAKE) -f CMakeFiles/isAngry.dir/build.make CMakeFiles/isAngry.dir/GUI/GameEngine.cpp.s
+.PHONY : GUI/GameEngine.cpp.s
+
 GUI/Menu/Menu.o: GUI/Menu/Menu.cpp.o
 
 .PHONY : GUI/Menu/Menu.o
@@ -178,6 +205,87 @@ GUI/Menu/Menu.cpp.s:
 	$(MAKE) -f CMakeFiles/isAngry.dir/build.make CMakeFiles/isAngry.dir/GUI/Menu/Menu.cpp.s
 	$(MAKE) -f CMakeFiles/isAngryTest.dir/build.make CMakeFiles/isAngryTest.dir/GUI/Menu/Menu.cpp.s
 .PHONY : GUI/Menu/Menu.cpp.s
+
+GameCharacter/GameCharacter.o: GameCharacter/GameCharacter.cpp.o
+
+.PHONY : GameCharacter/GameCharacter.o
+
+# target to build an object file
+GameCharacter/GameCharacter.cpp.o:
+	$(MAKE) -f CMakeFiles/isAngry.dir/build.make CMakeFiles/isAngry.dir/GameCharacter/GameCharacter.cpp.o
+.PHONY : GameCharacter/GameCharacter.cpp.o
+
+GameCharacter/GameCharacter.i: GameCharacter/GameCharacter.cpp.i
+
+.PHONY : GameCharacter/GameCharacter.i
+
+# target to preprocess a source file
+GameCharacter/GameCharacter.cpp.i:
+	$(MAKE) -f CMakeFiles/isAngry.dir/build.make CMakeFiles/isAngry.dir/GameCharacter/GameCharacter.cpp.i
+.PHONY : GameCharacter/GameCharacter.cpp.i
+
+GameCharacter/GameCharacter.s: GameCharacter/GameCharacter.cpp.s
+
+.PHONY : GameCharacter/GameCharacter.s
+
+# target to generate assembly for a file
+GameCharacter/GameCharacter.cpp.s:
+	$(MAKE) -f CMakeFiles/isAngry.dir/build.make CMakeFiles/isAngry.dir/GameCharacter/GameCharacter.cpp.s
+.PHONY : GameCharacter/GameCharacter.cpp.s
+
+GameCharacter/Hero/Hero.o: GameCharacter/Hero/Hero.cpp.o
+
+.PHONY : GameCharacter/Hero/Hero.o
+
+# target to build an object file
+GameCharacter/Hero/Hero.cpp.o:
+	$(MAKE) -f CMakeFiles/isAngry.dir/build.make CMakeFiles/isAngry.dir/GameCharacter/Hero/Hero.cpp.o
+.PHONY : GameCharacter/Hero/Hero.cpp.o
+
+GameCharacter/Hero/Hero.i: GameCharacter/Hero/Hero.cpp.i
+
+.PHONY : GameCharacter/Hero/Hero.i
+
+# target to preprocess a source file
+GameCharacter/Hero/Hero.cpp.i:
+	$(MAKE) -f CMakeFiles/isAngry.dir/build.make CMakeFiles/isAngry.dir/GameCharacter/Hero/Hero.cpp.i
+.PHONY : GameCharacter/Hero/Hero.cpp.i
+
+GameCharacter/Hero/Hero.s: GameCharacter/Hero/Hero.cpp.s
+
+.PHONY : GameCharacter/Hero/Hero.s
+
+# target to generate assembly for a file
+GameCharacter/Hero/Hero.cpp.s:
+	$(MAKE) -f CMakeFiles/isAngry.dir/build.make CMakeFiles/isAngry.dir/GameCharacter/Hero/Hero.cpp.s
+.PHONY : GameCharacter/Hero/Hero.cpp.s
+
+GameObjects/Bullet/Bullet.o: GameObjects/Bullet/Bullet.cpp.o
+
+.PHONY : GameObjects/Bullet/Bullet.o
+
+# target to build an object file
+GameObjects/Bullet/Bullet.cpp.o:
+	$(MAKE) -f CMakeFiles/isAngry.dir/build.make CMakeFiles/isAngry.dir/GameObjects/Bullet/Bullet.cpp.o
+.PHONY : GameObjects/Bullet/Bullet.cpp.o
+
+GameObjects/Bullet/Bullet.i: GameObjects/Bullet/Bullet.cpp.i
+
+.PHONY : GameObjects/Bullet/Bullet.i
+
+# target to preprocess a source file
+GameObjects/Bullet/Bullet.cpp.i:
+	$(MAKE) -f CMakeFiles/isAngry.dir/build.make CMakeFiles/isAngry.dir/GameObjects/Bullet/Bullet.cpp.i
+.PHONY : GameObjects/Bullet/Bullet.cpp.i
+
+GameObjects/Bullet/Bullet.s: GameObjects/Bullet/Bullet.cpp.s
+
+.PHONY : GameObjects/Bullet/Bullet.s
+
+# target to generate assembly for a file
+GameObjects/Bullet/Bullet.cpp.s:
+	$(MAKE) -f CMakeFiles/isAngry.dir/build.make CMakeFiles/isAngry.dir/GameObjects/Bullet/Bullet.cpp.s
+.PHONY : GameObjects/Bullet/Bullet.cpp.s
 
 GameObjects/Star/Star.o: GameObjects/Star/Star.cpp.o
 
@@ -247,9 +355,21 @@ help:
 	@echo "... isAngry"
 	@echo "... isAngryTest"
 	@echo "... test"
+	@echo "... GUI/GameEngine.o"
+	@echo "... GUI/GameEngine.i"
+	@echo "... GUI/GameEngine.s"
 	@echo "... GUI/Menu/Menu.o"
 	@echo "... GUI/Menu/Menu.i"
 	@echo "... GUI/Menu/Menu.s"
+	@echo "... GameCharacter/GameCharacter.o"
+	@echo "... GameCharacter/GameCharacter.i"
+	@echo "... GameCharacter/GameCharacter.s"
+	@echo "... GameCharacter/Hero/Hero.o"
+	@echo "... GameCharacter/Hero/Hero.i"
+	@echo "... GameCharacter/Hero/Hero.s"
+	@echo "... GameObjects/Bullet/Bullet.o"
+	@echo "... GameObjects/Bullet/Bullet.i"
+	@echo "... GameObjects/Bullet/Bullet.s"
 	@echo "... GameObjects/Star/Star.o"
 	@echo "... GameObjects/Star/Star.i"
 	@echo "... GameObjects/Star/Star.s"

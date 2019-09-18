@@ -4,7 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/manu/CLionProjects/isAngry/GUI/GameEngine.cpp" "/Users/manu/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GUI/GameEngine.cpp.o"
   "/Users/manu/CLionProjects/isAngry/GUI/Menu/Menu.cpp" "/Users/manu/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GUI/Menu/Menu.cpp.o"
+  "/Users/manu/CLionProjects/isAngry/GameCharacter/GameCharacter.cpp" "/Users/manu/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GameCharacter/GameCharacter.cpp.o"
+  "/Users/manu/CLionProjects/isAngry/GameCharacter/Hero/Hero.cpp" "/Users/manu/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GameCharacter/Hero/Hero.cpp.o"
+  "/Users/manu/CLionProjects/isAngry/GameObjects/Bullet/Bullet.cpp" "/Users/manu/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GameObjects/Bullet/Bullet.cpp.o"
   "/Users/manu/CLionProjects/isAngry/GameObjects/Star/Star.cpp" "/Users/manu/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GameObjects/Star/Star.cpp.o"
   "/Users/manu/CLionProjects/isAngry/main.cpp" "/Users/manu/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/main.cpp.o"
   )

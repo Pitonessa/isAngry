@@ -3,6 +3,7 @@
 #include "SFML/Graphics.hpp"
 #include "GUI/Menu/Menu.h"
 #include "GameObjects/Star/Star.h"
+#include "GameCharacter/Hero/Hero.h"
 
 /**
  * @param gameState indica lo stato del gioco
@@ -30,68 +31,8 @@ int main() {
 
     sf::Texture background;
     sf::Texture background2;
-    background.loadFromFile("../Res/candy.jpeg");
-    background2.loadFromFile("../Res/candy.jepg");
-
-    sf::VertexArray backgroundLayer(sf::Triangles);
-    backgroundLayer.append(sf::Vertex(
-            sf::Vector2f(-100, height),
-            sf::Color::Green
-    ));
-    backgroundLayer.append(sf::Vertex(
-            sf::Vector2f(100, height - 400),
-            sf::Color::Green
-    ));
-    backgroundLayer.append(sf::Vertex(
-            sf::Vector2f(200, height),
-            sf::Color(30, 150, 80)
-    ));
-
-    sf::VertexArray backgroundLayer2(sf::Triangles);
-    backgroundLayer2.append(sf::Vertex(
-            sf::Vector2f(-50, height),
-            sf::Color::Cyan
-    ));
-    backgroundLayer2.append(sf::Vertex(
-            sf::Vector2f(100, height - 150),
-            sf::Color(30, 150, 80)
-    ));
-    backgroundLayer2.append(sf::Vertex(
-            sf::Vector2f(250, height),
-            sf::Color(30, 150, 80)
-    ));
-
-    sf::VertexArray backgroundLayer3(sf::Triangles);
-    backgroundLayer3.append(sf::Vertex(
-            sf::Vector2f(0, height),
-            sf::Color(-100, 80, 30)
-    ));
-    backgroundLayer3.append(sf::Vertex(
-            sf::Vector2f(0, height - 75),
-            sf::Color(0, 80, 30)
-    ));
-    backgroundLayer3.append(sf::Vertex(
-            sf::Vector2f(100, height),
-            sf::Color(0, 80, 30)
-    ));
-
-    sf::VertexArray terrain(sf::Quads);
-    terrain.append(sf::Vertex(
-            sf::Vector2f(0, height),
-            sf::Color(255, 255, 100)
-    ));
-    terrain.append(sf::Vertex(
-            sf::Vector2f(window.getView().getSize().x, height),
-            sf::Color(255, 255, 100)
-    ));
-    terrain.append(sf::Vertex(
-            sf::Vector2f(window.getView().getSize().x, window.getView().getSize().y),
-            sf::Color(255, 255, 100)
-    ));
-    terrain.append(sf::Vertex(
-            sf::Vector2f(0, window.getView().getSize().y),
-            sf::Color(255, 255, 100)
-    ));
+    background.loadFromFile("../Res/candy2.jpeg");
+    background2.loadFromFile("../Res/candy3.jpg");
 
     std::vector<Star*> stars;
     for (int i = 0; i < 300; i++) {
@@ -103,6 +44,12 @@ int main() {
     }
 
     int length = stars.size();
+
+    auto hTexture = new sf::Texture;
+    hTexture->loadFromFile("../Res/hero_spritesheet.png");
+
+    Hero hero(3, *hTexture, sf::Vector2f(200, 200));
+    hero.scale(sf::Vector2f(3.0f, 3.0f));
 
     while (window.isOpen()) {
 
@@ -142,97 +89,30 @@ int main() {
                     if (e.key.code == sf::Keyboard::RShift)
                         gameState = 0;
                 } else if (gameState == 2) {
+                    std::vector<sf::Vector2f> dir;
                     if (e.key.code == sf::Keyboard::RShift)
                         gameState = 0;
                     if (e.key.code == sf::Keyboard::Escape)
                         gameState = 3;
+                    hero.move(dir);
+                    dir.clear();
                 } else {
                     float d = window.getView().getSize().x;
                     if (e.key.code == sf::Keyboard::Escape)
                         gameState = 2;
-                    else {
-                        float a = backgroundLayer[backgroundLayer.getVertexCount() - 1].position.x;
-                        //std::cout << std::endl << backgroundLayer3.getVertexCount() << std::endl;
-                        if (a < d) {
-                            //ADD A MOUNTAIN
-                            float pendence = static_cast<float>((rand() % 201) + 200) / 100;
-                            float offSet = (backgroundLayer[backgroundLayer.getVertexCount() - 1].position.x -
-                                            backgroundLayer[backgroundLayer.getVertexCount() - 2].position.x) / (rand() % 2 + 1);
-                            float mHeight = static_cast<float>(rand() % 301) + 300;
-                            float start = backgroundLayer[backgroundLayer.getVertexCount() - 1].position.x - offSet;
-                            float distance = mHeight / pendence;
-                            backgroundLayer.append(sf::Vertex(
-                                    sf::Vector2f(start, height),
-                                    sf::Color::Green
-                            ));
-                            backgroundLayer.append(sf::Vertex(
-                                    sf::Vector2f(start + distance, height - mHeight),
-                                    sf::Color::Green
-                            ));
-                            backgroundLayer.append(sf::Vertex(
-                                    sf::Vector2f(start + 2 * distance, height),
-                                    sf::Color::Green
-                            ));
 
-
-
-                            std::cout << "Montagna aggiunta" << std::endl;
-                        }
-
-                        a = backgroundLayer[backgroundLayer2.getVertexCount() - 1].position.x;
-                        if(a < d) {
-                            float pendence = static_cast<float>((rand() % 101) + 100) / 100;
-                            float offSet = (backgroundLayer2[backgroundLayer2.getVertexCount() - 1].position.x -
-                                            backgroundLayer2[backgroundLayer2.getVertexCount() - 2].position.x) / (rand() % 3 + 1);
-                            float mHeight = static_cast<float>(rand() % 151) + 150;
-                            float start = backgroundLayer2[backgroundLayer2.getVertexCount() - 1].position.x - offSet;
-                            float distance = mHeight / pendence;
-                            backgroundLayer2.append(sf::Vertex(
-                                    sf::Vector2f(start, height),
-                                    sf::Color(30, 150, 80)
-                            ));
-                            backgroundLayer2.append(sf::Vertex(
-                                    sf::Vector2f(start + distance, height - mHeight),
-                                    sf::Color(30, 150, 80)
-                            ));
-                            backgroundLayer2.append(sf::Vertex(
-                                    sf::Vector2f(start + 2 * distance, height),
-                                    sf::Color(30, 150, 80)
-                            ));
-                            std::cout << "Montagna aggiunta" << std::endl;
-                        }
-                        a = backgroundLayer3[backgroundLayer3.getVertexCount() - 1].position.x;
-                        //std::cout << std::endl << a << std::endl;
-
-                        if(a < d) {
-                            float pendence = static_cast<float>((rand() % 51) + 50) / 100;
-                            float offSet = (backgroundLayer3[backgroundLayer3.getVertexCount() - 1].position.x -
-                                            backgroundLayer3[backgroundLayer3.getVertexCount() - 2].position.x) / (rand() % 3 + 1);
-                            float mHeight = static_cast<float>(rand() % 51) + 50;
-                            float start = backgroundLayer3[backgroundLayer3.getVertexCount() - 1].position.x - offSet;
-                            float distance = mHeight / pendence;
-                            std::cout << "Pendence: " << pendence << std::endl
-                                      << "offset: " << offSet << std::endl
-                                      << "mheight: " << mHeight << std::endl
-                                      << "start: " << start << std::endl
-                                      << "distance: " << distance << std::endl;
-                            backgroundLayer3.append(sf::Vertex(
-                                    sf::Vector2f(start, height),
-                                    sf::Color(0, 80, 30)
-                            ));
-                            backgroundLayer3.append(sf::Vertex(
-                                    sf::Vector2f(start + distance, height - mHeight),
-                                    sf::Color(0, 80, 30)
-                            ));
-                            backgroundLayer3.append(sf::Vertex(
-                                    sf::Vector2f(start + 2 * distance, height),
-                                    sf::Color(0, 80, 30)
-                            ));
-                            std::cout << "Montagna 3 aggiunta, posizione finale: " << backgroundLayer3[backgroundLayer3.getVertexCount() -1].position.x << std::endl;
-                        }
-                    }
                 }
             }
+        }
+        if(gameState == 2) {
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::W))
+                hero.move(sf::Vector2f(0, -1));
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::S))
+                hero.move(sf::Vector2f(0, 1));
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::A))
+                hero.move(sf::Vector2f(-1, 0));
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))
+                hero.move(sf::Vector2f(1, 0));
         }
         if (gameState == 0) {
             int counter = 0;
@@ -261,15 +141,11 @@ int main() {
             back2.scale(sf::Vector2f(window.getView().getSize().y / background.getSize().y, window.getView().getSize().y / background.getSize().y));
             window.draw(back);
             window.draw(back2);
+            hero.animate();
+            window.draw(hero);
 
         } else {
             window.clear(sf::Color(19, 24, 98));
-
-
-            window.draw(terrain);
-            window.draw(backgroundLayer);
-            window.draw(backgroundLayer2);
-            window.draw(backgroundLayer3);
         }
         window.display();
     }
