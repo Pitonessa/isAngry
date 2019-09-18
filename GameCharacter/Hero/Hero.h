@@ -19,17 +19,12 @@ public:
 private:
     //Gun* weapon;
     int sweetCount {0};
-    sf::Texture heroTexture;
     sf::Clock c;
     std::vector<sf::IntRect> textureFrame {
-            sf::IntRect(0, 94, 80, 94),
-            sf::IntRect(80, 94, 80, 94),
-            sf::IntRect(160, 94, 80, 94),
-            sf::IntRect(240, 94, 80, 94),
-            sf::IntRect(320, 94, 80, 94),
-            sf::IntRect(400, 94, 80, 94),
+            sf::IntRect(0, 0, 80, 86),
+            sf::IntRect(0,86 , 80, 86)
     };
-    int actualFrame {1};
+    int actualFrame {0};
 
 };
 

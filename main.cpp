@@ -4,6 +4,9 @@
 #include "GUI/Menu/Menu.h"
 #include "GameObjects/Star/Star.h"
 #include "GameCharacter/Hero/Hero.h"
+#include "GameCharacter/Archer/Archer.h"
+#include "GameCharacter/Watcher/Watcher.h"
+#include "GameCharacter/Brawler/Brawler.h"
 
 /**
  * @param gameState indica lo stato del gioco
@@ -51,6 +54,30 @@ int main() {
     Hero hero(3, *hTexture, sf::Vector2f(200, 200));
     hero.scale(sf::Vector2f(3.0f, 3.0f));
 
+
+    auto aTexture = new sf::Texture;
+    Archer archer(4, *aTexture, sf::Vector2f(300,300));
+    if (aTexture->loadFromFile("../Res/hero_spritesheet.png")){
+
+        archer.scale(sf::Vector2f(-3.0f, 3.0f));
+
+    }
+
+    auto wTexture = new sf::Texture;
+    Watcher watcher(5, *wTexture, sf::Vector2f(400,400));
+    if (wTexture->loadFromFile("../Res/hero_spritesheet.png")){
+
+        watcher.scale(sf::Vector2f(3.0f, -3.0f));
+
+    }
+
+    auto bTexture = new sf::Texture;
+    Brawler brawler(5, *bTexture, sf::Vector2f(400,400));
+    if (bTexture->loadFromFile("../Res/hero_spritesheet.png")){
+
+        brawler.scale(sf::Vector2f(-3.0f, -3.0f));
+
+    }
     while (window.isOpen()) {
 
         sf::Event e;
@@ -143,6 +170,9 @@ int main() {
             window.draw(back2);
             hero.animate();
             window.draw(hero);
+            window.draw(archer);
+            window.draw(watcher);
+            window.draw(brawler);
 
         } else {
             window.clear(sf::Color(19, 24, 98));
