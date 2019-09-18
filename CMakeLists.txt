@@ -6,7 +6,7 @@ add_subdirectory(test)
 
 include_directories(sfml/include)
 
-link_directories(/Users/mac/CLionProjects/isAngry/sfml/lib)
+link_directories(./sfml/lib)
 link_libraries(libsfml-audio.2.5.1.dylib
         libsfml-audio.2.5.dylib
         libsfml-audio.dylib
