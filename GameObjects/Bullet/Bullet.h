@@ -7,14 +7,12 @@
 
 
 #include <SFML/Graphics/Sprite.hpp>
+#include "../GameObject.h"
 
-class Bullet : sf::Sprite {
+class Bullet : public GameObject {
 public:
-    Bullet(sf::Texture& texture, sf::Vector2f pos);
-    void update();
-
-private:
-    float speed {12};
+    Bullet(sf::Texture& texture, sf::Vector2f pos, float speed);
+    void update() override;
 };
 
 
