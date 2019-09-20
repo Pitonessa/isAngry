@@ -22,12 +22,14 @@ public:
     explicit GameEngine(sf::RenderWindow& mainWindow);
     void drawWorld() const;
     void navigate(sf::Keyboard::Key key);
+    void moveHero(sf::Vector2f direction);
 
     sf::Texture* heroTexture;
     sf::Texture* stalkerTexture;
     sf::Texture* brawlerTexture;
     sf::Texture* archerTexture;
     sf::Texture* bossTexture;
+    sf::Texture* backgroundTexture;
 
     short int gameState {0};
 private:
@@ -38,6 +40,7 @@ private:
     std::vector<GameObject*> props;
     std::vector<Bullet*> bullets;
     std::vector<Star*> stars;
+    std::vector<sf::Sprite*> background;
     bool loadTextures();
 
 };

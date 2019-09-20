@@ -82,14 +82,14 @@ int main() {
             }
         }
         if(cascettoEngine->gameState == 2) {
-            /*if (sf::Keyboard::isKeyPressed(sf::Keyboard::W))
-                hero.move(sf::Vector2f(0, -1));
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::W))
+                cascettoEngine->moveHero(sf::Vector2f(0, -1));
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::S))
-                hero.move(sf::Vector2f(0, 1));
+                cascettoEngine->moveHero(sf::Vector2f(0, 1));
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::A))
-                hero.move(sf::Vector2f(-1, 0));
+                cascettoEngine->moveHero(sf::Vector2f(-1, 0));
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))
-                hero.move(sf::Vector2f(1, 0));*/
+                cascettoEngine->moveHero(sf::Vector2f(1, 0));
         }
         if (cascettoEngine->gameState == 0) {
             window.clear(sf::Color(19, 24, 98));
@@ -99,22 +99,7 @@ int main() {
         }
         else if (cascettoEngine->gameState == 2) {
             window.clear(sf::Color::Black);
-            sf::Sprite back(background);
-            back.scale(sf::Vector2f(window.getView().getSize().y / background.getSize().y, window.getView().getSize().y / background.getSize().y));
-            sf::Sprite back2(background2);
-            back2.setOrigin(sf::Vector2f(0, 0));
-            back2.setPosition(back.getGlobalBounds().width, 0);
-            back2.scale(sf::Vector2f(window.getView().getSize().y / background.getSize().y, window.getView().getSize().y / background.getSize().y));
-            window.draw(back);
-            window.draw(back2);
-            //hero.animate();
-            //window.draw(hero);
-            window.draw(archer);
-            window.draw(watcher);
-            //brawler.move(hero);
-            window.draw(brawler);
-
-
+            cascettoEngine->drawWorld();
         } else {
             window.clear(sf::Color(19, 24, 98));
         }

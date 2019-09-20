@@ -14,20 +14,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9c0d17a-405a-4c07-a605-4ab0d0ec653d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/GameObjects/GameObject.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameObjects/GameObject.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GUI/GameEngine.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/GameEngine.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GUI/GameEngine.h" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/GameEngine.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/Menu/Menu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/Menu/Menu.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/Menu/Menu.h" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/Menu/Menu.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameObjects/Bullet/Bullet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameObjects/Bullet/Bullet.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameObjects/Bullet/Bullet.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameObjects/Bullet/Bullet.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameObjects/Star/Star.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameObjects/Star/Star.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameObjects/Star/Star.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameObjects/Star/Star.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/candy3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Res/candy3.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/font/candy4.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameCharacter/Hero/Hero.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameCharacter/Hero/Hero.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
@@ -220,7 +210,8 @@
       <workItem from="1568808684861" duration="2175000" />
       <workItem from="1568819545531" duration="6664000" />
       <workItem from="1568895172745" duration="53000" />
-      <workItem from="1568895256438" duration="6252000" />
+      <workItem from="1568895256438" duration="6827000" />
+      <workItem from="1568906675342" duration="3060000" />
     </task>
     <task id="LOCAL-00001" summary="Aggiunta google framework google test e implementazione test della classe Star">
       <created>1567813414981</created>
@@ -257,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568811045719</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Aggiunto gemeEngine">
+      <created>1568905802665</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1568905802665</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,6 +280,7 @@
     <MESSAGE value="Aggiunto hero" />
     <MESSAGE value="Aggiunto spritesheet" />
     <MESSAGE value="Aggiunto spritesheet2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggiunto spritesheet2" />
+    <MESSAGE value="Aggiunto gemeEngine" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aggiunto gemeEngine" />
   </component>
 </project>
