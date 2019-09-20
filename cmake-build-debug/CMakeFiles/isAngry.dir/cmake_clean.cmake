@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/isAngry.dir/main.cpp.o"
   "CMakeFiles/isAngry.dir/GUI/Menu/Menu.cpp.o"
   "CMakeFiles/isAngry.dir/GameObjects/Star/Star.cpp.o"
   "CMakeFiles/isAngry.dir/GameCharacter/GameCharacter.cpp.o"
@@ -9,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/isAngry.dir/GameCharacter/Archer/Archer.cpp.o"
   "CMakeFiles/isAngry.dir/GameCharacter/Watcher/Watcher.cpp.o"
   "CMakeFiles/isAngry.dir/GameCharacter/Brawler/Brawler.cpp.o"
+  "CMakeFiles/isAngry.dir/GameObjects/GameObject.cpp.o"
+  "CMakeFiles/isAngry.dir/main.cpp.o"
   "isAngry.pdb"
   "isAngry"
 )

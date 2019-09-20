@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/mac/CLionProjects/isAngry/GameCharacter/Hero/Hero.cpp" "/Users/mac/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GameCharacter/Hero/Hero.cpp.o"
   "/Users/mac/CLionProjects/isAngry/GameCharacter/Watcher/Watcher.cpp" "/Users/mac/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GameCharacter/Watcher/Watcher.cpp.o"
   "/Users/mac/CLionProjects/isAngry/GameObjects/Bullet/Bullet.cpp" "/Users/mac/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GameObjects/Bullet/Bullet.cpp.o"
+  "/Users/mac/CLionProjects/isAngry/GameObjects/GameObject.cpp" "/Users/mac/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GameObjects/GameObject.cpp.o"
   "/Users/mac/CLionProjects/isAngry/GameObjects/Star/Star.cpp" "/Users/mac/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GameObjects/Star/Star.cpp.o"
   "/Users/mac/CLionProjects/isAngry/main.cpp" "/Users/mac/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/main.cpp.o"
   )
