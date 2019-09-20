@@ -11,4 +11,5 @@ Watcher::Watcher(float speed, sf::Texture &Texture, sf::Vector2f position):GameC
     setPosition(position);
 
 }
+
 void Watcher::attack() {}

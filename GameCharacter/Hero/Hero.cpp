@@ -9,6 +9,7 @@ Hero::Hero(float speed, sf::Texture &texture, sf::Vector2f position) : GameChara
     c.restart();
     setTextureRect(textureFrame[actualFrame]);
     setPosition(position);
+    scale(sf::Vector2f(-1,1));
 }
 
 void Hero::move(std::vector<sf::Vector2f> directions) {

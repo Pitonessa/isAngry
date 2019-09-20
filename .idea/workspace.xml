@@ -14,9 +14,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9c0d17a-405a-4c07-a605-4ab0d0ec653d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Res/alien.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Res/dino.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Res/dino_walk_original.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Res/lanter_walk_original.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Res/walk.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GameCharacter/Brawler/Brawler.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameCharacter/Brawler/Brawler.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GameCharacter/Brawler/Brawler.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameCharacter/Brawler/Brawler.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameCharacter/Hero/Hero.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameCharacter/Hero/Hero.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameCharacter/Hero/Hero.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameCharacter/Hero/Hero.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameCharacter/Watcher/Watcher.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameCharacter/Watcher/Watcher.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -48,53 +58,42 @@
     <session id="1145638621">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="666" />
-          <entry key="h" value="214" />
-          <entry key="txt" value="15" />
+          <entry key="cpp" value="1333" />
+          <entry key="h" value="455" />
+          <entry key="txt" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="ObjectiveC" value="880" />
-          <entry key="PLAIN_TEXT" value="15" />
+          <entry key="ObjectiveC" value="1788" />
+          <entry key="PLAIN_TEXT" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cpp" value="6" />
-          <entry key="h" value="3" />
+          <entry key="cpp" value="13" />
+          <entry key="h" value="10" />
           <entry key="inl" value="1" />
+          <entry key="jpeg" value="3" />
+          <entry key="jpg" value="2" />
+          <entry key="png" value="39" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="ObjectiveC" value="10" />
+          <entry key="Image" value="44" />
+          <entry key="ObjectiveC" value="24" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GameCharacter/Brawler/Brawler.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
-              <folding>
-                <element signature="e#38#57#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="141">
+              <caret line="78" column="57" selection-start-line="78" selection-start-column="57" selection-end-line="78" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -102,8 +101,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GameCharacter/Brawler/Brawler.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+            <state relative-caret-position="244">
+              <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
               <folding>
                 <element signature="e#92#121#0" expanded="true" />
               </folding>
@@ -112,55 +111,41 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Res/dino.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Res/lanter_walk_original.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GameCharacter/Brawler/Brawler.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+              <folding>
+                <element signature="e#38#57#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GameCharacter/Hero/Hero.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+            <state relative-caret-position="186">
+              <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GameCharacter/Watcher/Watcher.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" selection-start-line="4" selection-end-line="13" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GameCharacter/Watcher/Watcher.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" lean-forward="true" selection-start-line="8" selection-end-line="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GameCharacter/Hero/Hero.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GameCharacter/Archer/Archer.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" selection-start-line="4" selection-end-line="12" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GameCharacter/Archer/Archer.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" selection-start-line="6" selection-end-line="18" selection-end-column="2" />
+            <state relative-caret-position="150">
+              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -190,9 +175,10 @@
         <option value="$PROJECT_DIR$/GameCharacter/Hero/Hero.h" />
         <option value="$PROJECT_DIR$/GameCharacter/Watcher/Watcher.h" />
         <option value="$PROJECT_DIR$/GameCharacter/Watcher/Watcher.cpp" />
+        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/GameCharacter/Brawler/Brawler.h" />
         <option value="$PROJECT_DIR$/GameCharacter/Brawler/Brawler.cpp" />
-        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/GameCharacter/Hero/Hero.cpp" />
       </list>
     </option>
   </component>
@@ -207,10 +193,10 @@
     <option name="configuration" value="0-isAngry" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-15" />
-    <option name="y" value="23" />
+    <option name="x" value="22" />
+    <option name="y" value="34" />
     <option name="width" value="1280" />
-    <option name="height" value="714" />
+    <option name="height" value="612" />
   </component>
   <component name="ProjectId" id="1PgKTC9NFJOxesfVAQQua0rH7F5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -236,7 +222,25 @@
               <item name="isAngry" type="b2602c69:ProjectViewProjectNode" />
               <item name="isAngry" type="462c0819:PsiDirectoryNode" />
               <item name="GameCharacter" type="462c0819:PsiDirectoryNode" />
+              <item name="Archer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="isAngry" type="b2602c69:ProjectViewProjectNode" />
+              <item name="isAngry" type="462c0819:PsiDirectoryNode" />
+              <item name="GameCharacter" type="462c0819:PsiDirectoryNode" />
               <item name="Brawler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="isAngry" type="b2602c69:ProjectViewProjectNode" />
+              <item name="isAngry" type="462c0819:PsiDirectoryNode" />
+              <item name="GameCharacter" type="462c0819:PsiDirectoryNode" />
+              <item name="Hero" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="isAngry" type="b2602c69:ProjectViewProjectNode" />
+              <item name="isAngry" type="462c0819:PsiDirectoryNode" />
+              <item name="GameCharacter" type="462c0819:PsiDirectoryNode" />
+              <item name="Watcher" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="isAngry" type="b2602c69:ProjectViewProjectNode" />
@@ -248,6 +252,11 @@
               <item name="isAngry" type="462c0819:PsiDirectoryNode" />
               <item name="GUI" type="462c0819:PsiDirectoryNode" />
               <item name="Menu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="isAngry" type="b2602c69:ProjectViewProjectNode" />
+              <item name="isAngry" type="462c0819:PsiDirectoryNode" />
+              <item name="Res" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="isAngry" type="b2602c69:ProjectViewProjectNode" />
@@ -278,13 +287,14 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/GameCharacter/Watcher" />
       <recent name="$PROJECT_DIR$/Res" />
+      <recent name="$PROJECT_DIR$/GameCharacter/Watcher" />
       <recent name="$PROJECT_DIR$/test/lib" />
       <recent name="$PROJECT_DIR$/GameObjects" />
       <recent name="$PROJECT_DIR$/GameObjects/Props/Star" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Res" />
       <recent name="$PROJECT_DIR$/test" />
       <recent name="$PROJECT_DIR$/sfml/include" />
       <recent name="$PROJECT_DIR$/sfml" />
@@ -417,14 +427,21 @@
       <option name="project" value="LOCAL" />
       <updated>1568816881694</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add insegimento">
+      <created>1568819001043</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1568819001043</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7348000" />
+    <option name="totallyTimeSpent" value="20330000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-15" y="23" width="1280" height="714" extended-state="0" />
+    <frame x="22" y="34" width="1280" height="612" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26979" />
@@ -432,22 +449,44 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.48142165" visible="true" weight="0.329582" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.41922456" visible="true" weight="0.32884616" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.51857835" side_tool="true" visible="true" weight="0.329582" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.58077544" side_tool="true" weight="0.32884616" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49919224" weight="0.329582" />
       <window_info anchor="bottom" id="CMake" order="11" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.48303714" weight="0.3279743" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.42084005" weight="0.32692307" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26979" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.41922456" visible="true" weight="0.32884616" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.58077544" side_tool="true" visible="true" weight="0.32884616" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49919224" weight="0.329582" />
+      <window_info anchor="bottom" id="CMake" order="11" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.42084005" weight="0.32692307" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -475,7 +514,8 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="Aggiunta google framework google test e implementazione test della classe Star" />
     <MESSAGE value="add nemici base" />
-    <option name="LAST_COMMIT_MESSAGE" value="add nemici base" />
+    <MESSAGE value="add insegimento" />
+    <option name="LAST_COMMIT_MESSAGE" value="add insegimento" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/GameCharacter/GameCharacter.cpp">
@@ -516,55 +556,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GameCharacter/Archer/Archer.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="18" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GameCharacter/Archer/Archer.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" selection-start-line="4" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameCharacter/Watcher/Watcher.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="8" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameCharacter/Watcher/Watcher.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="13" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameCharacter/Hero/Hero.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameCharacter/Hero/Hero.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameCharacter/Brawler/Brawler.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-          <folding>
-            <element signature="e#92#121#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -575,23 +570,164 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GameCharacter/Brawler/Brawler.cpp">
+    <entry file="file://$PROJECT_DIR$/Res/png/Dead (2).png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Res/png/Dead (3).png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Res/png/Dead (4).png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Res/png/Dead (5).png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Res/png/Dead (1).png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Res/Dino/Walk (3).png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Res/Dino/Walk (1).png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Res/Dino/Run (8).png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Res/Dino/Walk (2).png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Res/Dino/Walk (4).png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Res/Dino/Walk (5).png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Res/Dino/Walk (7).png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Res/Dino/Walk (8).png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Res/Dino/Walk (9).png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Res/Lantern/Dead (5).png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Res/Lantern/Dead (6).png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Res/Lantern/Dead (1).png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Res/Lantern/Dead (2).png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Res/Lantern/Dead (4).png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Res/Lantern/Dead (3).png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Res/Lantern/Jump (2).png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Res/Dino/Walk (10).png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Res/candy2.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Res/dino_walk_original.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Res/isAnimated.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Res/candy3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Res/candy4.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Res/lantern_walk.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Res/alien.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameCharacter/Watcher/Watcher.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+        <state relative-caret-position="91">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameCharacter/Watcher/Watcher.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameCharacter/Archer/Archer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Res/alien_walk.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Res/walk.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Res/dino.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Res/lanter_walk_original.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameCharacter/Brawler/Brawler.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
           <folding>
-            <element signature="e#38#57#0" expanded="true" />
+            <element signature="e#92#121#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
+        <state relative-caret-position="141">
+          <caret line="78" column="57" selection-start-line="78" selection-start-column="57" selection-end-line="78" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameCharacter/Brawler/Brawler.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#38#57#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameCharacter/Hero/Hero.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameCharacter/Hero/Hero.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
         </state>
       </provider>
     </entry>

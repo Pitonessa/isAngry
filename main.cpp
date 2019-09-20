@@ -34,8 +34,8 @@ int main() {
 
     sf::Texture background;
     sf::Texture background2;
-    background.loadFromFile("../Res/candy2.jpeg");
-    background2.loadFromFile("../Res/candy3.jpg");
+    background.loadFromFile("../Res/candy4.jpeg");
+    background2.loadFromFile("../Res/candy4.jpeg");
 
     std::vector<Star*> stars;
     for (int i = 0; i < 300; i++) {
@@ -51,31 +51,38 @@ int main() {
     auto hTexture = new sf::Texture;
 
     Hero hero(3, *hTexture, sf::Vector2f(200, 200));
-    if(hTexture->loadFromFile("../Res/hero_spritesheet.png"))
+    if(hTexture->loadFromFile("../Res/isAnimated.png"))
         hero.scale(sf::Vector2f(3.0f, 3.0f));
 
 
     auto aTexture = new sf::Texture;
     Archer archer(4, *aTexture, sf::Vector2f(300,300));
-    if (aTexture->loadFromFile("../Res/hero_spritesheet.png")){
+    archer.setTextureRect(sf::IntRect(0,0,213,428));
+    archer.scale(sf::Vector2f(0.20,0.20));
+    if (aTexture->loadFromFile("../Res/alien.png")){
 
-        archer.scale(sf::Vector2f(-3.0f, -3.0f));
+        archer.scale(sf::Vector2f(3.0f, 3.0f));
 
     }
 
     auto wTexture = new sf::Texture;
     Watcher watcher(5, *wTexture, sf::Vector2f(400,400));
-    if (wTexture->loadFromFile("../Res/hero_spritesheet.png")){
+    watcher.setTextureRect(sf::IntRect(0,0,680,472));
+    watcher.scale(sf::Vector2f(0.23,0.23));
+    if (wTexture->loadFromFile("../Res/dino.png")){
 
-        watcher.scale(sf::Vector2f(3.0f, -3.0f));
+        watcher.scale(sf::Vector2f(-3.0f, 3.0f));
 
     }
 
     auto bTexture = new sf::Texture;
     Brawler brawler(1, *bTexture, sf::Vector2f(400,400));
-    if (bTexture->loadFromFile("../Res/hero_spritesheet.png")){
+    brawler.setTextureRect(sf::IntRect(0,0,579,763));
+    brawler.scale(sf::Vector2f(0.10,0.10));
 
-        brawler.scale(sf::Vector2f(-3.0f, 3.0f));
+    if (bTexture->loadFromFile("../Res/lanter_walk_original.png")){
+
+        brawler.scale(sf::Vector2f(3.0f, 3.0f));
 
     }
     while (window.isOpen()) {
@@ -173,6 +180,7 @@ int main() {
             window.draw(archer);
             window.draw(watcher);
             brawler.move(hero);
+            brawler.animated();
             window.draw(brawler);
 
 
