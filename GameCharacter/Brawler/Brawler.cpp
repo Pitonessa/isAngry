@@ -9,22 +9,26 @@
 
 Brawler::Brawler(float speed, sf::Texture &Texture, sf::Vector2f position):GameCharacter(speed,Texture) {
     setPosition(position);
-    setTextureRect(sf::IntRect(0,0,80,86));
+    setTextureRect(textureFrame[actualFrame]);
     setPosition(position);
-
+    c.restart();
 }
 void Brawler::attack() {}
 void Brawler::move(const GameCharacter &hero) {
 
-    sf::Vector2f hPos = hero.getPosition();
-    hPos.y += hero.getGlobalBounds().height;
-    sf::Vector2f Pos = getPosition();
-    Pos.y += getGlobalBounds().height;
-
-    sf::Vector2f distance = hPos - Pos;
+    sf::Vector2f distance = hero.getPosition()- getPosition();
     distance = distance / sqrt(distance.x * distance.x + distance.y * distance.y);
     setPosition(getPosition()+distance*speed);
 }
-void Brawler::action(GameCharacter& player) {
-    move(player);
+void Brawler::animated(){
+    if (c.getElapsedTime()>=sf::milliseconds(80)){
+        if(actualFrame<textureFrame.size()-1)
+            actualFrame++;
+        else
+            actualFrame=0;
+        setTextureRect(textureFrame[actualFrame]);
+        c.restart();
+
+    }
+
 }
