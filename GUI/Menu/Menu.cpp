@@ -41,14 +41,23 @@ const MenuItem::TYPE& MenuItem::getType() const {
     return type;
 }
 
-Menu::Menu(std::vector<MenuItem *> &list, Menu::STYLE style) : style(style){
-    for (auto i : list) {
-        i->setFillColor(sf::Color::White);
-        itemList.push_back(i);
-        count++;
-    }
-    if (style == Menu::STYLE::CENTERED)
+Menu::Menu(Menu::STYLE style) : style(style){
+    if(style == Menu::STYLE::MAIN) {
+        itemList.push_back(new MenuItem(MenuItem::TYPE::START));
+        itemList.push_back(new MenuItem(MenuItem::TYPE::RECORD));
+        itemList.push_back(new MenuItem(MenuItem::TYPE::EXIT));
         itemList[active]->setFillColor(sf::Color::Red);
+        count = 3;
+    } else if (style == Menu::STYLE::TOP) {
+        itemList.push_back(new MenuItem(MenuItem::TYPE::SCORE));
+        itemList.push_back(new MenuItem(MenuItem::TYPE::INFO));
+        count = 2;
+    } else if (style == Menu::STYLE::CENTERED) {
+        itemList.push_back(new MenuItem(MenuItem::TYPE::RESUME));
+        itemList.push_back(new MenuItem(MenuItem::TYPE::QUIT));
+        itemList[active]->setFillColor(sf::Color::Red);
+        count = 2;
+    } else std::cerr << "Meni non definto";
 }
 
 Menu::~Menu() {
@@ -71,7 +80,20 @@ void Menu::draw(sf::RenderWindow& window) {
 
     float step = dim.x / count;
 
-    if (style == STYLE::TOP) {
+    if (style == STYLE::MAIN) {
+        int height = count * (64 + 8);
+        pos = actualView.getCenter();
+        pos.y -= height / 2;
+        for (auto i : itemList) {
+            i->setCharacterSize(64);
+            i->setFont(font);
+            sf::FloatRect s = i->getGlobalBounds();
+            i->setPosition(pos.x, pos.y);
+            i->setOrigin(s.width / 2 , s.height / 2);
+            pos.y += 72;
+            window.draw(*i);
+        }
+    } else if (style == STYLE::TOP) {
         pos.y = origin.y + 10;
         pos.x = origin.x + 10;
         for (auto i : itemList) {

@@ -30,9 +30,10 @@ class Menu {
 public:
     enum STYLE {
         CENTERED,
-        TOP
+        TOP,
+        MAIN
     };
-    Menu(std::vector<MenuItem*>& list, STYLE style);
+    Menu(STYLE style);
     ~Menu();
     void draw(sf::RenderWindow& window);
     void forward();
@@ -41,7 +42,7 @@ public:
     const STYLE& getStyle() const;
 private:
     int active {0};
-    int count;
+    int count {0};
     std::vector<MenuItem*> itemList;
     STYLE style;
 };

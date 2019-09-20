@@ -38,3 +38,22 @@ void Star::updatePosition(float width) {
 bool Star::getGloom() const {
     return gloom;
 }
+
+void Star::updateStar() {
+    if(static_cast<int> (rand() % 100) < 25)
+        updateBrightness();
+    updatePosition();
+}
+
+std::vector<Star*> Star::createStars(sf::RenderWindow* renderWindow, int number) {
+    srand(time(NULL));
+    std::vector<Star*> stars;
+    for(int i = 0; i < number; i++) {
+        float posX = rand() % renderWindow->getSize().x;
+        float posY = rand() % renderWindow->getSize().y * 1.25;
+        stars.push_back(new Star(rand() % 5 + 1, 7));
+        stars[i]->setPosition(posX, posY);
+        stars[i]->setFillColor(sf::Color::White);
+    }
+    return stars;
+}
