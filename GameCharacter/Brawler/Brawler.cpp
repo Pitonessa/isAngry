@@ -16,10 +16,15 @@ Brawler::Brawler(float speed, sf::Texture &Texture, sf::Vector2f position):GameC
 void Brawler::attack() {}
 void Brawler::move(const GameCharacter &hero) {
 
-    sf::Vector2f distance = hero.getPosition()- getPosition();
+    sf::Vector2f hPos = hero.getPosition();
+    hPos.y += hero.getGlobalBounds().height;
+    sf::Vector2f Pos = getPosition();
+    Pos.y += getGlobalBounds().height;
+
+    sf::Vector2f distance = hPos - Pos;
     distance = distance / sqrt(distance.x * distance.x + distance.y * distance.y);
     setPosition(getPosition()+distance*speed);
-
-
-    std::cout<<distance.x<<std::endl<<distance.y<<std::endl;
+}
+void Brawler::action(GameCharacter& player) {
+    move(player);
 }

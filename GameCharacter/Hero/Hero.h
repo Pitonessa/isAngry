@@ -15,6 +15,7 @@ public:
     void move(sf::Vector2f direction);
     void attack() override;
     void animate();
+    void action(GameCharacter& hero) override;
 
 private:
     //Gun* weapon;

@@ -6,12 +6,12 @@
 #define ISANGRY_GAMEENGINE_H
 
 
+#include <iostream>
 #include "SFML/Graphics.hpp"
 #include "../GameObjects/Bullet/Bullet.h"
 #include "../GameCharacter/Hero/Hero.h"
 #include "Menu/Menu.h"
 #include "../GameObjects/Star/Star.h"
-#include <iostream>
 
 class GameEngine {
 public:

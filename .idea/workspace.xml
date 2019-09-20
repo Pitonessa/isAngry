@@ -17,7 +17,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GUI/GameEngine.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/GameEngine.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GUI/GameEngine.h" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/GameEngine.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameCharacter/Brawler/Brawler.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameCharacter/Brawler/Brawler.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameCharacter/Brawler/Brawler.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameCharacter/Brawler/Brawler.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameCharacter/GameCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameCharacter/GameCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameCharacter/GameCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameCharacter/GameCharacter.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GameCharacter/Hero/Hero.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameCharacter/Hero/Hero.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameCharacter/Hero/Hero.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameCharacter/Hero/Hero.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
@@ -212,6 +217,8 @@
       <workItem from="1568895172745" duration="53000" />
       <workItem from="1568895256438" duration="6827000" />
       <workItem from="1568906675342" duration="3060000" />
+      <workItem from="1568970250263" duration="669000" />
+      <workItem from="1568983553136" duration="3564000" />
     </task>
     <task id="LOCAL-00001" summary="Aggiunta google framework google test e implementazione test della classe Star">
       <created>1567813414981</created>
@@ -255,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568905802665</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fix gemeEngine">
+      <created>1568970385182</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1568970385182</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,6 +295,7 @@
     <MESSAGE value="Aggiunto spritesheet" />
     <MESSAGE value="Aggiunto spritesheet2" />
     <MESSAGE value="Aggiunto gemeEngine" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggiunto gemeEngine" />
+    <MESSAGE value="fix gemeEngine" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix gemeEngine" />
   </component>
 </project>

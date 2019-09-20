@@ -24,6 +24,14 @@ void Hero::move(std::vector<sf::Vector2f> directions) {
 }
 
 void Hero::move(sf::Vector2f direction) {
+    float prod = direction.x * previusDirection;
+    if(prod < 0) {
+        scale(sf::Vector2f(-1, 1));
+        if(direction.x > 0)
+            Sprite::move(-getGlobalBounds().width, 0);
+        else Sprite::move(getGlobalBounds().width, 0);
+    }
+    previusDirection = direction.x;
     Transformable::move(direction * speed / sqrt(direction.x * direction.x + direction.y * direction.y));
 }
 
@@ -40,4 +48,8 @@ void Hero::animate() {
             actualFrame = 0;
         setTextureRect(textureFrame[actualFrame]);
     }
+}
+
+void Hero::action(GameCharacter &player) {
+
 }

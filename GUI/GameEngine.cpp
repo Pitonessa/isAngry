@@ -3,6 +3,7 @@
 //
 
 #include "GameEngine.h"
+#include "../GameCharacter/Brawler/Brawler.h"
 
 
 GameEngine::GameEngine(sf::RenderWindow &mainWindow) : gameWindow(&mainWindow), gameMenu(new Menu(Menu::STYLE::MAIN)) {
@@ -16,13 +17,16 @@ GameEngine::GameEngine(sf::RenderWindow &mainWindow) : gameWindow(&mainWindow), 
         //TODO TEXTURE NON CARICATE, GESTISCI
     }
     hero = new Hero(5, *heroTexture, sf::Vector2f(100, 100));
+    hero->scale(sf::Vector2f(3, 3));
     background.push_back(new sf::Sprite(*backgroundTexture));
     background.push_back(new sf::Sprite(*backgroundTexture));
     float scaleFactor = gameWindow->getView().getSize().y / background[0]->getTextureRect().height;
     background[0]->scale(sf::Vector2f(scaleFactor, scaleFactor));
-    background[1]->setPosition(background[0]->getTextureRect().width , 0);
+    background[1]->setPosition(background[0]->getGlobalBounds().width * 2 - 5 , 0);
     background[1]->scale(sf::Vector2f(-scaleFactor, scaleFactor));
+    std::cout << background[1]->getPosition().x;
     this->stars = Star::createStars(gameWindow);
+    enemies.push_back(new Brawler(3, *brawlerTexture, sf::Vector2f(400, 400)));
 }
 
 bool GameEngine::loadTextures() {
@@ -49,8 +53,10 @@ void GameEngine::drawWorld() const {
             for (auto b : background)
                 gameWindow->draw(*b);
             gameWindow->draw(*hero);
-            for (auto enemy : enemies)
+            for (auto enemy : enemies) {
+                enemy->action(*hero);
                 gameWindow->draw(*enemy);
+            }
             for (auto prop : props)
                 gameWindow->draw(*prop);
             for (auto bullet : bullets)

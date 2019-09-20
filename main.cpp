@@ -28,28 +28,6 @@ int main() {
     background.loadFromFile("../Res/candy2.jpeg");
     background2.loadFromFile("../Res/candy3.jpeg");
 
-    auto aTexture = new sf::Texture;
-    Archer archer(4, *aTexture, sf::Vector2f(300,300));
-    if (aTexture->loadFromFile("../Res/hero_spritesheet.png")){
-
-        archer.scale(sf::Vector2f(-3.0f, -3.0f));
-
-    }
-
-    auto wTexture = new sf::Texture;
-    Watcher watcher(5, *wTexture, sf::Vector2f(400,400));
-    if (wTexture->loadFromFile("../Res/hero_spritesheet.png")){
-        watcher.scale(sf::Vector2f(3.0f, -3.0f));
-
-    }
-
-    auto bTexture = new sf::Texture;
-    Brawler brawler(1, *bTexture, sf::Vector2f(400,400));
-    if (bTexture->loadFromFile("../Res/hero_spritesheet.png")){
-
-        brawler.scale(sf::Vector2f(-3.0f, 3.0f));
-
-    }
     while (window.isOpen()) {
 
         sf::Event e;

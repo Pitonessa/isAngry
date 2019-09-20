@@ -9,15 +9,15 @@
 
 class GameCharacter : public sf::Sprite {
 public:
-    static const sf::Vector2f directionUp;
-    static const sf::Vector2f directionDown;
-    static const sf::Vector2f directionLeft;
-    static const sf::Vector2f directionRight;
+    virtual void action(GameCharacter& player) = 0;
+
 protected:
     GameCharacter(float speed, sf::Texture& texture);
     void die();
     virtual void attack() = 0;
     float speed;
+    std::vector<sf::IntRect> frameList;
+    float previusDirection = 1;
 };
 
 
