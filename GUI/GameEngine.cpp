@@ -4,6 +4,7 @@
 
 #include "GameEngine.h"
 #include "../GameCharacter/Brawler/Brawler.h"
+#include "../GameCharacter/Factories/GameFactory.h"
 
 
 GameEngine::GameEngine(sf::RenderWindow &mainWindow) : gameWindow(&mainWindow), gameMenu(new Menu(Menu::STYLE::MAIN)) {
@@ -27,12 +28,18 @@ GameEngine::GameEngine(sf::RenderWindow &mainWindow) : gameWindow(&mainWindow), 
     std::cout << background[1]->getPosition().x;
     this->stars = Star::createStars(gameWindow);
     enemies.push_back(new Brawler(3, *brawlerTexture, sf::Vector2f(400, 400)));
+    enemies[0]->scale(sf::Vector2f(0.66, 0.66));
+
+    GameFactory::setBoundaries(
+            gameWindow->getView().getSize().x,
+            gameWindow->getView().getSize().y
+            );
 }
 
 bool GameEngine::loadTextures() {
-    return heroTexture->loadFromFile("../Res/hero_spritesheet.png") &&
+    return heroTexture->loadFromFile("../Res/isAnimated.png") &&
             stalkerTexture->loadFromFile("../Res/enemy_spritesheet.png") &&
-            brawlerTexture->loadFromFile("../Res/enemy_spritesheet.png") &&
+            brawlerTexture->loadFromFile("../Res/alienSpritesheet.png") &&
             archerTexture->loadFromFile("../Res/enemy_spritesheet.png") &&
             bossTexture->loadFromFile("../Res/enemy_spritesheet.png") &&
             backgroundTexture->loadFromFile("../Res/candy3.jpeg");
@@ -52,9 +59,11 @@ void GameEngine::drawWorld() const {
         case 2:                                     //GAME
             for (auto b : background)
                 gameWindow->draw(*b);
+            hero->animate();
             gameWindow->draw(*hero);
             for (auto enemy : enemies) {
                 enemy->action(*hero);
+                enemy->animate();
                 gameWindow->draw(*enemy);
             }
             for (auto prop : props)
@@ -105,4 +114,12 @@ void GameEngine::navigate(sf::Keyboard::Key key) {
 
 void GameEngine::moveHero(sf::Vector2f direction) {
     hero->move(direction);
+}
+
+void GameEngine::addEnemy(GameCharacter &enemy) {
+    enemies.push_back(&enemy);
+}
+
+void GameEngine::setHeroPos(float x, float y) {
+    hero->setPosition(x, y);
 }

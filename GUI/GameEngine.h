@@ -23,6 +23,8 @@ public:
     void drawWorld() const;
     void navigate(sf::Keyboard::Key key);
     void moveHero(sf::Vector2f direction);
+    void addEnemy(GameCharacter& enemy);
+    void setHeroPos(float x, float y);
 
     sf::Texture* heroTexture;
     sf::Texture* stalkerTexture;

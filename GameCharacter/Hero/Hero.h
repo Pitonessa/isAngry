@@ -14,7 +14,7 @@ public:
     void move(std::vector<sf::Vector2f> directions);
     void move(sf::Vector2f direction);
     void attack() override;
-    void animate();
+    void animate() override;
     void action(GameCharacter& hero) override;
 
 private:

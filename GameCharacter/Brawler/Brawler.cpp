@@ -17,11 +17,14 @@ void Brawler::attack() {}
 void Brawler::move(const GameCharacter &hero) {
 
     sf::Vector2f distance = hero.getPosition()- getPosition();
-    distance = distance / sqrt(distance.x * distance.x + distance.y * distance.y);
-    setPosition(getPosition()+distance*speed);
+    float mag = distance.x * distance.x + distance.y * distance.y;
+    if (mag >= 50) {
+        distance = distance / sqrt(mag);
+        Sprite::move(distance * speed);
+    }
 }
-void Brawler::animated(){
-    if (c.getElapsedTime()>=sf::milliseconds(80)){
+void Brawler::animate(){
+    if (c.getElapsedTime()>=sf::milliseconds(1000/6)){
         if(actualFrame<textureFrame.size()-1)
             actualFrame++;
         else
@@ -31,4 +34,8 @@ void Brawler::animated(){
 
     }
 
+}
+
+void Brawler::action(GameCharacter& hero) {
+    move(hero);
 }

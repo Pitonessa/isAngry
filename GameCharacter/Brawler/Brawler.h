@@ -16,20 +16,25 @@ public:
     Brawler(float speed, sf::Texture& Texture, sf::Vector2f position);
     void attack() override;
   void move(const GameCharacter&hero);
-  void animated();
+  void action(GameCharacter& hero) override;
+  void animate() override;
 
 private:
     sf::Clock c;
     std::vector<sf::IntRect> textureFrame {
-            sf::IntRect(0,0, 579, 763),
-            sf::IntRect(579,0 , 579, 763),
-            sf::IntRect(579*2,0 , 579, 763),
-            sf::IntRect(579*3,0, 579, 763),
-            sf::IntRect(579*4,0 , 579, 763),
-            sf::IntRect(579*5,0 , 579, 763),
-            sf::IntRect(579*6,0 , 579, 763),
-            sf::IntRect(579*7,0 , 579, 763),
-            sf::IntRect(579*8,0 , 579, 763)
+        /*
+        //IDLE
+            sf::IntRect(222, 1183, 213, 428),
+            sf::IntRect(0, 2482, 223, 438),
+            sf::IntRect(646, 2482, 235, 440),
+            */
+        //WALK
+            sf::IntRect(1567, 2046, 193, 436),
+            sf::IntRect(1075, 2482, 200, 442),
+            sf::IntRect(453, 2482, 193, 440),
+            sf::IntRect(1030, 1183, 180, 431),
+            sf::IntRect(1030, 2046, 184, 434),
+            sf::IntRect(1214, 2046, 176, 435),
     };
     int actualFrame {0};
 

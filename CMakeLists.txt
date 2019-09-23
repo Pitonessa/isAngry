@@ -34,7 +34,7 @@ SET(SOURCE_FILES
         GameCharacter/Watcher/Watcher.cpp
         GameCharacter/Brawler/Brawler.cpp
         GameObjects/GameObject.cpp
-        )
+        GameCharacter/Factories/GameFactory.cpp GameCharacter/Factories/GameFactory.h)
 
 add_library(isAngryTest ${SOURCE_FILES})
 add_executable(isAngry ${SOURCE_FILES} main.cpp)

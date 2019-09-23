@@ -10,6 +10,7 @@
 class GameCharacter : public sf::Sprite {
 public:
     virtual void action(GameCharacter& player) = 0;
+    virtual void animate() = 0;
 
 protected:
     GameCharacter(float speed, sf::Texture& texture);

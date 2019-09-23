@@ -15,6 +15,7 @@
 #include "GameCharacter/Watcher/Watcher.h"
 #include "GameCharacter/Brawler/Brawler.h"
 #include "GUI/GameEngine.h"
+#include "GameCharacter/Factories/GameFactory.h"
 
 int main() {
     srand(time(NULL));
@@ -51,6 +52,10 @@ int main() {
                         cascettoEngine->gameState = 0;
                     if (e.key.code == sf::Keyboard::Escape)
                         cascettoEngine->gameState = 3;
+                    if (e.key.code == sf::Keyboard::N)
+                        GameFactory::createEnemy(*cascettoEngine);
+                    if (e.key.code == sf::Keyboard::R)
+                        cascettoEngine->setHeroPos(window.getView().getSize().x / 2, window.getView().getSize().y / 2);
                 } else {
                     float d = window.getView().getSize().x;
                     if (e.key.code == sf::Keyboard::Escape)
