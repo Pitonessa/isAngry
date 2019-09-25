@@ -20,11 +20,12 @@ public:
         RECORD_PAGE,
     };
     explicit GameEngine(sf::RenderWindow& mainWindow);
-    void drawWorld() const;
+    void drawWorld();
     void navigate(sf::Keyboard::Key key);
     void moveHero(sf::Vector2f direction);
     void addEnemy(GameCharacter& enemy);
     void setHeroPos(float x, float y);
+    const sf::RenderWindow& getWindow();
 
     sf::Texture* heroTexture;
     sf::Texture* stalkerTexture;
@@ -44,6 +45,9 @@ private:
     std::vector<Star*> stars;
     std::vector<sf::Sprite*> background;
     bool loadTextures();
+    void moveView();
+    float gameSpeed;
+    sf::Clock gameClock;
 
 };
 

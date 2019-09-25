@@ -13,3 +13,10 @@ Watcher::Watcher(float speed, sf::Texture &Texture, sf::Vector2f position):GameC
 }
 
 void Watcher::attack() {}
+
+void Watcher::animate() {
+
+}
+void Watcher::action(GameCharacter& hero) {
+
+}

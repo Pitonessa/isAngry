@@ -4,20 +4,28 @@
 
 #include "GameFactory.h"
 #include "../Brawler/Brawler.h"
-
-float GameFactory::start = 0;
-float GameFactory::stop = 0;
-
-void GameFactory::setBoundaries(float first, float last) {
-    GameFactory::start = start;
-    GameFactory::stop = stop;
-}
+#include "../Archer/Archer.h"
+#include "../Watcher/Watcher.h"
 
 void GameFactory::createEnemy(GameEngine &engine) {
+    int
+        start = engine.getWindow().getView().getCenter().x,
+        stop = start + engine.getWindow().getSize().y;
     GameCharacter* enemy;
     float sf = static_cast<float>((rand() % 3) + 2) / 10;
-    float sped = static_cast<float>((rand() % 8) + 2) / 10;
-    enemy = new Brawler(5, *(engine.brawlerTexture), sf::Vector2f(300, 300));
+    float speed = static_cast<float>((rand() % 8) + 2) / 10;
+    int posX = rand() % (stop - start) + start;
+    int seed = rand() % 11;
+    if(seed < 3) {
+        enemy = new Brawler(speed, *(engine.brawlerTexture), sf::Vector2f(posX, 300));
+    } else if(seed < 6) {
+        enemy = new Archer(speed, *(engine.brawlerTexture), sf::Vector2f(300, 300));
+    } else if(seed < 9) {
+        enemy = new Watcher(speed, *(engine.brawlerTexture), sf::Vector2f(300, 300));
+    } else {
+        //TODO ADD BOSS
+        enemy = new Brawler(speed, *(engine.brawlerTexture), sf::Vector2f(300, 300));
+    }
     enemy->scale(sf, sf);
     engine.addEnemy(*enemy);
 }

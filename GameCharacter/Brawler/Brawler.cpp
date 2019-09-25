@@ -20,7 +20,7 @@ void Brawler::move(const GameCharacter &hero) {
     float mag = distance.x * distance.x + distance.y * distance.y;
     if (mag >= 50) {
         distance = distance / sqrt(mag);
-        Sprite::move(distance * speed);
+        Sprite::move(distance * speedX);
     }
 }
 void Brawler::animate(){

@@ -11,3 +11,10 @@ Archer::Archer(float speed, sf::Texture &Texture, sf::Vector2f position):GameCha
 
 }
  void Archer::attack() {}
+
+void Archer::animate() {
+
+}
+void Archer::action(GameCharacter& hero) {
+
+}

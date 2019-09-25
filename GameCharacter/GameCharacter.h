@@ -16,9 +16,10 @@ protected:
     GameCharacter(float speed, sf::Texture& texture);
     void die();
     virtual void attack() = 0;
-    float speed;
+    float speedX;
     std::vector<sf::IntRect> frameList;
     float previusDirection = 1;
+    int revert {0};
 };
 
 

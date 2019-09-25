@@ -5,6 +5,6 @@
 #include "GameCharacter.h"
 
 
-GameCharacter::GameCharacter(float speed, sf::Texture& texture) : Sprite(texture), speed(speed) {
+GameCharacter::GameCharacter(float speed, sf::Texture& texture) : Sprite(texture), speedX(speed) {
 
 }

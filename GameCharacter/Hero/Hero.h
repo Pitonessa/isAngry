@@ -21,13 +21,6 @@ private:
     //Gun* weapon;
     int sweetCount {0};
     sf::Clock c;
-    std::vector<sf::IntRect> textureFrame {
-            sf::IntRect(0,0, 80, 86),
-            sf::IntRect(80,0 , 80, 86),
-            sf::IntRect(160,0 , 80, 86),
-            sf::IntRect(240,0, 80, 86),
-            sf::IntRect(320,0 , 80, 86)
-    };
     int actualFrame {0};
 
 };

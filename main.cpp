@@ -16,6 +16,7 @@
 #include "GameCharacter/Brawler/Brawler.h"
 #include "GUI/GameEngine.h"
 #include "GameCharacter/Factories/GameFactory.h"
+#include <thread>
 
 int main() {
     srand(time(NULL));

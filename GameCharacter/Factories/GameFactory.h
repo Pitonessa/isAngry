@@ -13,11 +13,6 @@ public:
     ~GameFactory() = delete;
     static void createEnemy(GameEngine& engine);
     static void createProps(GameEngine& engine);
-    static void setBoundaries(float first, float last);
-
-private:
-    static float start;
-    static float stop;
 
 };
 

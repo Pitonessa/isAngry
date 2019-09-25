@@ -13,7 +13,8 @@ class Archer: public GameCharacter {
 public:
     Archer(float speed, sf::Texture& Texture, sf::Vector2f position);
     void attack() override;
-
+    void animate() override;
+    void action(GameCharacter& hero) override;
 
 
 };

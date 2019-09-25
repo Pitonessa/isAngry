@@ -14,6 +14,8 @@ class Watcher: public GameCharacter {
 public:
     Watcher(float speed, sf::Texture& Texture, sf::Vector2f position);
     void attack() override;
+    void animate() override;
+    void action(GameCharacter& hero) override;
 
 
 

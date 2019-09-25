@@ -2,18 +2,15 @@
 // Created by Emanuele Casciaro on 18/09/2019.
 //
 
+#include <thread>
 #include "GameEngine.h"
 #include "../GameCharacter/Brawler/Brawler.h"
 #include "../GameCharacter/Factories/GameFactory.h"
 
 
 GameEngine::GameEngine(sf::RenderWindow &mainWindow) : gameWindow(&mainWindow), gameMenu(new Menu(Menu::STYLE::MAIN)) {
-    heroTexture = new sf::Texture();
-    stalkerTexture = new sf::Texture();
-    brawlerTexture = new sf::Texture();
-    archerTexture = new sf::Texture();
-    bossTexture = new sf::Texture();
-    backgroundTexture = new sf::Texture();
+    gameSpeed = 1;
+    std::cout << gameSpeed << std::endl;
     if(!loadTextures()) {
         //TODO TEXTURE NON CARICATE, GESTISCI
     }
@@ -21,66 +18,77 @@ GameEngine::GameEngine(sf::RenderWindow &mainWindow) : gameWindow(&mainWindow), 
     hero->scale(sf::Vector2f(3, 3));
     background.push_back(new sf::Sprite(*backgroundTexture));
     background.push_back(new sf::Sprite(*backgroundTexture));
+    background.push_back(new sf::Sprite(*backgroundTexture));
+    background.push_back(new sf::Sprite(*backgroundTexture));
     float scaleFactor = gameWindow->getView().getSize().y / background[0]->getTextureRect().height;
     background[0]->scale(sf::Vector2f(scaleFactor, scaleFactor));
-    background[1]->setPosition(background[0]->getGlobalBounds().width * 2 - 5 , 0);
+    background[1]->setPosition(background[0]->getGlobalBounds().width * 2, 0);
     background[1]->scale(sf::Vector2f(-scaleFactor, scaleFactor));
-    std::cout << background[1]->getPosition().x;
+    background[2]->setPosition(background[0]->getGlobalBounds().width * 2, 0);
+    background[2]->scale(sf::Vector2f(scaleFactor, scaleFactor));
+    background[3]->setPosition(background[0]->getGlobalBounds().width * 4, 0);
+    background[3]->scale(sf::Vector2f(-scaleFactor, scaleFactor));
     this->stars = Star::createStars(gameWindow);
     enemies.push_back(new Brawler(3, *brawlerTexture, sf::Vector2f(400, 400)));
     enemies[0]->scale(sf::Vector2f(0.66, 0.66));
-
-    GameFactory::setBoundaries(
-            gameWindow->getView().getSize().x,
-            gameWindow->getView().getSize().y
-            );
+    gameClock.restart();
 }
 
 bool GameEngine::loadTextures() {
-    return heroTexture->loadFromFile("../Res/isAnimated.png") &&
-            stalkerTexture->loadFromFile("../Res/enemy_spritesheet.png") &&
-            brawlerTexture->loadFromFile("../Res/alienSpritesheet.png") &&
+    heroTexture = new sf::Texture();
+    stalkerTexture = new sf::Texture();
+    brawlerTexture = new sf::Texture();
+    archerTexture = new sf::Texture();
+    bossTexture = new sf::Texture();
+    backgroundTexture = new sf::Texture();
+    return heroTexture->loadFromFile("../Res/isAnimatedFull.png") &&
+            stalkerTexture->loadFromFile("../Res/dino.png") &&
+            brawlerTexture->loadFromFile("../Res/dino_walk_original.png") &&
             archerTexture->loadFromFile("../Res/enemy_spritesheet.png") &&
             bossTexture->loadFromFile("../Res/enemy_spritesheet.png") &&
             backgroundTexture->loadFromFile("../Res/candy3.jpeg");
 }
 
-void GameEngine::drawWorld() const {
-    switch (gameState) {
-        case 0:                                     //MAIN MENU
-            for (auto star : stars){
-                star->updateStar();
-                gameWindow->draw(*star);
+void GameEngine::drawWorld() {
+        if (gameClock.getElapsedTime() >= sf::seconds(1.0f / 60)) {
+            switch (gameState) {
+                case 0:                                     //MAIN MENU
+                    for (auto star : stars){
+                        star->updateStar();
+                        gameWindow->draw(*star);
+                    }
+                    gameMenu->draw(*gameWindow);
+                    break;
+                case 1:                                     //RECORD MENU
+                    break;
+                case 2:                                     //GAME
+                    for (auto b : background)
+                        gameWindow->draw(*b);
+                    hero->animate();
+                    gameWindow->draw(*hero);
+                    for (auto enemy : enemies) {
+                        enemy->action(*hero);
+                        enemy->animate();
+                        gameWindow->draw(*enemy);
+                    }
+                    for (auto prop : props)
+                        gameWindow->draw(*prop);
+                    for (auto bullet : bullets)
+                        gameWindow->draw(*bullet);
+                    moveView();
+                    break;
+                case 3:                                     //PAUSE
+                    gameWindow->draw(*hero);
+                    for (auto enemy : enemies)
+                        gameWindow->draw(*enemy);
+                    for (auto prop : props)
+                        gameWindow->draw(*prop);
+                    for (auto bullet : bullets)
+                        gameWindow->draw(*bullet);
+                    break;
             }
-            gameMenu->draw(*gameWindow);
-            break;
-        case 1:                                     //RECORD MENU
-            break;
-        case 2:                                     //GAME
-            for (auto b : background)
-                gameWindow->draw(*b);
-            hero->animate();
-            gameWindow->draw(*hero);
-            for (auto enemy : enemies) {
-                enemy->action(*hero);
-                enemy->animate();
-                gameWindow->draw(*enemy);
-            }
-            for (auto prop : props)
-                gameWindow->draw(*prop);
-            for (auto bullet : bullets)
-                gameWindow->draw(*bullet);
-            break;
-        case 3:                                     //PAUSE
-            gameWindow->draw(*hero);
-            for (auto enemy : enemies)
-                gameWindow->draw(*enemy);
-            for (auto prop : props)
-                gameWindow->draw(*prop);
-            for (auto bullet : bullets)
-                gameWindow->draw(*bullet);
-            break;
-    }
+        }
+    //return true;
 }
 
 void GameEngine::navigate(sf::Keyboard::Key key) {
@@ -92,6 +100,7 @@ void GameEngine::navigate(sf::Keyboard::Key key) {
         switch (gameMenu->getAction()) {
             case MenuItem::TYPE::START:
                 gameState = 2;
+                gameClock.restart();
                 break;
             case MenuItem::TYPE::RECORD:
                 gameState = 1;
@@ -122,4 +131,20 @@ void GameEngine::addEnemy(GameCharacter &enemy) {
 
 void GameEngine::setHeroPos(float x, float y) {
     hero->setPosition(x, y);
+}
+
+const sf::RenderWindow& GameEngine::getWindow() {
+    return *gameWindow;
+}
+
+void GameEngine::moveView() {
+    sf::View temp = gameWindow->getView();
+    temp.move(0.5f * gameSpeed, 0);
+    for (auto i : background) {
+        if (i->getPosition().x + 2 * i->getGlobalBounds().width < temp.getCenter().x) {
+            i->move(4 * i->getGlobalBounds().width, 0);
+            std::cout << "Background moved" << std::endl;
+        }
+    }
+    gameWindow->setView(temp);
 }
