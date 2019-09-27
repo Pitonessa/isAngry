@@ -20,6 +20,9 @@ protected:
     std::vector<sf::IntRect> frameList;
     float previusDirection = 1;
     int revert {0};
+    sf::Vector2f speed;
+    static sf::Vector2f gravity;
+
 };
 
 

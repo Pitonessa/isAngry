@@ -29,7 +29,7 @@ GameEngine::GameEngine(sf::RenderWindow &mainWindow) : gameWindow(&mainWindow), 
     background[3]->setPosition(background[0]->getGlobalBounds().width * 4, 0);
     background[3]->scale(sf::Vector2f(-scaleFactor, scaleFactor));
     this->stars = Star::createStars(gameWindow);
-    enemies.push_back(new Brawler(3, *brawlerTexture, sf::Vector2f(400, 400)));
+    enemies.push_back(new Brawler(1, *brawlerTexture, sf::Vector2f(400, 400)));
     enemies[0]->scale(sf::Vector2f(0.66, 0.66));
     gameClock.restart();
 }

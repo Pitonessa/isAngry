@@ -11,7 +11,7 @@ Hero::Hero(float speed, sf::Texture &texture, sf::Vector2f position) : GameChara
     setTextureRect(sf::IntRect(0, 0, 80, 86));
     setPosition(position);
 }
-
+/*
 void Hero::move(std::vector<sf::Vector2f> directions) {
     sf::Vector2f direction;
     for (auto i : directions) {
@@ -21,10 +21,23 @@ void Hero::move(std::vector<sf::Vector2f> directions) {
             getPosition() + direction * GameCharacter::speedX
             );
 }
-
+*/
 void Hero::move(sf::Vector2f direction) {
     direction.x < 0 ? revert = 1 : revert = 0;
-    Transformable::move(direction * speedX / sqrt(direction.x * direction.x + direction.y * direction.y));
+    float GroundLevel= 1200;
+    direction /= sqrt(direction.x * direction.x + direction.y * direction.y);
+    GameCharacter::speed += GameCharacter::gravity;
+    GameCharacter::speed.x = direction.x * speedX;
+    GameCharacter::speed.y += direction.y;
+    if(GroundLevel-(getPosition().y + getGlobalBounds().height) <= 0){
+       if ( speed.y >0)
+        speed.y = 0;
+        setPosition(getPosition().x, GroundLevel- getGlobalBounds().height);
+    }
+    Transformable::move(speed);
+
+
+    //Transformable::move(direction * speedX / sqrt(direction.x * direction.x + direction.y * direction.y));
 }
 
 void Hero::attack() {

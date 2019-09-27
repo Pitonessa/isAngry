@@ -16,7 +16,7 @@ void GameFactory::createEnemy(GameEngine &engine) {
     float speed = static_cast<float>((rand() % 8) + 2) / 10;
     int posX = rand() % (stop - start) + start;
     int seed = rand() % 11;
-    if(seed < 3) {
+    if(seed < 10) {
         enemy = new Brawler(speed, *(engine.brawlerTexture), sf::Vector2f(posX, 300));
     } else if(seed < 6) {
         enemy = new Archer(speed, *(engine.brawlerTexture), sf::Vector2f(300, 300));
