@@ -206,6 +206,14 @@
 			<Option target="isAngry"/>
 			<Option target="isAngryTest"/>
 		</Unit>
+		<Unit filename="/Users/manu/CLionProjects/isAngry/GameCharacter/Factories/GameFactory.cpp">
+			<Option target="isAngry"/>
+			<Option target="isAngryTest"/>
+		</Unit>
+		<Unit filename="/Users/manu/CLionProjects/isAngry/GameCharacter/Factories/GameFactory.h">
+			<Option target="isAngry"/>
+			<Option target="isAngryTest"/>
+		</Unit>
 		<Unit filename="/Users/manu/CLionProjects/isAngry/GameCharacter/GameCharacter.cpp">
 			<Option target="isAngry"/>
 			<Option target="isAngryTest"/>
@@ -251,6 +259,14 @@
 			<Option target="isAngryTest"/>
 		</Unit>
 		<Unit filename="/Users/manu/CLionProjects/isAngry/GameObjects/Star/Star.h">
+			<Option target="isAngry"/>
+			<Option target="isAngryTest"/>
+		</Unit>
+		<Unit filename="/Users/manu/CLionProjects/isAngry/GameObjects/Sweet/Sweet.cpp">
+			<Option target="isAngry"/>
+			<Option target="isAngryTest"/>
+		</Unit>
+		<Unit filename="/Users/manu/CLionProjects/isAngry/GameObjects/Sweet/Sweet.h">
 			<Option target="isAngry"/>
 			<Option target="isAngryTest"/>
 		</Unit>

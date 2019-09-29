@@ -1,10 +1,3 @@
-/*  PERLE DI GIANNI MORETTI
- *
- *  TRA GRAFICA E GRAN FICA E' UNA LETTERA
- *
- */
-
-
 #include <iostream>
 #include <cmath>
 #include "SFML/Graphics.hpp"
