@@ -4,5 +4,7 @@
 
 #include "GameObject.h"
 
-GameObject::GameObject(float s, sf::Texture& texture) : Sprite(texture), speed(s) {}
+GameObject::GameObject(float s, sf::Texture& texture, sf::Vector2f position) : Sprite(texture), speed(s) {
+    setPosition(position);
+}
 GameObject::GameObject() : speed(0) {}

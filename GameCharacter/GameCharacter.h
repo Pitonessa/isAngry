@@ -22,6 +22,7 @@ protected:
     int revert {0};
     sf::Vector2f speed;
     static sf::Vector2f gravity;
+    void fixheight();
 
 };
 

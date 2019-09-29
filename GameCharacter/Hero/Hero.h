@@ -16,6 +16,8 @@ public:
     void attack() override;
     void animate() override;
     void action(GameCharacter& hero) override;
+    void eatsweet();
+
 
 private:
     //Gun* weapon;

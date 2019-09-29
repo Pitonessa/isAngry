@@ -33,6 +33,7 @@ public:
     sf::Texture* archerTexture;
     sf::Texture* bossTexture;
     sf::Texture* backgroundTexture;
+    sf::Texture* candyTexture;
 
     short int gameState {0};
 private:

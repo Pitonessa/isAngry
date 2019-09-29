@@ -29,16 +29,16 @@ private:
             sf::IntRect(646, 2482, 235, 440),
             */
         //WALK
-            sf::IntRect(0, 0, 680, 472),
-            sf::IntRect(680, 0, 680, 472),
-            sf::IntRect(680 * 2, 0, 680, 472),
-            sf::IntRect(680 * 3, 0, 680, 472),
-            sf::IntRect(680 * 4, 0, 680, 472),
-            sf::IntRect(680 * 5, 0, 680, 472),
-            sf::IntRect(680 * 6, 0, 680, 472),
-            sf::IntRect(680 * 7, 0, 680, 472),
-            sf::IntRect(680 * 8, 0, 680, 472),
-            sf::IntRect(680 * 9, 0, 680, 472)
+            sf::IntRect(0, 0, 579, 763),
+            sf::IntRect(579, 0, 579, 763),
+            sf::IntRect(579 * 2, 0, 579, 763),
+            sf::IntRect(579 * 3, 0, 579, 763),
+            sf::IntRect(579 * 4, 0, 579, 763),
+            sf::IntRect(579 * 5, 0, 579, 763),
+            sf::IntRect(579 * 6, 0, 579, 763),
+            sf::IntRect(579 * 7, 0, 579, 763),
+            sf::IntRect(579 * 8, 0, 579, 763),
+            sf::IntRect(579 * 9, 0, 579, 763)
     };
     int actualFrame {0};
 

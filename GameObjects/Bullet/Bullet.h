@@ -11,8 +11,11 @@
 
 class Bullet : public GameObject {
 public:
-    Bullet(sf::Texture& texture, sf::Vector2f pos, float speed);
-    void update() override;
+    Bullet(sf::Texture& texture, sf::Vector2f pos, float speed,sf::Vector2f direction);
+    void update(GameCharacter* hero) override;
+
+private:
+    sf::Vector2f direction;
 };
 
 

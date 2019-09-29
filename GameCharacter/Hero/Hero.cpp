@@ -29,11 +29,7 @@ void Hero::move(sf::Vector2f direction) {
     GameCharacter::speed += GameCharacter::gravity;
     GameCharacter::speed.x = direction.x * speedX;
     GameCharacter::speed.y += direction.y;
-    if(GroundLevel-(getPosition().y + getGlobalBounds().height) <= 0){
-       if ( speed.y >0)
-        speed.y = 0;
-        setPosition(getPosition().x, GroundLevel- getGlobalBounds().height);
-    }
+    fixheight();
     Transformable::move(speed);
 
 
@@ -59,4 +55,9 @@ void Hero::animate() {
 
 void Hero::action(GameCharacter &player) {
 
+}
+
+void Hero::eatsweet() {
+    sweetCount++;
+    std::cout<< sweetCount;
 }

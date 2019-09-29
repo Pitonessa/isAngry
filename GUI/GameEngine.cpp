@@ -6,9 +6,12 @@
 #include "GameEngine.h"
 #include "../GameCharacter/Brawler/Brawler.h"
 #include "../GameCharacter/Factories/GameFactory.h"
+#include "../GameObjects/Sweet/Sweet.h"
 
 
 GameEngine::GameEngine(sf::RenderWindow &mainWindow) : gameWindow(&mainWindow), gameMenu(new Menu(Menu::STYLE::MAIN)) {
+
+    //todo metti il menu
     gameSpeed = 1;
     std::cout << gameSpeed << std::endl;
     if(!loadTextures()) {
@@ -31,6 +34,11 @@ GameEngine::GameEngine(sf::RenderWindow &mainWindow) : gameWindow(&mainWindow), 
     this->stars = Star::createStars(gameWindow);
     enemies.push_back(new Brawler(1, *brawlerTexture, sf::Vector2f(400, 400)));
     enemies[0]->scale(sf::Vector2f(0.66, 0.66));
+    props.push_back(new Sweet(sf::Vector2f(2000,1000),candyTexture));
+    props[0]->scale(0.33,0.33);
+    bullets.push_back(new Bullet(*bossTexture,sf::Vector2f(500,500),15,sf::Vector2f(2,1)));
+
+
     gameClock.restart();
 }
 
@@ -41,12 +49,14 @@ bool GameEngine::loadTextures() {
     archerTexture = new sf::Texture();
     bossTexture = new sf::Texture();
     backgroundTexture = new sf::Texture();
+    candyTexture = new sf::Texture();
     return heroTexture->loadFromFile("../Res/isAnimatedFull.png") &&
             stalkerTexture->loadFromFile("../Res/dino.png") &&
-            brawlerTexture->loadFromFile("../Res/dino_walk_original.png") &&
+            brawlerTexture->loadFromFile("../Res/lanter_walk_original.png") &&
             archerTexture->loadFromFile("../Res/enemy_spritesheet.png") &&
-            bossTexture->loadFromFile("../Res/enemy_spritesheet.png") &&
-            backgroundTexture->loadFromFile("../Res/candy3.jpeg");
+            bossTexture->loadFromFile("../Res/coconut.png") &&
+            candyTexture->loadFromFile("../Res/candy6.png") &&
+            backgroundTexture->loadFromFile("../Res/candy5.png");
 }
 
 void GameEngine::drawWorld() {
@@ -71,10 +81,16 @@ void GameEngine::drawWorld() {
                         enemy->animate();
                         gameWindow->draw(*enemy);
                     }
-                    for (auto prop : props)
+
+                    for (auto prop : props){
+                        prop->update(hero);
                         gameWindow->draw(*prop);
-                    for (auto bullet : bullets)
+                    }
+                    for (auto bullet : bullets){
                         gameWindow->draw(*bullet);
+                        bullet->update(hero);
+
+                    }
                     moveView();
                     break;
                 case 3:                                     //PAUSE
