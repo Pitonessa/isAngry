@@ -14,8 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9c0d17a-405a-4c07-a605-4ab0d0ec653d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/GameEngine.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/GameEngine.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Res/Background1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Res/Background1.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -207,6 +206,7 @@
       <workItem from="1569837550188" duration="104000" />
       <workItem from="1569840832628" duration="104000" />
       <workItem from="1569845786302" duration="56000" />
+      <workItem from="1569855935837" duration="613000" />
     </task>
     <task id="LOCAL-00001" summary="Aggiunta google framework google test e implementazione test della classe Star">
       <created>1567813414981</created>
@@ -306,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569837628604</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="ciao">
+      <created>1569856096789</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1569856096789</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,6 +345,7 @@
     <MESSAGE value="Aggiunta gravità" />
     <MESSAGE value="aggiunto candy 6" />
     <MESSAGE value="reso fixHeight pubblico" />
-    <option name="LAST_COMMIT_MESSAGE" value="reso fixHeight pubblico" />
+    <MESSAGE value="ciao" />
+    <option name="LAST_COMMIT_MESSAGE" value="ciao" />
   </component>
 </project>
