@@ -16,10 +16,6 @@
     <list default="true" id="d9c0d17a-405a-4c07-a605-4ab0d0ec653d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GUI/GameEngine.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/GameEngine.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameCharacter/Brawler/Brawler.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameCharacter/Brawler/Brawler.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameCharacter/GameCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameCharacter/GameCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameCharacter/GameCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameCharacter/GameCharacter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameCharacter/Hero/Hero.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameCharacter/Hero/Hero.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -208,6 +204,9 @@
       <workItem from="1569763175563" duration="8094000" />
       <workItem from="1569771965090" duration="307000" />
       <workItem from="1569837162316" duration="365000" />
+      <workItem from="1569837550188" duration="104000" />
+      <workItem from="1569840832628" duration="104000" />
+      <workItem from="1569845786302" duration="56000" />
     </task>
     <task id="LOCAL-00001" summary="Aggiunta google framework google test e implementazione test della classe Star">
       <created>1567813414981</created>
@@ -300,7 +299,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569772055458</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="reso fixHeight pubblico">
+      <created>1569837628604</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1569837628604</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,6 +337,7 @@
     <MESSAGE value="Vista mobile e sfondo ripetuto&#10;Cambiata logica animazione hero" />
     <MESSAGE value="Aggiunta gravità" />
     <MESSAGE value="aggiunto candy 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="aggiunto candy 6" />
+    <MESSAGE value="reso fixHeight pubblico" />
+    <option name="LAST_COMMIT_MESSAGE" value="reso fixHeight pubblico" />
   </component>
 </project>

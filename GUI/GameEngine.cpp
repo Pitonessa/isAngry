@@ -56,7 +56,7 @@ bool GameEngine::loadTextures() {
             archerTexture->loadFromFile("../Res/enemy_spritesheet.png") &&
             bossTexture->loadFromFile("../Res/coconut.png") &&
             candyTexture->loadFromFile("../Res/candy6.png") &&
-            backgroundTexture->loadFromFile("../Res/candy5.png");
+            backgroundTexture->loadFromFile("../Res/Background1.png");
 }
 
 void GameEngine::drawWorld() {
