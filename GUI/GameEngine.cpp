@@ -79,6 +79,7 @@ void GameEngine::drawWorld() {
                     for (auto enemy : enemies) {
                         enemy->action(*hero);
                         enemy->animate();
+                        enemy->fixHeight(1200);
                         gameWindow->draw(*enemy);
                     }
 
@@ -139,6 +140,7 @@ void GameEngine::navigate(sf::Keyboard::Key key) {
 
 void GameEngine::moveHero(sf::Vector2f direction) {
     hero->move(direction);
+    hero->fixHeight(1200);
 }
 
 void GameEngine::addEnemy(GameCharacter &enemy) {

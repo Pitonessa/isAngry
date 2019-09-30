@@ -11,6 +11,7 @@ class GameCharacter : public sf::Sprite {
 public:
     virtual void action(GameCharacter& player) = 0;
     virtual void animate() = 0;
+    void fixHeight(float groundLevel);
 
 protected:
     GameCharacter(float speed, sf::Texture& texture);
@@ -22,7 +23,6 @@ protected:
     int revert {0};
     sf::Vector2f speed;
     static sf::Vector2f gravity;
-    void fixheight();
 
 };
 

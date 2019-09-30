@@ -29,7 +29,6 @@ void Hero::move(sf::Vector2f direction) {
     GameCharacter::speed += GameCharacter::gravity;
     GameCharacter::speed.x = direction.x * speedX;
     GameCharacter::speed.y += direction.y;
-    fixheight();
     Transformable::move(speed);
 
 

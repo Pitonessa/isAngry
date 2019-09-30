@@ -3,8 +3,8 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
       <config projectName="isAngry" targetName="isAngry" />
-      <config projectName="isAngry" targetName="isAngryTest" />
       <config projectName="isAngry" targetName="test" />
+      <config projectName="isAngry" targetName="isAngryTest" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -15,21 +15,11 @@
   <component name="ChangeListManager">
     <list default="true" id="d9c0d17a-405a-4c07-a605-4ab0d0ec653d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/isAngry.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/isAngry.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/GameEngine.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/GameEngine.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameCharacter/Brawler/Brawler.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameCharacter/Brawler/Brawler.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameCharacter/GameCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameCharacter/GameCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameCharacter/GameCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameCharacter/GameCharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameCharacter/Hero/Hero.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameCharacter/Hero/Hero.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -216,6 +206,8 @@
       <workItem from="1569582091989" duration="5326000" />
       <workItem from="1569608192059" duration="515000" />
       <workItem from="1569763175563" duration="8094000" />
+      <workItem from="1569771965090" duration="307000" />
+      <workItem from="1569837162316" duration="365000" />
     </task>
     <task id="LOCAL-00001" summary="Aggiunta google framework google test e implementazione test della classe Star">
       <created>1567813414981</created>
@@ -301,7 +293,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569771717883</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="aggiunto candy 6">
+      <created>1569772055458</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1569772055458</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,6 +330,7 @@
     <MESSAGE value="il personaggio ora si gira" />
     <MESSAGE value="Vista mobile e sfondo ripetuto&#10;Cambiata logica animazione hero" />
     <MESSAGE value="Aggiunta gravità" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggiunta gravità" />
+    <MESSAGE value="aggiunto candy 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="aggiunto candy 6" />
   </component>
 </project>

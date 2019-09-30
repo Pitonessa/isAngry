@@ -14,6 +14,7 @@ Brawler::Brawler(float speed, sf::Texture &Texture, sf::Vector2f position):GameC
     c.restart();
 }
 void Brawler::attack() {}
+
 void Brawler::move(const GameCharacter &hero) {
 
     sf::Vector2f distance = hero.getPosition()- getPosition();
@@ -21,9 +22,9 @@ void Brawler::move(const GameCharacter &hero) {
     if (mag >= 50) {
         distance = distance / sqrt(mag);
         Sprite::move(distance * speedX);
-        fixheight();
     }
 }
+
 void Brawler::animate(){
     if (c.getElapsedTime()>=sf::milliseconds(1000/6)){
         if(actualFrame<textureFrame.size()-1)
