@@ -10,7 +10,6 @@
 
 
 GameEngine::GameEngine(sf::RenderWindow &mainWindow) : gameWindow(&mainWindow), gameMenu(new Menu(Menu::STYLE::MAIN)) {
-
     //todo metti il menu
     gameSpeed = 1;
     std::cout << gameSpeed << std::endl;

@@ -11,11 +11,16 @@
 #include "GameCharacter/Factories/GameFactory.h"
 #include <thread>
 
+class mattegay : public sf::Sprite{
+public:
+    mattegay(sf::Texture& t) : sf::Sprite(t){};
+};
+
 int main() {
     srand(time(NULL));
 
     sf::RenderWindow window(sf::VideoMode::getDesktopMode(), "isAngry");
-
+    /*
     auto cascettoEngine = new GameEngine(window);
 
     sf::Texture background;
@@ -83,4 +88,36 @@ int main() {
         window.display();
     }
     return 0;
+     */
+
+    sf::Texture texture;
+    texture.loadFromFile("../Res/coconut.png");
+    mattegay prova(texture);
+    prova.setOrigin(prova.getPosition().x + prova.getGlobalBounds().width / 2, prova.getPosition().y + prova.getGlobalBounds().height / 2);
+    prova.setPosition(500, 500);
+    sf::VertexArray grid(sf::Lines, 4);
+
+    grid[0].position = sf::Vector2f(0, prova.getPosition().y);
+    grid[1].position = sf::Vector2f(window.getView().getSize().x, prova.getPosition().y);
+    grid[2].position = sf::Vector2f(prova.getPosition().x, 0);
+    grid[3].position = sf::Vector2f(prova.getPosition().x, window.getView().getSize().y);
+    grid[0].color = sf::Color::White;
+    grid[1].color = sf::Color::White;
+    grid[2].color = sf::Color::White;
+    grid[3].color = sf::Color::White;
+
+    while(window.isOpen()) {
+
+        sf::Event event;
+        while(window.pollEvent(event)) {
+            if(event.type == sf::Event::Closed)
+                window.close();
+
+            window.clear(sf::Color::Black);
+            window.draw(prova);
+            window.draw(grid);
+            window.display();
+
+        }
+    }
 }
