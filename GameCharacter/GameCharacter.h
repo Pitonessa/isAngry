@@ -12,7 +12,8 @@ public:
     virtual void action(GameCharacter& player) = 0;
     virtual void animate() = 0;
     void fixHeight(float groundLevel);
-
+    static sf::Vector2f gravityAccelleration;
+    void jump();
 protected:
     GameCharacter(float speed, sf::Texture& texture);
     void die();

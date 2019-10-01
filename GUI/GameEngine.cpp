@@ -21,22 +21,21 @@ GameEngine::GameEngine(sf::RenderWindow &mainWindow) : gameWindow(&mainWindow), 
     hero->scale(sf::Vector2f(3, 3));
     background.push_back(new sf::Sprite(*backgroundTexture));
     background.push_back(new sf::Sprite(*backgroundTexture));
-    background.push_back(new sf::Sprite(*backgroundTexture));
-    background.push_back(new sf::Sprite(*backgroundTexture));
+
     float scaleFactor = gameWindow->getView().getSize().y / background[0]->getTextureRect().height;
     background[0]->scale(sf::Vector2f(scaleFactor, scaleFactor));
-    background[1]->setPosition(background[0]->getGlobalBounds().width * 2, 0);
-    background[1]->scale(sf::Vector2f(-scaleFactor, scaleFactor));
-    background[2]->setPosition(background[0]->getGlobalBounds().width * 2, 0);
-    background[2]->scale(sf::Vector2f(scaleFactor, scaleFactor));
-    background[3]->setPosition(background[0]->getGlobalBounds().width * 4, 0);
-    background[3]->scale(sf::Vector2f(-scaleFactor, scaleFactor));
+    background[1]->setPosition(background[0]->getGlobalBounds().width, 0);
+    background[1]->scale(sf::Vector2f(scaleFactor, scaleFactor));
+
     this->stars = Star::createStars(gameWindow);
     enemies.push_back(new Brawler(1, *brawlerTexture, sf::Vector2f(400, 400)));
-    enemies[0]->scale(sf::Vector2f(0.66, 0.66));
+    enemies[0]->scale(sf::Vector2f(0.33, 0.33));
     props.push_back(new Sweet(sf::Vector2f(2000,1000),candyTexture));
-    props[0]->scale(0.33,0.33);
+    props[0]->scale(0.08,0.08);
     bullets.push_back(new Bullet(*bossTexture,sf::Vector2f(500,500),15,sf::Vector2f(2,1)));
+
+    float h=gameWindow->getView().getSize().y;
+    GameCharacter::gravityAccelleration=sf::Vector2f(0,(2*h)/9);
 
 
     gameClock.restart();
@@ -79,7 +78,7 @@ void GameEngine::drawWorld() {
                     for (auto enemy : enemies) {
                         enemy->action(*hero);
                         enemy->animate();
-                        enemy->fixHeight(1200);
+                        enemy->fixHeight(961.5);
                         gameWindow->draw(*enemy);
                     }
 
@@ -140,7 +139,10 @@ void GameEngine::navigate(sf::Keyboard::Key key) {
 
 void GameEngine::moveHero(sf::Vector2f direction) {
     hero->move(direction);
-    hero->fixHeight(1200);
+    hero->fixHeight(961.5);
+}
+void GameEngine::herojump() {
+    std::cout<< GameCharacter::gravityAccelleration.y;
 }
 
 void GameEngine::addEnemy(GameCharacter &enemy) {
@@ -158,10 +160,12 @@ const sf::RenderWindow& GameEngine::getWindow() {
 void GameEngine::moveView() {
     sf::View temp = gameWindow->getView();
     temp.move(0.5f * gameSpeed, 0);
+    float pos;
+    pos= (temp.getCenter().x - temp.getSize().x/2);
     for (auto i : background) {
-        if (i->getPosition().x + 2 * i->getGlobalBounds().width < temp.getCenter().x) {
-            i->move(4 * i->getGlobalBounds().width, 0);
-            std::cout << "Background moved" << std::endl;
+        float s = i->getGlobalBounds().width;
+        if((i->getPosition().x + s) < pos){
+            i->move(sf::Vector2f(2*s,0));
         }
     }
     gameWindow->setView(temp);
