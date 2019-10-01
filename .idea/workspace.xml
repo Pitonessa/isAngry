@@ -65,46 +65,6 @@
     <select />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
-  <component name="FUSProjectUsageTrigger">
-    <session id="1145638621">
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="cpp" value="1904" />
-          <entry key="h" value="545" />
-          <entry key="txt" value="53" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="ObjectiveC" value="2449" />
-          <entry key="PLAIN_TEXT" value="53" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="cpp" value="16" />
-          <entry key="h" value="12" />
-          <entry key="inl" value="1" />
-          <entry key="jpeg" value="5" />
-          <entry key="jpg" value="2" />
-          <entry key="png" value="43" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="Image" value="50" />
-          <entry key="ObjectiveC" value="29" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
@@ -466,7 +426,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.isAngry">
+  <component name="RunManager" selected="CMake Application.Build All">
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -483,9 +443,9 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Build All" />
-      <item itemvalue="Application.isAngry" />
-      <item itemvalue="Application.test" />
+      <item itemvalue="CMake Application.Build All" />
+      <item itemvalue="CMake Application.isAngry" />
+      <item itemvalue="CMake Application.test" />
     </list>
   </component>
   <component name="SvnConfiguration">

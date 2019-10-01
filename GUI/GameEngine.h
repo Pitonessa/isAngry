@@ -22,7 +22,7 @@ public:
     explicit GameEngine(sf::RenderWindow& mainWindow);
     void drawWorld();
     void navigate(sf::Keyboard::Key key);
-    void herojump();
+    void heroJump();
     void moveHero(sf::Vector2f direction);
     void addEnemy(GameCharacter& enemy);
     void setHeroPos(float x, float y);

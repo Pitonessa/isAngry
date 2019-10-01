@@ -59,7 +59,7 @@ int main() {
         }
         if(cascettoEngine->gameState == 2) {
             if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
-                cascettoEngine->herojump();
+                cascettoEngine->heroJump();
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::S))
                 cascettoEngine->moveHero(sf::Vector2f(0, 1));
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::A))
