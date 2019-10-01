@@ -11,7 +11,6 @@
 class Hero : public GameCharacter {
 public:
     Hero(float speed, sf::Texture &texture, sf::Vector2f position);
-    void move(std::vector<sf::Vector2f> directions);
     void move(sf::Vector2f direction);
     void attack() override;
     void animate() override;
@@ -22,7 +21,6 @@ public:
 private:
     //Gun* weapon;
     int sweetCount {0};
-    sf::Clock c;
     int actualFrame {0};
 
 };

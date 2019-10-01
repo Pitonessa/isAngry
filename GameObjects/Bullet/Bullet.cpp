@@ -3,13 +3,14 @@
 //
 
 #include <cmath>
+#include <iostream>
 #include "Bullet.h"
 
-Bullet::Bullet(sf::Texture &texture, sf::Vector2f pos, float speed, sf::Vector2f direction) : GameObject(speed, texture,pos) ,direction(direction){
+Bullet::Bullet(sf::Texture &texture, sf::Vector2f pos, sf::Vector2f speed, float k) : GameObject(speed, texture, pos, k) {
     setScale(sf::Vector2f(0.25, 0.25));
-    this->direction/=sqrt(direction.x * direction.x + direction.y+direction.y);
 }
 
-void Bullet::update(GameCharacter* hero) {
-    move(direction*speed);
+void Bullet::update() {
+    speed.y += gravity.y * clock.restart().asSeconds();
+    move(speed.x, speed.y);
 }

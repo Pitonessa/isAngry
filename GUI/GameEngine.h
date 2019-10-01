@@ -47,6 +47,7 @@ private:
     std::vector<sf::Sprite*> background;
     bool loadTextures();
     void moveView();
+    void restartClock();
     float gameSpeed;
     sf::Clock gameClock;
 

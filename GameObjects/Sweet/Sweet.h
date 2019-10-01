@@ -12,7 +12,7 @@
 class Sweet: public GameObject {
 public:
     Sweet(sf::Vector2f position, sf::Texture *texture);
-    void update(GameCharacter* hero) override;
+    void update() override;
 
 
 };

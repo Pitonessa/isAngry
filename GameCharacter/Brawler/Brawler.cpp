@@ -11,7 +11,7 @@ Brawler::Brawler(float speed, sf::Texture &Texture, sf::Vector2f position):GameC
     setPosition(position);
     setTextureRect(textureFrame[actualFrame]);
     setPosition(position);
-    c.restart();
+    clock.restart();
 }
 void Brawler::attack() {}
 
@@ -26,13 +26,13 @@ void Brawler::move(const GameCharacter &hero) {
 }
 
 void Brawler::animate(){
-    if (c.getElapsedTime()>=sf::milliseconds(1000/6)){
+    if (clock.getElapsedTime()>=sf::milliseconds(1000/6)){
         if(actualFrame<textureFrame.size()-1)
             actualFrame++;
         else
             actualFrame=0;
         setTextureRect(textureFrame[actualFrame]);
-        c.restart();
+        clock.restart();
 
     }
 

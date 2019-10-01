@@ -7,7 +7,6 @@
 #include "Hero.h"
 
 Hero::Hero(float speed, sf::Texture &texture, sf::Vector2f position) : GameCharacter(speed, texture) {
-    c.restart();
     setTextureRect(sf::IntRect(0, 0, 80, 86));
     setPosition(position);
 }
@@ -40,8 +39,8 @@ void Hero::attack() {
 }
 
 void Hero::animate() {
-    if(c.getElapsedTime() >= sf::milliseconds(125)){
-        c.restart();
+    if(clock.getElapsedTime() >= sf::milliseconds(125)){
+        clock.restart();
         /*if(actualFrame < textureFrame.size() - 1)
             actualFrame++;
         else

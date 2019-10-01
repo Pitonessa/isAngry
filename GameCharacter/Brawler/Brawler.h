@@ -20,7 +20,6 @@ public:
   void animate() override;
 
 private:
-    sf::Clock c;
     std::vector<sf::IntRect> textureFrame {
         /*
         //IDLE

@@ -35,7 +35,7 @@ GameEngine::GameEngine(sf::RenderWindow &mainWindow) : gameWindow(&mainWindow), 
     enemies[0]->scale(sf::Vector2f(0.66, 0.66));
     props.push_back(new Sweet(sf::Vector2f(2000,1000),candyTexture));
     props[0]->scale(0.33,0.33);
-    bullets.push_back(new Bullet(*bossTexture,sf::Vector2f(500,500),15,sf::Vector2f(2,1)));
+    bullets.push_back(new Bullet(*bossTexture, sf::Vector2f(500, 500), sf::Vector2f(20, -10), 100));
 
 
     gameClock.restart();
@@ -83,12 +83,18 @@ void GameEngine::drawWorld() {
                     }
 
                     for (auto prop : props){
-                        prop->update(hero);
+                        prop->update();
                         gameWindow->draw(*prop);
                     }
+                    for (auto i = bullets.begin(); i < bullets.end(); i++) {
+                       //this->bullets[]
+                    }
                     for (auto bullet : bullets){
+                        bullet->update();
+                        /*if (bullet->isOut(gameWindow->getView(), 1000)) {
+                            //auto i = bullets.erase()
+                        }*/
                         gameWindow->draw(*bullet);
-                        bullet->update(hero);
 
                     }
                     moveView();
@@ -99,8 +105,8 @@ void GameEngine::drawWorld() {
                         gameWindow->draw(*enemy);
                     for (auto prop : props)
                         gameWindow->draw(*prop);
-                    for (auto bullet : bullets)
-                        gameWindow->draw(*bullet);
+                    for (auto bullet : bullets) {
+                        gameWindow->draw(*bullet); }
                     break;
             }
         }
@@ -116,7 +122,7 @@ void GameEngine::navigate(sf::Keyboard::Key key) {
         switch (gameMenu->getAction()) {
             case MenuItem::TYPE::START:
                 gameState = 2;
-                gameClock.restart();
+                restartClock();
                 break;
             case MenuItem::TYPE::RECORD:
                 gameState = 1;
@@ -129,6 +135,7 @@ void GameEngine::navigate(sf::Keyboard::Key key) {
                 break;
             case MenuItem::TYPE::RESUME:
                 gameState = 2;
+                restartClock();
                 break;
             default:
 
@@ -164,4 +171,14 @@ void GameEngine::moveView() {
         }
     }
     gameWindow->setView(temp);
+}
+
+void GameEngine::restartClock() {
+    hero->clock.restart();
+    for (auto enemy : enemies)
+        enemy->clock.restart();
+    for (auto obj : props)
+        obj->clock.restart();
+    for (auto bullet : bullets)
+        bullet->clock.restart();
 }

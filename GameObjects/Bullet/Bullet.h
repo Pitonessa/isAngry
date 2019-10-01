@@ -11,11 +11,10 @@
 
 class Bullet : public GameObject {
 public:
-    Bullet(sf::Texture& texture, sf::Vector2f pos, float speed,sf::Vector2f direction);
-    void update(GameCharacter* hero) override;
-
+    Bullet(sf::Texture& texture, sf::Vector2f pos, sf::Vector2f speed, float k);
+    void update() override;
+    bool isOut(sf::View view, float ground);
 private:
-    sf::Vector2f direction;
 };
 
 

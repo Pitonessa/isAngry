@@ -4,17 +4,14 @@
 
 #include "Sweet.h"
 
-Sweet::Sweet(sf::Vector2f position, sf::Texture *texture): GameObject(0,*texture,position) {
+Sweet::Sweet(sf::Vector2f position, sf::Texture *texture): GameObject(sf::Vector2f(), *texture, position, 0) {
+    sf::Vector2f center = getPosition();
+    center.x += getGlobalBounds().width / 2;
+    center.y += getGlobalBounds().height / 2;
+    setOrigin(center);
+    setPosition(position);
 }
 
-void Sweet::update(GameCharacter* character) {
-    Hero* hero= dynamic_cast<Hero*>(character);
-
-    if(getGlobalBounds().intersects(hero->getGlobalBounds())){
-        setScale(0,0);
-        hero->eatsweet();
-
-
-    }
+void Sweet::update() {
 
 }

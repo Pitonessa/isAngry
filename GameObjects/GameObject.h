@@ -11,11 +11,14 @@
 
 class GameObject : public sf::Sprite {
 public:
-    virtual void update(GameCharacter * hero) = 0;
+    virtual void update() = 0;
+    static sf::Vector2f gravity;
+    bool isOut(float groundLevel, sf::View limitView);
+    sf::Clock clock;
 protected:
-    explicit GameObject(float s, sf::Texture& texture, sf::Vector2f position);
-    GameObject();
-    float speed;
+    explicit GameObject(sf::Vector2f s, sf::Texture& texture, sf::Vector2f position, float k);
+    sf::Vector2f speed;
+    //float speed;
 
 };
 
