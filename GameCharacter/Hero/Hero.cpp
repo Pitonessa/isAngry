@@ -23,7 +23,7 @@ void Hero::move(std::vector<sf::Vector2f> directions) {
 */
 void Hero::move(sf::Vector2f direction) {
     direction.x < 0 ? revert = 1 : revert = 0;
-    float GroundLevel= 1200;
+    float GroundLevel= 961.5;
     direction /= sqrt(direction.x * direction.x + direction.y * direction.y);
     GameCharacter::speed += GameCharacter::gravity;
     GameCharacter::speed.x = direction.x * speedX;

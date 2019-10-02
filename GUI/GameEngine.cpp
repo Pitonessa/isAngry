@@ -32,9 +32,9 @@ GameEngine::GameEngine(sf::RenderWindow &mainWindow) : gameWindow(&mainWindow), 
     background[3]->scale(sf::Vector2f(-scaleFactor, scaleFactor));
     this->stars = Star::createStars(gameWindow);
     enemies.push_back(new Brawler(1, *brawlerTexture, sf::Vector2f(400, 400)));
-    enemies[0]->scale(sf::Vector2f(0.66, 0.66));
+    enemies[0]->scale(sf::Vector2f(0.33, 0.33));
     props.push_back(new Sweet(sf::Vector2f(2000,1000),candyTexture));
-    props[0]->scale(0.33,0.33);
+    props[0]->scale(0.10,0.10);
     bullets.push_back(new Bullet(*bossTexture, sf::Vector2f(500, 500), sf::Vector2f(20, -10), 100));
 
 
@@ -54,7 +54,7 @@ bool GameEngine::loadTextures() {
             brawlerTexture->loadFromFile("../Res/lanter_walk_original.png") &&
             archerTexture->loadFromFile("../Res/enemy_spritesheet.png") &&
             bossTexture->loadFromFile("../Res/coconut.png") &&
-            candyTexture->loadFromFile("../Res/candy6.png") &&
+            candyTexture->loadFromFile("../Res/lolly.png") &&
             backgroundTexture->loadFromFile("../Res/Background1.png");
 }
 
@@ -78,7 +78,7 @@ void GameEngine::drawWorld() {
                     for (auto enemy : enemies) {
                         enemy->action(*hero);
                         enemy->animate();
-                        enemy->fixHeight(1200);
+                        enemy->fixHeight(961.5);
                         gameWindow->draw(*enemy);
                     }
 
@@ -146,7 +146,7 @@ void GameEngine::navigate(sf::Keyboard::Key key) {
 
 void GameEngine::moveHero(sf::Vector2f direction) {
     hero->move(direction);
-    hero->fixHeight(1200);
+    hero->fixHeight(961.5);
 }
 
 void GameEngine::addEnemy(GameCharacter &enemy) {
@@ -181,4 +181,8 @@ void GameEngine::restartClock() {
         obj->clock.restart();
     for (auto bullet : bullets)
         bullet->clock.restart();
+}
+
+void GameEngine::herojump() {
+
 }
