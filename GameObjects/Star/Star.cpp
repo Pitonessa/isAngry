@@ -9,7 +9,7 @@ Star::Star(float radius, int points) : sf::CircleShape(radius, points) {
     brightness = static_cast<int> ((rand() % 50) + 200);
     speed = static_cast<float> ((rand() % 15 + 1))/ 100;
     gloom = brightness % 2 == 0;
-    //this->update();
+    //this->shootUpdate();
 }
 void Star::updateBrightness() {
     if (gloom) {

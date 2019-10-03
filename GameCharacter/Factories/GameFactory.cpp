@@ -17,14 +17,14 @@ void GameFactory::createEnemy(GameEngine &engine) {
     int posX = rand() % (stop - start) + start;
     int seed = rand() % 11;
     if(seed < 10) {
-        enemy = new Brawler(speed, *(engine.brawlerTexture), sf::Vector2f(posX, 300));
+        enemy = new Brawler(speed, sf::Vector2f(posX, 300));
     } else if(seed < 6) {
-        enemy = new Archer(speed, *(engine.brawlerTexture), sf::Vector2f(300, 300));
+        enemy = new Archer(speed, sf::Vector2f(300, 300));
     } else if(seed < 9) {
-        enemy = new Watcher(speed, *(engine.brawlerTexture), sf::Vector2f(300, 300));
+        enemy = new Watcher(speed, sf::Vector2f(300, 300));
     } else {
         //TODO ADD BOSS
-        enemy = new Brawler(speed, *(engine.brawlerTexture), sf::Vector2f(300, 300));
+        enemy = new Brawler(speed, sf::Vector2f(300, 300));
     }
     enemy->scale(sf, sf);
     engine.addEnemy(*enemy);

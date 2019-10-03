@@ -66,6 +66,8 @@ int main() {
                 cascettoEngine->moveHero(sf::Vector2f(-1, 0));
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))
                 cascettoEngine->moveHero(sf::Vector2f(1, 0));
+            if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left))
+                cascettoEngine->heroAttack();
         }
         if (cascettoEngine->gameState == 0) {
             window.clear(sf::Color(19, 24, 98));

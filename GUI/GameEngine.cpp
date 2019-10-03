@@ -7,6 +7,8 @@
 #include "../GameCharacter/Brawler/Brawler.h"
 #include "../GameCharacter/Factories/GameFactory.h"
 #include "../GameObjects/Sweet/Sweet.h"
+#include "../GameCharacter/Archer/Archer.h"
+#include "../GameCharacter/Watcher/Watcher.h"
 
 
 GameEngine::GameEngine(sf::RenderWindow &mainWindow) : gameWindow(&mainWindow), gameMenu(new Menu(Menu::STYLE::MAIN)) {
@@ -16,7 +18,8 @@ GameEngine::GameEngine(sf::RenderWindow &mainWindow) : gameWindow(&mainWindow), 
     if(!loadTextures()) {
         //TODO TEXTURE NON CARICATE, GESTISCI
     }
-    hero = new Hero(5, *heroTexture, sf::Vector2f(100, 100));
+    hero = new Hero(5, sf::Vector2f(100, 100));
+    hero->attachObserver(this);
     hero->scale(sf::Vector2f(3, 3));
     background.push_back(new sf::Sprite(*backgroundTexture));
     background.push_back(new sf::Sprite(*backgroundTexture));
@@ -25,31 +28,25 @@ GameEngine::GameEngine(sf::RenderWindow &mainWindow) : gameWindow(&mainWindow), 
     background[1]->setPosition(background[0]->getGlobalBounds().width, 0);
     background[1]->scale(sf::Vector2f(scaleFactor, scaleFactor));
     this->stars = Star::createStars(gameWindow);
-    enemies.push_back(new Brawler(1, *brawlerTexture, sf::Vector2f(400, 400)));
+    enemies.push_back(new Brawler(1, sf::Vector2f(400, 400)));
     enemies[0]->scale(sf::Vector2f(0.33, 0.33));
-    props.push_back(new Sweet(sf::Vector2f(2000,1000),candyTexture));
-    props[0]->scale(0.33,0.33);
-    bullets.push_back(new Bullet(*bossTexture, sf::Vector2f(500, 500), sf::Vector2f(20, -10), 100));
+    props.push_back(new Sweet(sf::Vector2f(2000, 1000)));
+    props[0]->scale(0.33, 0.33);
+    bullets.push_back(new Bullet(sf::Vector2f(500, 500), sf::Vector2f(20, -1), 10));
 
 
     gameClock.restart();
 }
 
 bool GameEngine::loadTextures() {
-    heroTexture = new sf::Texture();
-    stalkerTexture = new sf::Texture();
-    brawlerTexture = new sf::Texture();
-    archerTexture = new sf::Texture();
-    bossTexture = new sf::Texture();
     backgroundTexture = new sf::Texture();
-    candyTexture = new sf::Texture();
-    return heroTexture->loadFromFile("../Res/isAnimatedFull.png") &&
-            stalkerTexture->loadFromFile("../Res/dino.png") &&
-            brawlerTexture->loadFromFile("../Res/lanter_walk_original.png") &&
-            archerTexture->loadFromFile("../Res/enemy_spritesheet.png") &&
-            bossTexture->loadFromFile("../Res/coconut.png") &&
-            candyTexture->loadFromFile("../Res/candy6.png") &&
-            backgroundTexture->loadFromFile("../Res/Background1.png");
+    return backgroundTexture->loadFromFile("../Res/Background1.png") &&
+        Hero::loadTexture() &&
+        Archer::loadTexture() &&
+        Brawler::loadTexture() &&
+        Watcher::loadTexture() &&
+        Sweet::loadTexture() &&
+        Bullet::loadTexture();
 }
 
 void GameEngine::drawWorld() {
@@ -80,15 +77,14 @@ void GameEngine::drawWorld() {
                         prop->update();
                         gameWindow->draw(*prop);
                     }
-                    for (auto i = bullets.begin(); i < bullets.end(); i++) {
-                       //this->bullets[]
-                    }
-                    for (auto bullet : bullets){
-                        bullet->update();
-                        /*if (bullet->isOut(gameWindow->getView(), 1000)) {
-                            //auto i = bullets.erase()
-                        }*/
-                        gameWindow->draw(*bullet);
+
+                    for (unsigned long i = 0; i < bullets.size(); i++) {
+                        bullets[i]->update();
+                        if (bullets[i]->isOut(gameWindow->getView(), 1000)) {
+                            delete bullets[i];
+                            bullets.erase(bullets.begin() + i);
+                        }
+                        else gameWindow->draw(*bullets[i]);
 
                     }
                     moveView();
@@ -157,7 +153,7 @@ const sf::RenderWindow& GameEngine::getWindow() {
 
 void GameEngine::moveView() {
     sf::View temp = gameWindow->getView();
-    temp.move(0.5f * gameSpeed * 10, 0);
+    temp.move(0.5f * gameSpeed, 0);
     for (auto i : background) {
         float pos = i->getPosition().x;
         if (pos + i->getGlobalBounds().width < temp.getCenter().x - temp.getSize().x / 2) {
@@ -178,4 +174,21 @@ void GameEngine::restartClock() {
         bullet->clock.restart();
 }
 
-void GameEngine::heroJump() {}
+void GameEngine::heroJump() {
+
+}
+
+void GameEngine::heroAttack() {
+    hero->attack();
+}
+
+
+/*
+void GameEngine::shootUpdate(GameCharacter &character) {
+    sf::Vector2f firePosition = character.getPosition();
+    bullets.push_back(new Bullet(*bossTexture, firePosition, sf::Vector2f(0, 0), 100, this));
+}*/
+
+void GameEngine::update(GameObject *bullet) {
+    bullets.push_back(dynamic_cast<Bullet*>(bullet));
+}

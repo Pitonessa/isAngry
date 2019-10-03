@@ -13,7 +13,7 @@
 #include "Menu/Menu.h"
 #include "../GameObjects/Star/Star.h"
 
-class GameEngine {
+class GameEngine : public Observer {
 public:
     enum PAGE {
         MAIN_MENU,
@@ -26,17 +26,15 @@ public:
     void moveHero(sf::Vector2f direction);
     void addEnemy(GameCharacter& enemy);
     void setHeroPos(float x, float y);
+    void heroAttack();
     const sf::RenderWindow& getWindow();
 
-    sf::Texture* heroTexture;
-    sf::Texture* stalkerTexture;
-    sf::Texture* brawlerTexture;
-    sf::Texture* archerTexture;
-    sf::Texture* bossTexture;
     sf::Texture* backgroundTexture;
-    sf::Texture* candyTexture;
 
     short int gameState {0};
+
+    void update(GameObject* bullet) override;
+
 private:
     sf::RenderWindow* gameWindow;
     Hero* hero;

@@ -4,7 +4,9 @@
 
 #include "Archer.h"
 
-Archer::Archer(float speed, sf::Texture &Texture, sf::Vector2f position):GameCharacter(speed,Texture) {
+sf::Texture* Archer::archerTexture = nullptr;
+
+Archer::Archer(float speed, sf::Vector2f position):GameCharacter(speed, *Archer::archerTexture) {
     setPosition(position);
     setTextureRect(sf::IntRect(0,0,80,86));
     setPosition(position);
@@ -17,4 +19,9 @@ void Archer::animate() {
 }
 void Archer::action(GameCharacter& hero) {
 
+}
+
+bool Archer::loadTexture() {
+    archerTexture = new sf::Texture;
+    return archerTexture->loadFromFile("../Res/enemy_spritesheet.png");
 }

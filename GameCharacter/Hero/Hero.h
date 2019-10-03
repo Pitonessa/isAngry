@@ -7,21 +7,28 @@
 
 
 #include "../GameCharacter.h"
+#include "../../GUI/Subject.h"
 
-class Hero : public GameCharacter {
+class Hero : public GameCharacter, public Subject {
 public:
-    Hero(float speed, sf::Texture &texture, sf::Vector2f position);
+    Hero(float speed, sf::Vector2f position);
     void move(sf::Vector2f direction);
     void attack() override;
     void animate() override;
     void action(GameCharacter& hero) override;
-    void eatsweet();
+    void eatSweet();
 
+    static bool loadTexture();
+
+    void notify() override;
 
 private:
     //Gun* weapon;
     int sweetCount {0};
     int actualFrame {0};
+    static sf::Texture* heroTexture;
+    float rof {0.1};
+    sf::Clock fireClock;
 
 };
 

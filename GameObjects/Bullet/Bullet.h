@@ -11,10 +11,11 @@
 
 class Bullet : public GameObject {
 public:
-    Bullet(sf::Texture& texture, sf::Vector2f pos, sf::Vector2f speed, float k);
+    Bullet(sf::Vector2f pos, sf::Vector2f speed, float k);
     void update() override;
-    bool isOut(sf::View view, float ground);
+    static bool loadTexture();
 private:
+    static sf::Texture* bulletTexture;
 };
 
 

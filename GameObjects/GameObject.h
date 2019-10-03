@@ -13,7 +13,7 @@ class GameObject : public sf::Sprite {
 public:
     virtual void update() = 0;
     static sf::Vector2f gravity;
-    bool isOut(float groundLevel, sf::View limitView);
+    bool isOut(sf::View limitView, float groundLevel);
     sf::Clock clock;
 protected:
     explicit GameObject(sf::Vector2f s, sf::Texture& texture, sf::Vector2f position, float k);

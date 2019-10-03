@@ -25,6 +25,7 @@ protected:
     sf::Vector2f speed;
     static sf::Vector2f gravity;
 
+
 };
 
 

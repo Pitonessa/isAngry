@@ -11,13 +11,14 @@
 
 
 
-class Brawler: public GameCharacter {
+class Brawler : public GameCharacter {
 public:
-    Brawler(float speed, sf::Texture& Texture, sf::Vector2f position);
+    Brawler(float speed, sf::Vector2f position);
     void attack() override;
-  void move(const GameCharacter&hero);
-  void action(GameCharacter& hero) override;
-  void animate() override;
+    void move(const GameCharacter&hero);
+    void action(GameCharacter& hero) override;
+    void animate() override;
+    static bool loadTexture();
 
 private:
     std::vector<sf::IntRect> textureFrame {
@@ -40,6 +41,8 @@ private:
             sf::IntRect(579 * 9, 0, 579, 763)
     };
     int actualFrame {0};
+
+    static sf::Texture* brawlerTexture;
 
 
 

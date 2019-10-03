@@ -12,12 +12,11 @@ GameObject::GameObject(sf::Vector2f speed, sf::Texture& texture, sf::Vector2f po
     clock.restart();
 }
 
-bool GameObject::isOut(float groundLevel, sf::View limitView) {
+bool GameObject::isOut(sf::View limitView, float groundLevel) {
     float x = getPosition().x;
     float y = getPosition().y;
     float leftBoundary = limitView.getCenter().x - limitView.getSize().x / 2;
     float rightBoundary = limitView.getCenter().x + limitView.getSize().x / 2;
-
     return (
             x >= rightBoundary
             ) || (

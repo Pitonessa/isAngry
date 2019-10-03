@@ -4,7 +4,9 @@
 
 #include "Sweet.h"
 
-Sweet::Sweet(sf::Vector2f position, sf::Texture *texture): GameObject(sf::Vector2f(), *texture, position, 0) {
+sf::Texture* Sweet::candyTexture = nullptr;
+
+Sweet::Sweet(sf::Vector2f position) : GameObject(sf::Vector2f(0, 0), *Sweet::candyTexture, position, 0) {
     sf::Vector2f center = getPosition();
     center.x += getGlobalBounds().width / 2;
     center.y += getGlobalBounds().height / 2;
@@ -12,6 +14,9 @@ Sweet::Sweet(sf::Vector2f position, sf::Texture *texture): GameObject(sf::Vector
     setPosition(position);
 }
 
-void Sweet::update() {
+void Sweet::update() {}
 
+bool Sweet::loadTexture() {
+    candyTexture = new sf::Texture;
+    return candyTexture->loadFromFile("../Res/candy6.png");
 }

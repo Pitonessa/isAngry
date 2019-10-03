@@ -5,10 +5,14 @@
 #include <iostream>
 #include <cmath>
 #include "Hero.h"
+#include "../../GameObjects/Bullet/Bullet.h"
 
-Hero::Hero(float speed, sf::Texture &texture, sf::Vector2f position) : GameCharacter(speed, texture) {
+sf::Texture* Hero::heroTexture = nullptr;
+
+Hero::Hero(float speed, sf::Vector2f position) : GameCharacter(speed, *Hero::heroTexture) {
     setTextureRect(sf::IntRect(0, 0, 80, 86));
     setPosition(position);
+    fireClock.restart();
 }
 /*
 void Hero::move(std::vector<sf::Vector2f> directions) {
@@ -35,7 +39,10 @@ void Hero::move(sf::Vector2f direction) {
 }
 
 void Hero::attack() {
-
+    if (fireClock.getElapsedTime().asSeconds() >= rof) {
+        notify();
+        fireClock.restart();
+    }
 }
 
 void Hero::animate() {
@@ -51,11 +58,23 @@ void Hero::animate() {
     }
 }
 
-void Hero::action(GameCharacter &player) {
 
-}
-
-void Hero::eatsweet() {
+void Hero::eatSweet() {
     sweetCount++;
     std::cout<< sweetCount;
+}
+
+bool Hero::loadTexture() {
+    Hero::heroTexture = new sf::Texture;
+    return Hero::heroTexture->loadFromFile("../Res/isAnimatedFull.png");
+}
+
+void Hero::notify() {
+    Bullet* bullet = new Bullet(getPosition(), sf::Vector2f(20 * (revert == 0 ? 1 : - 1), -5), 10);
+    for (auto o : observerList)
+        o->update(bullet);
+}
+
+void Hero::action(GameCharacter &hero) {
+
 }
