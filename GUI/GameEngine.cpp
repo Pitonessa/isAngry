@@ -183,6 +183,10 @@ void GameEngine::restartClock() {
         bullet->clock.restart();
 }
 
-void GameEngine::herojump() {
+void GameEngine::heroJump()  {
+    float groundLevel=961.5;
+if(hero->getPosition().y + hero->getGlobalBounds().height >= groundLevel)
+
+    hero->jump();
 
 }

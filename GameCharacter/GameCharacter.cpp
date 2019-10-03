@@ -17,3 +17,7 @@ void GameCharacter::fixHeight(float groundLevel) {
     }
 
 }
+
+void GameCharacter::jump() {
+    speed.y=-35;
+}
