@@ -14,10 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9c0d17a-405a-4c07-a605-4ab0d0ec653d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Res/lolly.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/GameEngine.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/GameEngine.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameCharacter/Hero/Hero.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameCharacter/Hero/Hero.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -423,7 +420,7 @@
       <workItem from="1568794421464" duration="1606000" />
       <workItem from="1568808684861" duration="309000" />
       <workItem from="1569768375006" duration="6840000" />
-      <workItem from="1570035763540" duration="2107000" />
+      <workItem from="1570035763540" duration="2346000" />
     </task>
     <task id="LOCAL-00001" summary="Aggiunta google framework google test e implementazione test della classe Star">
       <created>1567813414981</created>
@@ -481,11 +478,18 @@
       <option name="project" value="LOCAL" />
       <updated>1568989131463</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add isa animated">
+      <created>1570045202157</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1570045202157</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32637000" />
+    <option name="totallyTimeSpent" value="32876000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
