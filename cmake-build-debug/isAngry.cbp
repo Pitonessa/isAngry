@@ -8,290 +8,284 @@
 		<Option virtualFolders="CMake Files\;CMake Files\test\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/mac/CLionProjects/isAngry/cmake-build-debug"/>
+				<Option working_dir="/Users/manu/CLionProjects/isAngry/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/mac/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mac/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mac/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mac/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/manu/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/manu/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/manu/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/manu/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/mac/CLionProjects/isAngry/cmake-build-debug"/>
+				<Option working_dir="/Users/manu/CLionProjects/isAngry/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/mac/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mac/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mac/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mac/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/manu/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/manu/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/manu/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/manu/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/mac/CLionProjects/isAngry/cmake-build-debug"/>
+				<Option working_dir="/Users/manu/CLionProjects/isAngry/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/mac/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mac/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mac/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mac/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/manu/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/manu/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/manu/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/manu/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="isAngry">
-				<Option output="/Users/mac/CLionProjects/isAngry/cmake-build-debug/isAngry" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/mac/CLionProjects/isAngry/cmake-build-debug"/>
+				<Option output="/Users/manu/CLionProjects/isAngry/cmake-build-debug/isAngry" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/manu/CLionProjects/isAngry/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/mac/CLionProjects/isAngry/sfml/include"/>
+					<Add directory="/Users/manu/CLionProjects/isAngry/sfml/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/mac/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 isAngry"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mac/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mac/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mac/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/manu/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 isAngry"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/manu/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/manu/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/manu/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="isAngry/fast">
-				<Option output="/Users/mac/CLionProjects/isAngry/cmake-build-debug/isAngry" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/mac/CLionProjects/isAngry/cmake-build-debug"/>
+				<Option output="/Users/manu/CLionProjects/isAngry/cmake-build-debug/isAngry" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/manu/CLionProjects/isAngry/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/mac/CLionProjects/isAngry/sfml/include"/>
+					<Add directory="/Users/manu/CLionProjects/isAngry/sfml/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/mac/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 isAngry/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mac/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mac/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mac/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/manu/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 isAngry/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/manu/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/manu/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/manu/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="isAngryTest">
-				<Option output="/Users/mac/CLionProjects/isAngry/cmake-build-debug/libisAngryTest.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/mac/CLionProjects/isAngry/cmake-build-debug"/>
+				<Option output="/Users/manu/CLionProjects/isAngry/cmake-build-debug/libisAngryTest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/manu/CLionProjects/isAngry/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/mac/CLionProjects/isAngry/sfml/include"/>
+					<Add directory="/Users/manu/CLionProjects/isAngry/sfml/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/mac/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 isAngryTest"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mac/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mac/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mac/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/manu/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 isAngryTest"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/manu/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/manu/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/manu/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="isAngryTest/fast">
-				<Option output="/Users/mac/CLionProjects/isAngry/cmake-build-debug/libisAngryTest.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/mac/CLionProjects/isAngry/cmake-build-debug"/>
+				<Option output="/Users/manu/CLionProjects/isAngry/cmake-build-debug/libisAngryTest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/manu/CLionProjects/isAngry/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/mac/CLionProjects/isAngry/sfml/include"/>
+					<Add directory="/Users/manu/CLionProjects/isAngry/sfml/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/mac/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 isAngryTest/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mac/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mac/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mac/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/manu/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 isAngryTest/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/manu/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/manu/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/manu/CLionProjects/isAngry/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="test">
-				<Option output="/Users/mac/CLionProjects/isAngry/cmake-build-debug/test/test" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/mac/CLionProjects/isAngry/cmake-build-debug/test"/>
+				<Option output="/Users/manu/CLionProjects/isAngry/cmake-build-debug/test/test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/manu/CLionProjects/isAngry/cmake-build-debug/test"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/mac/CLionProjects/isAngry/test/include"/>
-					<Add directory="/Users/mac/CLionProjects/isAngry/test/.."/>
-					<Add directory="/Users/mac/CLionProjects/isAngry/test/../sfml/include"/>
+					<Add directory="/Users/manu/CLionProjects/isAngry/test/include"/>
+					<Add directory="/Users/manu/CLionProjects/isAngry/test/.."/>
+					<Add directory="/Users/manu/CLionProjects/isAngry/test/../sfml/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/mac/CLionProjects/isAngry/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 test"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mac/CLionProjects/isAngry/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mac/CLionProjects/isAngry/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mac/CLionProjects/isAngry/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/manu/CLionProjects/isAngry/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/manu/CLionProjects/isAngry/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/manu/CLionProjects/isAngry/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/manu/CLionProjects/isAngry/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="test/fast">
-				<Option output="/Users/mac/CLionProjects/isAngry/cmake-build-debug/test/test" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/mac/CLionProjects/isAngry/cmake-build-debug/test"/>
+				<Option output="/Users/manu/CLionProjects/isAngry/cmake-build-debug/test/test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/manu/CLionProjects/isAngry/cmake-build-debug/test"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/mac/CLionProjects/isAngry/test/include"/>
-					<Add directory="/Users/mac/CLionProjects/isAngry/test/.."/>
-					<Add directory="/Users/mac/CLionProjects/isAngry/test/../sfml/include"/>
+					<Add directory="/Users/manu/CLionProjects/isAngry/test/include"/>
+					<Add directory="/Users/manu/CLionProjects/isAngry/test/.."/>
+					<Add directory="/Users/manu/CLionProjects/isAngry/test/../sfml/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/mac/CLionProjects/isAngry/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 test/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mac/CLionProjects/isAngry/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mac/CLionProjects/isAngry/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mac/CLionProjects/isAngry/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/manu/CLionProjects/isAngry/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 test/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/manu/CLionProjects/isAngry/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/manu/CLionProjects/isAngry/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/manu/CLionProjects/isAngry/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/mac/CLionProjects/isAngry/GUI/GameEngine.cpp">
+		<Unit filename="/Users/manu/CLionProjects/isAngry/GUI/GameEngine.cpp">
 			<Option target="isAngry"/>
 			<Option target="isAngryTest"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/isAngry/GUI/GameEngine.h">
+		<Unit filename="/Users/manu/CLionProjects/isAngry/GUI/GameEngine.h">
 			<Option target="isAngry"/>
 			<Option target="isAngryTest"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/isAngry/GUI/Menu/Menu.cpp">
+		<Unit filename="/Users/manu/CLionProjects/isAngry/GUI/Menu/Menu.cpp">
 			<Option target="isAngry"/>
 			<Option target="isAngryTest"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/isAngry/GUI/Menu/Menu.h">
+		<Unit filename="/Users/manu/CLionProjects/isAngry/GUI/Menu/Menu.h">
 			<Option target="isAngry"/>
 			<Option target="isAngryTest"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/isAngry/GameCharacter/Archer/Archer.cpp">
+		<Unit filename="/Users/manu/CLionProjects/isAngry/GameCharacter/Archer/Archer.cpp">
 			<Option target="isAngry"/>
 			<Option target="isAngryTest"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/isAngry/GameCharacter/Archer/Archer.h">
+		<Unit filename="/Users/manu/CLionProjects/isAngry/GameCharacter/Archer/Archer.h">
 			<Option target="isAngry"/>
 			<Option target="isAngryTest"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/isAngry/GameCharacter/Brawler/Brawler.cpp">
+		<Unit filename="/Users/manu/CLionProjects/isAngry/GameCharacter/Brawler/Brawler.cpp">
 			<Option target="isAngry"/>
 			<Option target="isAngryTest"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/isAngry/GameCharacter/Brawler/Brawler.h">
+		<Unit filename="/Users/manu/CLionProjects/isAngry/GameCharacter/Brawler/Brawler.h">
 			<Option target="isAngry"/>
 			<Option target="isAngryTest"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/isAngry/GameCharacter/Factories/GameFactory.cpp">
+		<Unit filename="/Users/manu/CLionProjects/isAngry/GameCharacter/Factories/GameFactory.cpp">
 			<Option target="isAngry"/>
 			<Option target="isAngryTest"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/isAngry/GameCharacter/Factories/GameFactory.h">
+		<Unit filename="/Users/manu/CLionProjects/isAngry/GameCharacter/Factories/GameFactory.h">
 			<Option target="isAngry"/>
 			<Option target="isAngryTest"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/isAngry/GameCharacter/GameCharacter.cpp">
+		<Unit filename="/Users/manu/CLionProjects/isAngry/GameCharacter/GameCharacter.cpp">
 			<Option target="isAngry"/>
 			<Option target="isAngryTest"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/isAngry/GameCharacter/GameCharacter.h">
+		<Unit filename="/Users/manu/CLionProjects/isAngry/GameCharacter/GameCharacter.h">
 			<Option target="isAngry"/>
 			<Option target="isAngryTest"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/isAngry/GameCharacter/Hero/Hero.cpp">
+		<Unit filename="/Users/manu/CLionProjects/isAngry/GameCharacter/Hero/Hero.cpp">
 			<Option target="isAngry"/>
 			<Option target="isAngryTest"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/isAngry/GameCharacter/Hero/Hero.h">
+		<Unit filename="/Users/manu/CLionProjects/isAngry/GameCharacter/Hero/Hero.h">
 			<Option target="isAngry"/>
 			<Option target="isAngryTest"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/isAngry/GameCharacter/Watcher/Watcher.cpp">
+		<Unit filename="/Users/manu/CLionProjects/isAngry/GameCharacter/Watcher/Watcher.cpp">
 			<Option target="isAngry"/>
 			<Option target="isAngryTest"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/isAngry/GameCharacter/Watcher/Watcher.h">
+		<Unit filename="/Users/manu/CLionProjects/isAngry/GameCharacter/Watcher/Watcher.h">
 			<Option target="isAngry"/>
 			<Option target="isAngryTest"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/isAngry/GameObjects/Bullet/Bullet.cpp">
+		<Unit filename="/Users/manu/CLionProjects/isAngry/GameObjects/Bullet/Bullet.cpp">
 			<Option target="isAngry"/>
 			<Option target="isAngryTest"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/isAngry/GameObjects/Bullet/Bullet.h">
+		<Unit filename="/Users/manu/CLionProjects/isAngry/GameObjects/Bullet/Bullet.h">
 			<Option target="isAngry"/>
 			<Option target="isAngryTest"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/isAngry/GameObjects/GameObject.cpp">
+		<Unit filename="/Users/manu/CLionProjects/isAngry/GameObjects/GameObject.cpp">
 			<Option target="isAngry"/>
 			<Option target="isAngryTest"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/isAngry/GameObjects/GameObject.h">
+		<Unit filename="/Users/manu/CLionProjects/isAngry/GameObjects/GameObject.h">
 			<Option target="isAngry"/>
 			<Option target="isAngryTest"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/isAngry/GameObjects/Star/Star.cpp">
+		<Unit filename="/Users/manu/CLionProjects/isAngry/GameObjects/Star/Star.cpp">
 			<Option target="isAngry"/>
 			<Option target="isAngryTest"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/isAngry/GameObjects/Star/Star.h">
+		<Unit filename="/Users/manu/CLionProjects/isAngry/GameObjects/Star/Star.h">
 			<Option target="isAngry"/>
 			<Option target="isAngryTest"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/isAngry/GameObjects/Sweet/Sweet.cpp">
+		<Unit filename="/Users/manu/CLionProjects/isAngry/GameObjects/Sweet/Sweet.cpp">
 			<Option target="isAngry"/>
 			<Option target="isAngryTest"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/isAngry/GameObjects/Sweet/Sweet.h">
+		<Unit filename="/Users/manu/CLionProjects/isAngry/GameObjects/Sweet/Sweet.h">
 			<Option target="isAngry"/>
 			<Option target="isAngryTest"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/isAngry/main.cpp">
+		<Unit filename="/Users/manu/CLionProjects/isAngry/main.cpp">
 			<Option target="isAngry"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/isAngry/test/GameObject/_Star.cpp">
+		<Unit filename="/Users/manu/CLionProjects/isAngry/test/GameObject/_Star.cpp">
 			<Option target="test"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/isAngry/test/_Menu.cpp">
+		<Unit filename="/Users/manu/CLionProjects/isAngry/test/_Menu.cpp">
 			<Option target="test"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/isAngry/test/main.cpp">
+		<Unit filename="/Users/manu/CLionProjects/isAngry/test/main.cpp">
 			<Option target="test"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/isAngry/CMakeLists.txt">
+		<Unit filename="/Users/manu/CLionProjects/isAngry/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/Users/mac/CLionProjects/isAngry/test/CMakeLists.txt">
+		<Unit filename="/Users/manu/CLionProjects/isAngry/test/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\test\"/>
 		</Unit>
 	</Project>

@@ -19,7 +19,6 @@ GameEngine::GameEngine(sf::RenderWindow &mainWindow) : gameWindow(&mainWindow), 
         //TODO TEXTURE NON CARICATE, GESTISCI
     }
     hero = new Hero(5, sf::Vector2f(100, 100));
-    hero->attachObserver(this);
     hero->scale(sf::Vector2f(3, 3));
     background.push_back(new sf::Sprite(*backgroundTexture));
     background.push_back(new sf::Sprite(*backgroundTexture));
@@ -32,8 +31,6 @@ GameEngine::GameEngine(sf::RenderWindow &mainWindow) : gameWindow(&mainWindow), 
     enemies[0]->scale(sf::Vector2f(0.33, 0.33));
     props.push_back(new Sweet(sf::Vector2f(2000, 1000)));
     props[0]->scale(0.33, 0.33);
-    bullets.push_back(new Bullet(sf::Vector2f(500, 500), sf::Vector2f(20, -1), 10));
-
 
     gameClock.restart();
 }
@@ -80,7 +77,7 @@ void GameEngine::drawWorld() {
 
                     for (unsigned long i = 0; i < bullets.size(); i++) {
                         bullets[i]->update();
-                        if (bullets[i]->isOut(gameWindow->getView(), 1000)) {
+                        if (bullets[i]->isOut(gameWindow->getView(), 1000) || detectCollision(*bullets[i])) {
                             delete bullets[i];
                             bullets.erase(bullets.begin() + i);
                         }
@@ -179,16 +176,37 @@ void GameEngine::heroJump() {
 }
 
 void GameEngine::heroAttack() {
-    hero->attack();
+    if(hero->attack()) {
+        bullets.push_back(new Bullet(hero->getPosition(), sf::Vector2f(20 * (hero->getDirection()), .5), 25, true));
+    }
+
 }
 
+bool GameEngine::detectCollision(Bullet &bullet) {
+    bool result = false;
+    if(bullet.isFriendly()) {
+        for (int i = 0; i < enemies.size(); i++) {
+            if (bullet.getGlobalBounds().intersects(enemies[i]->getGlobalBounds())) {
+                if (enemies[i]->takeDamage()) {
+                    delete enemies[i];
+                    enemies.erase(enemies.begin() + i);
+                    break;
+                }
+                result = true;
+            }
+        }
+    } else {
+        if (bullet.getGlobalBounds().intersects(hero->getGlobalBounds())) {
+            if(hero->takeDamage())
+                std::cout << "Sei morto";
+            result = true;
+        }
+    }
+    return result;
+}
 
 /*
 void GameEngine::shootUpdate(GameCharacter &character) {
     sf::Vector2f firePosition = character.getPosition();
     bullets.push_back(new Bullet(*bossTexture, firePosition, sf::Vector2f(0, 0), 100, this));
 }*/
-
-void GameEngine::update(GameObject *bullet) {
-    bullets.push_back(dynamic_cast<Bullet*>(bullet));
-}

@@ -18,6 +18,17 @@ void GameCharacter::fixHeight(float groundLevel) {
 
 }
 
+bool GameCharacter::takeDamage() {
+    return true;
+}
+
+void GameCharacter::die() {
+
+}
+
+int GameCharacter::getDirection() {
+    return revert == 0 ? 1 : -1;
+}
 void GameCharacter::jump() {
     speed.y=-35;
 }

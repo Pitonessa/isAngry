@@ -13,6 +13,9 @@ public:
     virtual void animate() = 0;
     void fixHeight(float groundLevel);
     sf::Clock clock;
+    void die();
+    virtual bool takeDamage();
+    int getDirection();
     void jump();
 
 protected:

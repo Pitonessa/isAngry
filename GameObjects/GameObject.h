@@ -7,7 +7,6 @@
 
 
 #include "SFML/Graphics.hpp"
-#include "../GameCharacter/GameCharacter.h"
 
 class GameObject : public sf::Sprite {
 public:

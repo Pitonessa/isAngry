@@ -40,11 +40,11 @@ void Hero::move(sf::Vector2f direction) {
     //Transformable::move(direction * speedX / sqrt(direction.x * direction.x + direction.y * direction.y));
 }
 
-void Hero::attack() {
+bool Hero::attack() {
     if (fireClock.getElapsedTime().asSeconds() >= rof) {
-        notify();
         fireClock.restart();
-    }
+        return true;
+    } else return false;
 }
 
 void Hero::animate() {
@@ -71,11 +71,6 @@ bool Hero::loadTexture() {
     return Hero::heroTexture->loadFromFile("../Res/isAnimatedFull.png");
 }
 
-void Hero::notify() {
-    Bullet* bullet = new Bullet(getPosition(), sf::Vector2f(20 * (revert == 0 ? 1 : - 1), -5), 10);
-    for (auto o : observerList)
-        o->update(bullet);
-}
 
 void Hero::action(GameCharacter &hero) {
 

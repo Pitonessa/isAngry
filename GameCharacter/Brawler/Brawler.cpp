@@ -13,7 +13,9 @@ Brawler::Brawler(float speed, sf::Vector2f position) : GameCharacter(speed, *Bra
     setPosition(position);
     clock.restart();
 }
-void Brawler::attack() {}
+bool Brawler::attack() {
+    return true;
+}
 
 void Brawler::move(const GameCharacter &hero) {
 

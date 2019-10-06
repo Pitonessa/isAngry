@@ -11,11 +11,13 @@
 
 class Bullet : public GameObject {
 public:
-    Bullet(sf::Vector2f pos, sf::Vector2f speed, float k);
+    Bullet(sf::Vector2f pos, sf::Vector2f speed, float k, bool friendly = false);
     void update() override;
     static bool loadTexture();
+    bool isFriendly();
 private:
     static sf::Texture* bulletTexture;
+    bool friendly;
 };
 
 

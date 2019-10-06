@@ -12,9 +12,12 @@ Watcher::Watcher(float speed, sf::Vector2f position) : GameCharacter(speed, *Wat
     setPosition(position);
 }
 
-void Watcher::attack() {}
+bool Watcher::attack() {
+    return true;
+}
 
 void Watcher::animate() {}
+
 void Watcher::action(GameCharacter& hero) {}
 
 bool Watcher::loadTexture() {

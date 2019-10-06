@@ -8,8 +8,9 @@
 
 sf::Texture* Bullet::bulletTexture = nullptr;
 
-Bullet::Bullet(sf::Vector2f pos, sf::Vector2f speed, float k) : GameObject(speed, *Bullet::bulletTexture, pos, k) {
+Bullet::Bullet(sf::Vector2f pos, sf::Vector2f speed, float k, bool frindly) : GameObject(speed, *Bullet::bulletTexture, pos, k), friendly(frindly) {
     setScale(sf::Vector2f(0.25, 0.25));
+    setColor(sf::Color(0, 255, 0));
 }
 
 void Bullet::update() {
@@ -20,4 +21,8 @@ void Bullet::update() {
 bool Bullet::loadTexture() {
     bulletTexture = new sf::Texture;
     return Bullet::bulletTexture->loadFromFile("../Res/coconut.png");
+}
+
+bool Bullet::isFriendly() {
+    return friendly;
 }

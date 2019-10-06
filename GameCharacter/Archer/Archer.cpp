@@ -12,7 +12,9 @@ Archer::Archer(float speed, sf::Vector2f position):GameCharacter(speed, *Archer:
     setPosition(position);
 
 }
- void Archer::attack() {}
+bool Archer::attack() {
+    return true;
+}
 
 void Archer::animate() {
 
