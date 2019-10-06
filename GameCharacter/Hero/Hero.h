@@ -11,7 +11,7 @@
 class Hero : public GameCharacter {
 public:
     Hero(float speed, sf::Vector2f position);
-    void move(sf::Vector2f direction);
+    void move(sf::Vector2f direction) override;
     bool attack() override;
     void animate() override;
     void action(GameCharacter& hero) override;

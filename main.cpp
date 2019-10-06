@@ -11,12 +11,9 @@
 #include "GameCharacter/Factories/GameFactory.h"
 #include <thread>
 
-class mattegay : public sf::Sprite{
-public:
-    mattegay(sf::Texture& t) : sf::Sprite(t){};
-};
 
-int main() {
+
+ int main() {
     srand(time(NULL));
 
     sf::RenderWindow window(sf::VideoMode::getDesktopMode(), "isAngry");
@@ -58,16 +55,17 @@ int main() {
             }
         }
         if(cascettoEngine->gameState == 2) {
+            sf::Vector2f direction(0,1);
             if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
                 cascettoEngine->heroJump();
-            if (sf::Keyboard::isKeyPressed(sf::Keyboard::S))
-                cascettoEngine->moveHero(sf::Vector2f(0, 1));
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::A))
-                cascettoEngine->moveHero(sf::Vector2f(-1, 0));
-            if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))
-                cascettoEngine->moveHero(sf::Vector2f(1, 0));
+                direction.x = -1;
+            else if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))
+                direction.x = 1;
+            cascettoEngine->moveHero(direction);
             if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left))
                 cascettoEngine->heroAttack();
+
         }
         if (cascettoEngine->gameState == 0) {
             window.clear(sf::Color(19, 24, 98));

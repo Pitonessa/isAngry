@@ -41,7 +41,8 @@ void Brawler::animate(){
 }
 
 void Brawler::action(GameCharacter& hero) {
-    move(hero);
+   // move(hero);
+
 }
 
 bool Brawler::loadTexture() {

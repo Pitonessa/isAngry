@@ -22,6 +22,11 @@ public:
 
 private:
     static sf::Texture* watcherTexture;
+    unsigned alpha{255};
+    void fadein();
+    void fadeout();
+    int actualframe{0};
+
 
 
 

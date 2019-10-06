@@ -49,6 +49,7 @@ private:
     void restartClock();
     float gameSpeed;
     sf::Clock gameClock;
+    float GroundLevel{961.5};
 
 };
 
