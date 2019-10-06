@@ -17,11 +17,10 @@ public:
     virtual bool takeDamage();
     int getDirection();
     void jump();
+    virtual bool attack() = 0;
 
 protected:
     GameCharacter(float speed, sf::Texture& texture);
-    void die();
-    virtual void attack() = 0;
     float speedX;
     std::vector<sf::IntRect> frameList;
     float previusDirection = 1;
