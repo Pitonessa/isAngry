@@ -13,6 +13,7 @@ public:
     virtual void animate() = 0;
     void fixHeight(float groundLevel);
     sf::Clock clock;
+    void jump();
 
 protected:
     GameCharacter(float speed, sf::Texture& texture);
