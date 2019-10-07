@@ -66,7 +66,12 @@ void GameEngine::drawWorld() {
                         gameWindow->draw(*b);
                     hero->animate();
                     gameWindow->draw(*hero);
+                    float heroX= hero->getPosition().x;
                     for (auto enemy : enemies) {
+                        float enemyX= enemy->getPosition().x;
+                        sf::Vector2f direction(heroX - enemyX <= 0? -1:1,0);
+                        enemy->action(*hero);
+                        enemy->move(direction);
                         auto bullet = enemy->action(*hero);
                         if(bullet != nullptr)
                             bullets.push_back(bullet);
@@ -91,7 +96,8 @@ void GameEngine::drawWorld() {
                     }
                     moveView();
                     break;
-                case 3:                                     //PAUSE
+                /*case 3:
+                    //PAUSE
                     gameWindow->draw(*hero);
                     for (auto enemy : enemies)
                         gameWindow->draw(*enemy);
@@ -177,6 +183,10 @@ void GameEngine::restartClock() {
 }
 
 void GameEngine::heroJump() {
+    float position=hero->getPosition().y;
+    float h= hero->getGlobalBounds().height;
+    if(position + h >= GroundLevel)
+        hero->jump();
 
 }
 
@@ -214,7 +224,6 @@ bool GameEngine::detectCollision(Bullet &bullet) {
 void GameEngine::shootUpdate(GameCharacter &character) {
     sf::Vector2f firePosition = character.getPosition();
     bullets.push_back(new Bullet(*bossTexture, firePosition, sf::Vector2f(0, 0), 100, this));
-    1/2gt^2 = h  -->9/2*k = h --> k = 2/9 h
 }*/
 
 float GameEngine::getGravity() {

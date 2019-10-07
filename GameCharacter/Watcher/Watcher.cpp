@@ -7,8 +7,7 @@
 sf::Texture* Watcher::watcherTexture = nullptr;
 
 Watcher::Watcher(float speed, sf::Vector2f position) : GameCharacter(speed, *Watcher::watcherTexture) {
-    setPosition(position);
-    setTextureRect(sf::IntRect(0,0,80,86));
+    setTextureRect(sf::IntRect(680*actualframe,0,680,472));
     setPosition(position);
 }
 
@@ -16,12 +15,38 @@ bool Watcher::attack() {
     return true;
 }
 
-void Watcher::animate() {}
-
-Bullet* Watcher::action(GameCharacter& hero) {
-    return nullptr;
+void Watcher::animate() {
+    if(actualframe==9)
+        actualframe=0;
+    else
+        actualframe++;
+    setTextureRect(sf::IntRect(680*actualframe,472*revert,680,472));
 }
 
+Bullet* Watcher::action(GameCharacter& hero) {
+    sf::Vector2f distance = ( hero.getPosition()-getPosition());
+    setRevert(-distance);
+    float length = sqrt(distance.x*distance.x + distance.y * distance.y);
+    if(length<800 && length>200)
+        fadeout();
+    else
+        if(length<200 )
+            fadein();
+}
+
+void Watcher::fadein() {
+    if(alpha<255){
+        alpha++;
+        setColor(sf::Color(255,255,255,alpha));
+    }
+
+}
+void Watcher::fadeout() {
+    if(alpha>0){
+        alpha--;
+        setColor(sf::Color(255,255,255,alpha));
+    }
+}
 bool Watcher::loadTexture() {
     watcherTexture = new sf::Texture;
     return watcherTexture->loadFromFile("../Res/dino.png");

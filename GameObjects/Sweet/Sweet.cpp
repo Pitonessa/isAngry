@@ -18,5 +18,5 @@ void Sweet::update() {}
 
 bool Sweet::loadTexture() {
     candyTexture = new sf::Texture;
-    return candyTexture->loadFromFile("../Res/candy6.png");
+    return candyTexture->loadFromFile("../Res/lolly.png");
 }

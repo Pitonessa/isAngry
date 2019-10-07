@@ -1,7 +1,7 @@
-/Users/manu/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/manu/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/manu/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir
-/Users/manu/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngryTest.dir
-/Users/manu/CLionProjects/isAngry/cmake-build-debug/test/CMakeFiles/rebuild_cache.dir
-/Users/manu/CLionProjects/isAngry/cmake-build-debug/test/CMakeFiles/edit_cache.dir
-/Users/manu/CLionProjects/isAngry/cmake-build-debug/test/CMakeFiles/test.dir
+/Users/mac/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/mac/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/mac/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir
+/Users/mac/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngryTest.dir
+/Users/mac/CLionProjects/isAngry/cmake-build-debug/test/CMakeFiles/rebuild_cache.dir
+/Users/mac/CLionProjects/isAngry/cmake-build-debug/test/CMakeFiles/edit_cache.dir
+/Users/mac/CLionProjects/isAngry/cmake-build-debug/test/CMakeFiles/test.dir

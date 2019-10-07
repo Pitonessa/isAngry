@@ -27,7 +27,8 @@ void Hero::move(std::vector<sf::Vector2f> directions) {
 */
 void Hero::move(sf::Vector2f direction) {
    if(direction.x !=0|| direction.y!=0){
-   direction.x < 0 ? revert = 1 : revert = 0;
+       if(direction.x != 0)
+        direction.x < 0 ? revert = 1 : revert = 0;
     float GroundLevel= 961.5;
     direction /= sqrt(direction.x * direction.x + direction.y * direction.y);
     GameCharacter::speed += GameCharacter::gravity;
@@ -35,9 +36,6 @@ void Hero::move(sf::Vector2f direction) {
     GameCharacter::speed.y += direction.y;
     Transformable::move(speed);
    }
-
-
-    //Transformable::move(direction * speedX / sqrt(direction.x * direction.x + direction.y * direction.y));
 }
 
 bool Hero::attack() {
