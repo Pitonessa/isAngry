@@ -18,7 +18,9 @@ bool Watcher::attack() {
 
 void Watcher::animate() {}
 
-void Watcher::action(GameCharacter& hero) {}
+Bullet* Watcher::action(GameCharacter& hero) {
+    return nullptr;
+}
 
 bool Watcher::loadTexture() {
     watcherTexture = new sf::Texture;

@@ -3,6 +3,7 @@
 //
 
 #include "Archer.h"
+#include "../../GUI/GameEngine.h"
 
 sf::Texture* Archer::archerTexture = nullptr;
 
@@ -19,7 +20,19 @@ bool Archer::attack() {
 void Archer::animate() {
 
 }
-void Archer::action(GameCharacter& hero) {
+Bullet* Archer::action(GameCharacter& hero) {
+    if(fireClock.getElapsedTime().asSeconds() >= rof) {
+        float bulletTime = 1;
+        float k = GameEngine::getGravity();
+        sf::Vector2f distance = hero.getPosition() - getPosition();
+        sf::Vector2f speed(
+                distance.x / bulletTime,
+                -((distance.y / bulletTime) + (k * bulletTime / 2))
+                );
+        fireClock.restart();
+        return new Bullet(getPosition(), speed, k);
+    }
+    else return nullptr;
 
 }
 

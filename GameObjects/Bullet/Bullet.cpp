@@ -14,8 +14,14 @@ Bullet::Bullet(sf::Vector2f pos, sf::Vector2f speed, float k, bool frindly) : Ga
 }
 
 void Bullet::update() {
-    speed.y += gravity.y * clock.restart().asSeconds();
-    move(speed);
+    //speed.y += gravity.y * clock.restart().asSeconds();
+    float deltaT = clock.restart().asSeconds();
+    speed.y += gravity.y * deltaT;
+    sf::Vector2f offset(
+            speed.x * deltaT,
+            speed.y * deltaT
+            );
+    move(offset);
 }
 
 bool Bullet::loadTexture() {

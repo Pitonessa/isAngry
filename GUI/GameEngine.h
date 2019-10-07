@@ -15,6 +15,7 @@
 
 class GameEngine {
 public:
+
     enum PAGE {
         MAIN_MENU,
         RECORD_PAGE,
@@ -29,6 +30,8 @@ public:
     void heroAttack();
     bool detectCollision(Bullet& bullet);
     const sf::RenderWindow& getWindow();
+    static float getGravity();
+    static float k;
 
     sf::Texture* backgroundTexture;
 

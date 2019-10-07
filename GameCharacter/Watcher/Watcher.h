@@ -15,7 +15,7 @@ public:
     Watcher(float speed, sf::Vector2f position);
     bool attack() override;
     void animate() override;
-    void action(GameCharacter& hero) override;
+    Bullet* action(GameCharacter& hero) override;
 
     static bool loadTexture();
 

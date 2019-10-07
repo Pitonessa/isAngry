@@ -40,8 +40,9 @@ void Brawler::animate(){
 
 }
 
-void Brawler::action(GameCharacter& hero) {
+Bullet* Brawler::action(GameCharacter& hero) {
     move(hero);
+    return nullptr;
 }
 
 bool Brawler::loadTexture() {

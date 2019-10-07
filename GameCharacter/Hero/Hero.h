@@ -14,7 +14,7 @@ public:
     void move(sf::Vector2f direction);
     bool attack() override;
     void animate() override;
-    void action(GameCharacter& hero) override;
+    Bullet* action(GameCharacter& enemy) override;
     void eatSweet();
 
     static bool loadTexture();
@@ -24,8 +24,6 @@ private:
     int sweetCount {0};
     int actualFrame {0};
     static sf::Texture* heroTexture;
-    float rof {0.5};
-    sf::Clock fireClock;
 
 };
 

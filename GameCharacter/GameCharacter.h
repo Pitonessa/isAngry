@@ -6,13 +6,15 @@
 #define ISANGRY_GAMECHARACTER_H
 
 #include "SFML/Graphics.hpp"
+#include "../GameObjects/Bullet/Bullet.h"
 
 class GameCharacter : public sf::Sprite {
 public:
-    virtual void action(GameCharacter& player) = 0;
+    virtual Bullet* action(GameCharacter& player) = 0;
     virtual void animate() = 0;
     void fixHeight(float groundLevel);
     sf::Clock clock;
+    sf::Clock fireClock;
     void die();
     virtual bool takeDamage();
     int getDirection();
@@ -27,6 +29,7 @@ protected:
     int revert {0};
     sf::Vector2f speed;
     static sf::Vector2f gravity;
+    float rof{0.5};
 
 
 };

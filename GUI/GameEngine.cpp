@@ -10,6 +10,7 @@
 #include "../GameCharacter/Archer/Archer.h"
 #include "../GameCharacter/Watcher/Watcher.h"
 
+float GameEngine::k = 0;
 
 GameEngine::GameEngine(sf::RenderWindow &mainWindow) : gameWindow(&mainWindow), gameMenu(new Menu(Menu::STYLE::MAIN)) {
     //todo metti il menu
@@ -31,6 +32,8 @@ GameEngine::GameEngine(sf::RenderWindow &mainWindow) : gameWindow(&mainWindow), 
     enemies[0]->scale(sf::Vector2f(0.33, 0.33));
     props.push_back(new Sweet(sf::Vector2f(2000, 1000)));
     props[0]->scale(0.33, 0.33);
+
+    k = 2.0f/9.0f * gameWindow->getView().getSize().y;
 
     gameClock.restart();
 }
@@ -64,7 +67,9 @@ void GameEngine::drawWorld() {
                     hero->animate();
                     gameWindow->draw(*hero);
                     for (auto enemy : enemies) {
-                        enemy->action(*hero);
+                        auto bullet = enemy->action(*hero);
+                        if(bullet != nullptr)
+                            bullets.push_back(bullet);
                         enemy->animate();
                         enemy->fixHeight(1061.5);
                         gameWindow->draw(*enemy);
@@ -209,4 +214,9 @@ bool GameEngine::detectCollision(Bullet &bullet) {
 void GameEngine::shootUpdate(GameCharacter &character) {
     sf::Vector2f firePosition = character.getPosition();
     bullets.push_back(new Bullet(*bossTexture, firePosition, sf::Vector2f(0, 0), 100, this));
+    1/2gt^2 = h  -->9/2*k = h --> k = 2/9 h
 }*/
+
+float GameEngine::getGravity() {
+    return k;
+}

@@ -16,7 +16,7 @@ public:
     Brawler(float speed, sf::Vector2f position);
     bool attack() override;
     void move(const GameCharacter&hero);
-    void action(GameCharacter& hero) override;
+    Bullet* action(GameCharacter& hero) override;
     void animate() override;
     static bool loadTexture();
 
