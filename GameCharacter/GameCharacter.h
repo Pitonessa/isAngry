@@ -25,15 +25,15 @@ public:
     virtual void move(sf::Vector2f direction);
 
 protected:
+    int actualFrame {0};
     GameCharacter(float speed, sf::Texture& texture);
     float speedX;
     std::vector<sf::IntRect> frameList;
-    float previusDirection = 1;
     int revert {0};
     sf::Vector2f speed;
     static sf::Vector2f gravity;
     void setRevert(sf::Vector2f direction);
-    float rof{0.5};
+    float rof{1};
 
 
 };

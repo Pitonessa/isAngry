@@ -7,7 +7,7 @@
 #include "GameCharacter/Archer/Archer.h"
 #include "GameCharacter/Watcher/Watcher.h"
 #include "GameCharacter/Brawler/Brawler.h"
-#include "GUI/GameEngine.h"
+#include "GameLogic/GameEngine.h"
 #include "GameCharacter/Factories/GameFactory.h"
 #include <thread>
 

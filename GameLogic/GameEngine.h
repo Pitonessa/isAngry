@@ -10,8 +10,10 @@
 #include "SFML/Graphics.hpp"
 #include "../GameObjects/Bullet/Bullet.h"
 #include "../GameCharacter/Hero/Hero.h"
-#include "Menu/Menu.h"
+#include "../GUI/Menu/Menu.h"
 #include "../GameObjects/Star/Star.h"
+
+//TODO ADD STATE PATTERN
 
 class GameEngine {
 public:

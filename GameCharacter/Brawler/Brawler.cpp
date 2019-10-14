@@ -41,7 +41,11 @@ void Brawler::animate(){
 }
 
 Bullet* Brawler::action(GameCharacter& hero) {
-    move(hero);
+    sf::Vector2f direction(
+            hero.getPosition().x - getPosition().x,
+            0
+            );
+    GameCharacter::move(direction);
     return nullptr;
 }
 

@@ -37,19 +37,13 @@ void GameCharacter::jump() {
 }
 
  void GameCharacter::move(sf::Vector2f direction) {
-     if(direction.x !=0|| direction.y!=0){
+     if(direction.x != 0 || direction.y!=0){
          setRevert(direction);
-         float GroundLevel= 961.5;
          direction /= sqrt(direction.x * direction.x + direction.y * direction.y);
-         GameCharacter::speed += GameCharacter::gravity;
-         GameCharacter::speed.x = direction.x * speedX;
-         GameCharacter::speed.y += direction.y;
-         Transformable::move(speed);
-
+         GameCharacter::speed += GameCharacter::gravity * clock.getElapsedTime().asSeconds();
+         GameCharacter::speed.x = direction.x * 5;
+         Transformable::move(speed * clock.getElapsedTime().asSeconds());
      }
-
-
-
 }
 
 void GameCharacter::setRevert(sf::Vector2f direction) {

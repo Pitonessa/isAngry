@@ -9,6 +9,7 @@
 #include "../GameObjects/Sweet/Sweet.h"
 #include "../GameCharacter/Archer/Archer.h"
 #include "../GameCharacter/Watcher/Watcher.h"
+#include "../GameCharacter/Boss/Boss.h"
 
 float GameEngine::k = 0;
 
@@ -28,12 +29,11 @@ GameEngine::GameEngine(sf::RenderWindow &mainWindow) : gameWindow(&mainWindow), 
     background[1]->setPosition(background[0]->getGlobalBounds().width, 0);
     background[1]->scale(sf::Vector2f(scaleFactor, scaleFactor));
     this->stars = Star::createStars(gameWindow);
-    enemies.push_back(new Brawler(1, sf::Vector2f(400, 400)));
-    enemies[0]->scale(sf::Vector2f(0.33, 0.33));
-    props.push_back(new Sweet(sf::Vector2f(2000, 1000)));
-    props[0]->scale(0.33, 0.33);
+    /*props.push_back(new Sweet(sf::Vector2f(2000, 1000)));
+    props[0]->scale(0.33, 0.33);*/
+    //enemies.push_back(new Brawler(5, sf::Vector2f(1000, 300)));
 
-    k = 2.0f/9.0f * gameWindow->getView().getSize().y;
+    k = 0.5f/9.0f * gameWindow->getView().getSize().y;
 
     gameClock.restart();
 }
@@ -46,7 +46,8 @@ bool GameEngine::loadTextures() {
         Brawler::loadTexture() &&
         Watcher::loadTexture() &&
         Sweet::loadTexture() &&
-        Bullet::loadTexture();
+        Bullet::loadTexture() &&
+        Boss::loadTexture();
 }
 
 void GameEngine::drawWorld() {
@@ -66,15 +67,12 @@ void GameEngine::drawWorld() {
                         gameWindow->draw(*b);
                     hero->animate();
                     gameWindow->draw(*hero);
-                    float heroX= hero->getPosition().x;
+                    float heroX = hero->getPosition().x;
                     for (auto enemy : enemies) {
-                        float enemyX= enemy->getPosition().x;
-                        sf::Vector2f direction(heroX - enemyX <= 0? -1:1,0);
-                        enemy->action(*hero);
-                        enemy->move(direction);
                         auto bullet = enemy->action(*hero);
                         if(bullet != nullptr)
                             bullets.push_back(bullet);
+                        enemy->move(sf::Vector2f(0, 1));
                         enemy->animate();
                         enemy->fixHeight(1061.5);
                         gameWindow->draw(*enemy);
@@ -105,7 +103,7 @@ void GameEngine::drawWorld() {
                         gameWindow->draw(*prop);
                     for (auto bullet : bullets) {
                         gameWindow->draw(*bullet); }
-                    break;
+                    break;*/
             }
         }
     //return true;
@@ -192,7 +190,7 @@ void GameEngine::heroJump() {
 
 void GameEngine::heroAttack() {
     if(hero->attack()) {
-        bullets.push_back(new Bullet(hero->getPosition(), sf::Vector2f(20 * (hero->getDirection()), .5), 25, true));
+        bullets.push_back(new Bullet(hero->getPosition(), sf::Vector2f(2000 * (hero->getDirection()), 0), 0, true));
     }
 
 }
@@ -200,12 +198,11 @@ void GameEngine::heroAttack() {
 bool GameEngine::detectCollision(Bullet &bullet) {
     bool result = false;
     if(bullet.isFriendly()) {
-        for (int i = 0; i < enemies.size(); i++) {
+        for (int i = 0; i < enemies.size() && !result; i++) {
             if (bullet.getGlobalBounds().intersects(enemies[i]->getGlobalBounds())) {
                 if (enemies[i]->takeDamage()) {
                     delete enemies[i];
                     enemies.erase(enemies.begin() + i);
-                    break;
                 }
                 result = true;
             }
@@ -213,7 +210,6 @@ bool GameEngine::detectCollision(Bullet &bullet) {
     } else {
         if (bullet.getGlobalBounds().intersects(hero->getGlobalBounds())) {
             if(hero->takeDamage())
-                std::cout << "Sei morto";
             result = true;
         }
     }

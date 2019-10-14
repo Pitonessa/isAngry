@@ -20,6 +20,7 @@ void Bullet::update() {
             speed.x * deltaT,
             speed.y * deltaT
             );
+    if(friendly) offset.y = 0;
     move(offset);
 }
 

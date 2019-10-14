@@ -14,7 +14,7 @@ protected:
 
     Menu *centerd, *top, *pause;
 
-    virtual void SetUp() {
+    /*virtual void SetUp() {
         centerdList.push_back(new MenuItem(MenuItem::TYPE::START));
         centerdList.push_back(new MenuItem(MenuItem::TYPE::SCORE));
         centerdList.push_back(new MenuItem(MenuItem::TYPE::EXIT));
@@ -29,7 +29,7 @@ protected:
         pause = new Menu(pauseList, Menu::STYLE::CENTERED);
 
 
-    }
+    }*/
 
     virtual void TearDown() {
         delete centerd;

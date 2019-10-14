@@ -10,7 +10,7 @@
 
 
 
-class Watcher : public GameCharacter {
+class Watcher : virtual public GameCharacter {
 public:
     Watcher(float speed, sf::Vector2f position);
     bool attack() override;

@@ -11,11 +11,11 @@
 
 
 
-class Brawler : public GameCharacter {
+class Brawler : virtual public GameCharacter {
 public:
     Brawler(float speed, sf::Vector2f position);
     bool attack() override;
-    void move(const GameCharacter&hero);
+    void move(const GameCharacter& hero);
     Bullet* action(GameCharacter& hero) override;
     void animate() override;
     static bool loadTexture();
@@ -40,7 +40,6 @@ private:
             sf::IntRect(579 * 8, 0, 579, 763),
             sf::IntRect(579 * 9, 0, 579, 763)
     };
-    int actualFrame {0};
 
     static sf::Texture* brawlerTexture;
 

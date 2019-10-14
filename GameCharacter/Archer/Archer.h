@@ -9,7 +9,7 @@
 
 
 
-class Archer : public GameCharacter {
+class Archer : virtual public GameCharacter {
 public:
     Archer(float speed, sf::Vector2f position);
     bool attack() override;
@@ -19,6 +19,7 @@ public:
 
 private:
     static sf::Texture* archerTexture;
+    static int bulletSpeed;
 
 
 };
