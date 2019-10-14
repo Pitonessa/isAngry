@@ -29,12 +29,12 @@ SET(SOURCE_FILES
         GameCharacter/GameCharacter.cpp
         GameCharacter/Hero/Hero.cpp
         GameObjects/Bullet/Bullet.cpp
-        GUI/GameEngine.cpp
+        GameLogic/GameEngine.cpp
         GameCharacter/Archer/Archer.cpp
         GameCharacter/Watcher/Watcher.cpp
         GameCharacter/Brawler/Brawler.cpp
         GameObjects/GameObject.cpp
-        GameCharacter/Factories/GameFactory.cpp GameCharacter/Factories/GameFactory.h GameObjects/Sweet/Sweet.cpp GameObjects/Sweet/Sweet.h)
+        GameCharacter/Factories/GameFactory.cpp GameCharacter/Factories/GameFactory.h GameObjects/Sweet/Sweet.cpp GameObjects/Sweet/Sweet.h GameCharacter/Boss/Boss.cpp GameCharacter/Boss/Boss.h GameLogic/Context/Context.cpp GameLogic/Context/Context.h GameLogic/States/State.cpp GameLogic/States/State.h)
 
 add_library(isAngryTest ${SOURCE_FILES})
 add_executable(isAngry ${SOURCE_FILES} main.cpp)

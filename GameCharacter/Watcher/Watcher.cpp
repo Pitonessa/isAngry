@@ -16,21 +16,31 @@ bool Watcher::attack() {
 }
 
 void Watcher::animate() {
-    if(actualframe==9)
-        actualframe=0;
+    if(actualframe>=39)
+        actualframe = 0;
     else
         actualframe++;
-    setTextureRect(sf::IntRect(680*actualframe + 6800 * revert,0,680,472));
+        setTextureRect(sf::IntRect(680 * (actualframe / 4),472 * revert,680,472));
 }
 
-void Watcher::action(GameCharacter& hero) {
-    sf::Vector2f distance = ( hero.getPosition()-getPosition());
+Bullet* Watcher::action(GameCharacter& hero) {
+    sf::Vector2f center(
+            getPosition().x + getGlobalBounds().width / 2,
+            getPosition().y + getGlobalBounds().height / 2
+            );
+    sf::Vector2f heroCenter(
+            hero.getPosition().x + hero.getGlobalBounds().width / 2,
+            hero.getPosition().y + hero.getGlobalBounds().height / 2
+            );
+    sf::Vector2f distance = (heroCenter - center);
     setRevert(-distance);
     float length = sqrt(distance.x*distance.x + distance.y * distance.y);
     if(length<800 && length>200)
         fadeout();
     else
             fadein();
+        fadein();
+    return nullptr;
 }
 
 void Watcher::fadein() {
@@ -41,7 +51,7 @@ void Watcher::fadein() {
 
 }
 void Watcher::fadeout() {
-    if(alpha>0){
+    if(alpha > 30){
         alpha--;
         setColor(sf::Color(255,255,255,alpha));
     }

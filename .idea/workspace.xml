@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
       <config projectName="isAngry" targetName="isAngry" />
       <config projectName="isAngry" targetName="test" />
@@ -13,12 +13,14 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9c0d17a-405a-4c07-a605-4ab0d0ec653d" name="Default Changelist" comment="add jump">
-      <change afterPath="$PROJECT_DIR$/Res/dino_idle_original.png" afterDir="false" />
+    <list default="true" id="b68051dd-b0ca-46e1-83a6-990d892ca78e" name="Default Changelist" comment="add isa animated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GUI/GameEngine.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/GameEngine.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GUI/GameEngine.h" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/GameEngine.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameCharacter/Archer/Archer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameCharacter/Archer/Archer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameCharacter/Archer/Archer.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameCharacter/Archer/Archer.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GameCharacter/Brawler/Brawler.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameCharacter/Brawler/Brawler.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameCharacter/Brawler/Brawler.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameCharacter/Brawler/Brawler.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GameCharacter/Factories/GameFactory.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameCharacter/Factories/GameFactory.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GameCharacter/GameCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameCharacter/GameCharacter.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GameCharacter/GameCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameCharacter/GameCharacter.h" afterDir="false" />
@@ -27,25 +29,8 @@
       <change beforePath="$PROJECT_DIR$/GameCharacter/Watcher/Watcher.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameCharacter/Watcher/Watcher.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GameCharacter/Watcher/Watcher.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameCharacter/Watcher/Watcher.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GameObjects/Bullet/Bullet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameObjects/Bullet/Bullet.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameObjects/Sweet/Sweet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameObjects/Sweet/Sweet.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/dino_walk_original.png" beforeDir="false" afterPath="$PROJECT_DIR$/Res/dino_walk_original.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/isAngry.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/isAngry.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,139 +55,6 @@
     <select />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
-  <component name="FUSProjectUsageTrigger">
-    <session id="1145638621">
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="cpp" value="4123" />
-          <entry key="h" value="774" />
-          <entry key="txt" value="85" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="CMakeCache.txt" value="24" />
-          <entry key="ObjectiveC" value="4897" />
-          <entry key="PLAIN_TEXT" value="61" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="cpp" value="27" />
-          <entry key="h" value="22" />
-          <entry key="inl" value="1" />
-          <entry key="jpeg" value="5" />
-          <entry key="jpg" value="2" />
-          <entry key="png" value="52" />
-          <entry key="txt" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CMakeCache.txt" value="2" />
-          <entry key="CMakeLists.txt" value="1" />
-          <entry key="Image" value="59" />
-          <entry key="ObjectiveC" value="50" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.28" value="1" />
-          <entry key="project.opened" value="2" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GameCharacter/Brawler/Brawler.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
-              <folding>
-                <element signature="e#38#57#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GameCharacter/GameCharacter.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="55" column="50" selection-start-line="55" selection-start-column="50" selection-end-line="55" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GameCharacter/GameCharacter.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
-              <folding>
-                <element signature="e#119#147#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GameCharacter/Hero/Hero.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GameCharacter/Watcher/Watcher.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="51" column="52" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Res/dino_idle_original.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Res/dino_walk_original.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GameCharacter/Hero/Hero.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Res/lolly.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/GameObjects/Sweet/Sweet.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -213,11 +65,6 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>jump</find>
-      <find>manu</find>
-      <find>SOUrce</find>
-      <find>home</find>
-      <find>sour</find>
-      <find>verb</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -229,139 +76,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/GameCharacter/Archer/Archer.h" />
-        <option value="$PROJECT_DIR$/GameCharacter/Archer/Archer.cpp" />
-        <option value="$PROJECT_DIR$/GameCharacter/Brawler/Brawler.h" />
-        <option value="$PROJECT_DIR$/GameObjects/Bullet/Bullet.cpp" />
-        <option value="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
-        <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/GUI/GameEngine.h" />
-        <option value="$PROJECT_DIR$/GameCharacter/Hero/Hero.h" />
-        <option value="$PROJECT_DIR$/GameCharacter/Hero/Hero.cpp" />
-        <option value="$PROJECT_DIR$/GameCharacter/Brawler/Brawler.cpp" />
-        <option value="$PROJECT_DIR$/GUI/GameEngine.cpp" />
-        <option value="$PROJECT_DIR$/GameCharacter/Factories/GameFactory.cpp" />
-        <option value="$PROJECT_DIR$/GameCharacter/Watcher/Watcher.h" />
-        <option value="$PROJECT_DIR$/GameCharacter/GameCharacter.h" />
-        <option value="$PROJECT_DIR$/GameCharacter/GameCharacter.cpp" />
-        <option value="$PROJECT_DIR$/GameCharacter/Watcher/Watcher.cpp" />
-        <option value="$PROJECT_DIR$/GameObjects/Sweet/Sweet.cpp" />
-      </list>
-    </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="OCResolveContextSettings">
     <option name="configuration" value="0-isAngry" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="119" />
-    <option name="y" value="35" />
-    <option name="width" value="1080" />
-    <option name="height" value="715" />
-  </component>
   <component name="ProjectId" id="1PgKTC9NFJOxesfVAQQua0rH7F5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="isAngry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="isAngry" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="isAngry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="isAngry" type="462c0819:PsiDirectoryNode" />
-              <item name="GameCharacter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="isAngry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="isAngry" type="462c0819:PsiDirectoryNode" />
-              <item name="GameCharacter" type="462c0819:PsiDirectoryNode" />
-              <item name="Archer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="isAngry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="isAngry" type="462c0819:PsiDirectoryNode" />
-              <item name="GameCharacter" type="462c0819:PsiDirectoryNode" />
-              <item name="Brawler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="isAngry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="isAngry" type="462c0819:PsiDirectoryNode" />
-              <item name="GameCharacter" type="462c0819:PsiDirectoryNode" />
-              <item name="Factories" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="isAngry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="isAngry" type="462c0819:PsiDirectoryNode" />
-              <item name="GameCharacter" type="462c0819:PsiDirectoryNode" />
-              <item name="Hero" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="isAngry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="isAngry" type="462c0819:PsiDirectoryNode" />
-              <item name="GameCharacter" type="462c0819:PsiDirectoryNode" />
-              <item name="Watcher" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="isAngry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="isAngry" type="462c0819:PsiDirectoryNode" />
-              <item name="GameObjects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="isAngry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="isAngry" type="462c0819:PsiDirectoryNode" />
-              <item name="GameObjects" type="462c0819:PsiDirectoryNode" />
-              <item name="Bullet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="isAngry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="isAngry" type="462c0819:PsiDirectoryNode" />
-              <item name="GameObjects" type="462c0819:PsiDirectoryNode" />
-              <item name="Sweet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="isAngry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="isAngry" type="462c0819:PsiDirectoryNode" />
-              <item name="GUI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="isAngry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="isAngry" type="462c0819:PsiDirectoryNode" />
-              <item name="GUI" type="462c0819:PsiDirectoryNode" />
-              <item name="Menu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="isAngry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="isAngry" type="462c0819:PsiDirectoryNode" />
-              <item name="Res" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="isAngry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="isAngry" type="462c0819:PsiDirectoryNode" />
-              <item name="sfml" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -395,116 +115,6 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
-  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -517,7 +127,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.isAngry">
+  <component name="RunManager" selected="CMake Application.isAngry">
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -534,9 +144,9 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Build All" />
-      <item itemvalue="Application.isAngry" />
-      <item itemvalue="Application.test" />
+      <item itemvalue="CMake Application.Build All" />
+      <item itemvalue="CMake Application.isAngry" />
+      <item itemvalue="CMake Application.test" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -544,7 +154,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d9c0d17a-405a-4c07-a605-4ab0d0ec653d" name="Default Changelist" comment="" />
+      <changelist id="b68051dd-b0ca-46e1-83a6-990d892ca78e" name="Default Changelist" comment="add isa animated" />
       <created>1562085947014</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -596,7 +206,10 @@
       <workItem from="1568794421464" duration="1606000" />
       <workItem from="1568808684861" duration="309000" />
       <workItem from="1569768375006" duration="6840000" />
-      <workItem from="1570035763540" duration="17491000" />
+      <workItem from="1570035763540" duration="5028000" />
+      <workItem from="1570369634582" duration="119000" />
+      <workItem from="1570370196316" duration="124000" />
+      <workItem from="1570454676491" duration="3153000" />
     </task>
     <task id="LOCAL-00001" summary="Aggiunta google framework google test e implementazione test della classe Star">
       <created>1567813414981</created>
@@ -668,18 +281,22 @@
       <option name="project" value="LOCAL" />
       <updated>1570103796259</updated>
     </task>
-    <task id="LOCAL-00011" summary="add jump">
-      <created>1570119053445</created>
+    <task id="LOCAL-00011" summary="add isa animated">
+      <created>1570369666652</created>
       <option name="number" value="00011" />
       <option name="presentableId" value="LOCAL-00011" />
       <option name="project" value="LOCAL" />
-      <updated>1570119053445</updated>
+      <updated>1570369666652</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add isa animated">
+      <created>1570370265515</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1570370265516</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48021000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -690,66 +307,8 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="119" y="35" width="1080" height="715" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33140656" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.41922456" visible="true" weight="0.38202247" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32876712" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32876712" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.58077544" side_tool="true" weight="0.32884616" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49919224" weight="0.4574639" />
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.32876712" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.42084005" weight="0.27608347" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26979" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.41922456" visible="true" weight="0.32884616" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.58077544" side_tool="true" weight="0.32884616" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49919224" weight="0.329582" />
-      <window_info anchor="bottom" id="CMake" order="11" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.42084005" weight="0.32692307" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-    </layout-to-restore>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="Vcs.Log.History.Properties">
-    <option name="COLUMN_ORDER">
-      <list>
-        <option value="0" />
-        <option value="2" />
-        <option value="3" />
-        <option value="1" />
-      </list>
-    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -757,28 +316,12 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
+              <option name="COLUMN_ORDER" />
             </State>
           </value>
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
@@ -787,209 +330,6 @@
     <MESSAGE value="add insegimento" />
     <MESSAGE value="add nemici" />
     <MESSAGE value="add isa animated" />
-    <MESSAGE value="add jump" />
-    <option name="LAST_COMMIT_MESSAGE" value="add jump" />
-    <option name="UPDATE_GROUP_BY_PACKAGES" value="true" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Res/Dino/Run (8).png" />
-    <entry file="file://$PROJECT_DIR$/Res/Dino/Walk (2).png" />
-    <entry file="file://$PROJECT_DIR$/Res/Dino/Walk (4).png" />
-    <entry file="file://$PROJECT_DIR$/Res/Dino/Walk (5).png" />
-    <entry file="file://$PROJECT_DIR$/Res/Dino/Walk (7).png" />
-    <entry file="file://$PROJECT_DIR$/Res/Dino/Walk (8).png" />
-    <entry file="file://$PROJECT_DIR$/Res/Dino/Walk (9).png" />
-    <entry file="file://$PROJECT_DIR$/Res/Lantern/Dead (5).png" />
-    <entry file="file://$PROJECT_DIR$/Res/Lantern/Dead (6).png" />
-    <entry file="file://$PROJECT_DIR$/Res/Lantern/Dead (1).png" />
-    <entry file="file://$PROJECT_DIR$/Res/Lantern/Dead (2).png" />
-    <entry file="file://$PROJECT_DIR$/Res/Lantern/Dead (4).png" />
-    <entry file="file://$PROJECT_DIR$/Res/Lantern/Dead (3).png" />
-    <entry file="file://$PROJECT_DIR$/Res/Lantern/Jump (2).png" />
-    <entry file="file://$PROJECT_DIR$/Res/Dino/Walk (10).png" />
-    <entry file="file://$PROJECT_DIR$/Res/candy2.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Res/candy3.jpg" />
-    <entry file="file://$PROJECT_DIR$/Res/lantern_walk.png" />
-    <entry file="file://$PROJECT_DIR$/GameCharacter/Archer/Archer.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Res/alien_walk.png" />
-    <entry file="file://$PROJECT_DIR$/Res/walk.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Res/candy4.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Res/ciambella.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Res/isAnimated.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Res/candy3.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameObjects/Sweet/Sweet.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-309" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameObjects/Bullet/Bullet.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="212" column="33" selection-start-line="212" selection-start-column="33" selection-end-line="212" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameObjects/Bullet/Bullet.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="64" column="34" selection-start-line="64" selection-start-column="34" selection-end-line="64" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GUI/GameEngine.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Res/dino.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameObjects/GameObject.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Res/alien.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameCharacter/Factories/GameFactory.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GUI/GameEngine.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1084">
-          <caret line="28" column="48" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
-          <folding>
-            <element signature="e#54#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameCharacter/Brawler/Brawler.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-          <folding>
-            <element signature="e#92#121#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameCharacter/Watcher/Watcher.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Res/isAnimatedFull.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Res/lanter_walk_original.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameCharacter/Brawler/Brawler.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
-          <folding>
-            <element signature="e#38#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameCharacter/Hero/Hero.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameCharacter/Hero/Hero.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameCharacter/GameCharacter.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
-          <folding>
-            <element signature="e#119#147#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameCharacter/GameCharacter.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="55" column="50" selection-start-line="55" selection-start-column="50" selection-end-line="55" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameCharacter/Watcher/Watcher.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="51" column="52" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Res/dino_idle_original.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Res/dino_walk_original.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Res/lolly.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameObjects/Sweet/Sweet.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
+    <option name="LAST_COMMIT_MESSAGE" value="add isa animated" />
   </component>
 </project>

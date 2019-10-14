@@ -70,6 +70,6 @@ bool Hero::loadTexture() {
 }
 
 
-void Hero::action(GameCharacter &hero) {
+Bullet* Hero::action(GameCharacter &hero) {
 
 }

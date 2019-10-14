@@ -9,7 +9,9 @@
 #include "../GameObjects/Sweet/Sweet.h"
 #include "../GameCharacter/Archer/Archer.h"
 #include "../GameCharacter/Watcher/Watcher.h"
+#include "../GameCharacter/Boss/Boss.h"
 
+float GameEngine::k = 0;
 
 GameEngine::GameEngine(sf::RenderWindow &mainWindow) : gameWindow(&mainWindow), gameMenu(new Menu(Menu::STYLE::MAIN)) {
     //todo metti il menu
@@ -27,8 +29,11 @@ GameEngine::GameEngine(sf::RenderWindow &mainWindow) : gameWindow(&mainWindow), 
     background[1]->setPosition(background[0]->getGlobalBounds().width, 0);
     background[1]->scale(sf::Vector2f(scaleFactor, scaleFactor));
     this->stars = Star::createStars(gameWindow);
-    props.push_back(new Sweet(sf::Vector2f(2000, 1000)));
-    props[0]->scale(0.33, 0.33);
+    /*props.push_back(new Sweet(sf::Vector2f(2000, 1000)));
+    props[0]->scale(0.33, 0.33);*/
+    //enemies.push_back(new Brawler(5, sf::Vector2f(1000, 300)));
+
+    k = 0.5f/9.0f * gameWindow->getView().getSize().y;
 
     gameClock.restart();
 }
@@ -38,10 +43,11 @@ bool GameEngine::loadTextures() {
     return backgroundTexture->loadFromFile("../Res/Background1.png") &&
         Hero::loadTexture() &&
         Archer::loadTexture() &&
+        Brawler::loadTexture() &&
         Watcher::loadTexture() &&
         Sweet::loadTexture() &&
         Bullet::loadTexture() &&
-        Brawler::loadTexture();
+        Boss::loadTexture();
 }
 
 void GameEngine::drawWorld() {
@@ -61,15 +67,14 @@ void GameEngine::drawWorld() {
                         gameWindow->draw(*b);
                     hero->animate();
                     gameWindow->draw(*hero);
-                    float heroX= hero->getPosition().x;
+                    float heroX = hero->getPosition().x;
                     for (auto enemy : enemies) {
-                        float enemyX= enemy->getPosition().x;
-                        sf::Vector2f direction(heroX - enemyX <= 0? -1:1,0);
-                        enemy->action(*hero);
-                        enemy->move(direction);
+                        auto bullet = enemy->action(*hero);
+                        if(bullet != nullptr)
+                            bullets.push_back(bullet);
+                        enemy->move(sf::Vector2f(0, 1));
                         enemy->animate();
-                        enemy->fixHeight(961.5);
-
+                        enemy->fixHeight(1061.5);
                         gameWindow->draw(*enemy);
                     }
 
@@ -137,7 +142,7 @@ void GameEngine::navigate(sf::Keyboard::Key key) {
 
 void GameEngine::moveHero(sf::Vector2f direction) {
     hero->move(direction);
-    hero->fixHeight(961.5);
+    hero->fixHeight(1061.5);
 }
 
 void GameEngine::addEnemy(GameCharacter &enemy) {
@@ -185,7 +190,7 @@ void GameEngine::heroJump() {
 
 void GameEngine::heroAttack() {
     if(hero->attack()) {
-        bullets.push_back(new Bullet(hero->getPosition(), sf::Vector2f(20 * (hero->getDirection()), .5), 25, true));
+        bullets.push_back(new Bullet(hero->getPosition(), sf::Vector2f(2000 * (hero->getDirection()), 0), 0, true));
     }
 
 }
@@ -193,12 +198,11 @@ void GameEngine::heroAttack() {
 bool GameEngine::detectCollision(Bullet &bullet) {
     bool result = false;
     if(bullet.isFriendly()) {
-        for (int i = 0; i < enemies.size(); i++) {
+        for (int i = 0; i < enemies.size() && !result; i++) {
             if (bullet.getGlobalBounds().intersects(enemies[i]->getGlobalBounds())) {
                 if (enemies[i]->takeDamage()) {
                     delete enemies[i];
                     enemies.erase(enemies.begin() + i);
-                    break;
                 }
                 result = true;
             }
@@ -206,7 +210,6 @@ bool GameEngine::detectCollision(Bullet &bullet) {
     } else {
         if (bullet.getGlobalBounds().intersects(hero->getGlobalBounds())) {
             if(hero->takeDamage())
-                std::cout << "Sei morto";
             result = true;
         }
     }
@@ -218,3 +221,7 @@ void GameEngine::shootUpdate(GameCharacter &character) {
     sf::Vector2f firePosition = character.getPosition();
     bullets.push_back(new Bullet(*bossTexture, firePosition, sf::Vector2f(0, 0), 100, this));
 }*/
+
+float GameEngine::getGravity() {
+    return k;
+}

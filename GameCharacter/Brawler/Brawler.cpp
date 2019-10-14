@@ -40,9 +40,13 @@ void Brawler::animate(){
 
 }
 
-void Brawler::action(GameCharacter& hero) {
-   // move(hero);
-
+Bullet* Brawler::action(GameCharacter& hero) {
+    sf::Vector2f direction(
+            hero.getPosition().x - getPosition().x,
+            0
+            );
+    GameCharacter::move(direction);
+    return nullptr;
 }
 
 bool Brawler::loadTexture() {

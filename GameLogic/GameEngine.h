@@ -10,11 +10,14 @@
 #include "SFML/Graphics.hpp"
 #include "../GameObjects/Bullet/Bullet.h"
 #include "../GameCharacter/Hero/Hero.h"
-#include "Menu/Menu.h"
+#include "../GUI/Menu/Menu.h"
 #include "../GameObjects/Star/Star.h"
+
+//TODO ADD STATE PATTERN
 
 class GameEngine {
 public:
+
     enum PAGE {
         MAIN_MENU,
         RECORD_PAGE,
@@ -29,6 +32,8 @@ public:
     void heroAttack();
     bool detectCollision(Bullet& bullet);
     const sf::RenderWindow& getWindow();
+    static float getGravity();
+    static float k;
 
     sf::Texture* backgroundTexture;
 

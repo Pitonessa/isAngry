@@ -6,13 +6,15 @@
 #define ISANGRY_GAMEFACTORY_H
 
 #include "SFML/Graphics.hpp"
-#include "../../GUI/GameEngine.h"
+#include "../../GameLogic/GameEngine.h"
+
+//TODO LOGICA DI CREAZIONE ESTERNA
 
 class GameFactory {
 public:
     ~GameFactory() = delete;
     static void createEnemy(GameEngine& engine);
-    static void createProps(GameEngine& engine);
+    static void createProps();
 
 };
 
