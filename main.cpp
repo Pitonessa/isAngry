@@ -43,7 +43,11 @@
                     if (e.key.code == sf::Keyboard::Escape)
                         cascettoEngine->gameState = 3;
                     if (e.key.code == sf::Keyboard::N)
-                        GameFactory::createEnemy(*cascettoEngine);
+                        cascettoEngine->addEnemy(GameFactory::WATCHER);
+                    if (e.key.code == sf::Keyboard::L)
+                        cascettoEngine->addEnemy(GameFactory::ARCHER);
+                    if (e.key.code == sf::Keyboard::M)
+                        cascettoEngine->addEnemy(GameFactory::BRAWLER);
                     if (e.key.code == sf::Keyboard::R)
                         cascettoEngine->setHeroPos(window.getView().getSize().x / 2, window.getView().getSize().y / 2);
                 } else {

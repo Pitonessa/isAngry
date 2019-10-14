@@ -12,7 +12,8 @@ Boss::Boss(float speed, sf::Vector2f position) : GameCharacter(speed, *bossTextu
 
 bool Boss::loadTexture() {
     bossTexture = new sf::Texture;
-    return bossTexture->loadFromFile("../Res/spritesheet-2.png");
+    //return bossTexture->loadFromFile("../Res/spritesheet-2.png");
+    return true;
 }
 
 bool Boss::attack() {

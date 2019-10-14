@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/GameCharacter/Factories/GameFactory.cpp" line="13" mnemonic="8" />
+  </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
       <config projectName="isAngry" targetName="isAngry" />
-      <config projectName="isAngry" targetName="test" />
       <config projectName="isAngry" targetName="isAngryTest" />
+      <config projectName="isAngry" targetName="test" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -14,11 +17,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9c0d17a-405a-4c07-a605-4ab0d0ec653d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Res/merge_dino.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameCharacter/Watcher/Watcher.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameCharacter/Watcher/Watcher.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/dino_idle_original.png" beforeDir="false" afterPath="$PROJECT_DIR$/Res/dino_idle_original.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Res/dino_walk_original.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameCharacter/Factories/GameFactory.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameCharacter/Factories/GameFactory.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameCharacter/Factories/GameFactory.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameCharacter/Factories/GameFactory.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameLogic/GameEngine.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/GameEngine.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameLogic/GameEngine.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameLogic/GameEngine.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/isAngry.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/isAngry.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,22 +70,22 @@
     <session id="1145638621">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="4180" />
-          <entry key="h" value="774" />
-          <entry key="txt" value="101" />
+          <entry key="cpp" value="4935" />
+          <entry key="h" value="977" />
+          <entry key="txt" value="125" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeCache.txt" value="24" />
-          <entry key="ObjectiveC" value="4954" />
-          <entry key="PLAIN_TEXT" value="77" />
+          <entry key="ObjectiveC" value="5912" />
+          <entry key="PLAIN_TEXT" value="101" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cpp" value="27" />
-          <entry key="h" value="23" />
+          <entry key="cpp" value="31" />
+          <entry key="h" value="26" />
           <entry key="inl" value="1" />
           <entry key="jpeg" value="5" />
           <entry key="jpg" value="2" />
@@ -77,7 +98,7 @@
           <entry key="CMakeCache.txt" value="2" />
           <entry key="CMakeLists.txt" value="1" />
           <entry key="Image" value="67" />
-          <entry key="ObjectiveC" value="51" />
+          <entry key="ObjectiveC" value="58" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
@@ -93,10 +114,58 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="49" column="69" selection-start-line="49" selection-start-column="69" selection-end-line="49" selection-end-column="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GameCharacter/GameCharacter.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="307">
-              <caret line="55" column="50" selection-start-line="55" selection-start-column="50" selection-end-line="55" selection-end-column="50" />
+              <caret line="50" column="50" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/GameCharacter/Factories/GameFactory.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GameCharacter/Factories/GameFactory.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="555">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GameLogic/GameEngine.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+              <folding>
+                <element signature="e#114#133#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GameLogic/GameEngine.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="157">
+              <caret line="150" column="29" selection-start-line="150" selection-start-column="29" selection-end-line="150" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -104,8 +173,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GameCharacter/GameCharacter.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
+            <state relative-caret-position="172">
+              <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
               <folding>
                 <element signature="e#119#147#0" expanded="true" />
               </folding>
@@ -125,17 +194,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GameCharacter/Watcher/Watcher.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-203">
-              <caret line="22" column="62" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/GameCharacter/Watcher/Watcher.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+            <state relative-caret-position="-188">
+              <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -185,18 +245,21 @@
         <option value="$PROJECT_DIR$/GameCharacter/Brawler/Brawler.h" />
         <option value="$PROJECT_DIR$/GameObjects/Bullet/Bullet.cpp" />
         <option value="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/GUI/GameEngine.h" />
         <option value="$PROJECT_DIR$/GameCharacter/Hero/Hero.h" />
         <option value="$PROJECT_DIR$/GameCharacter/Hero/Hero.cpp" />
         <option value="$PROJECT_DIR$/GameCharacter/Brawler/Brawler.cpp" />
         <option value="$PROJECT_DIR$/GUI/GameEngine.cpp" />
-        <option value="$PROJECT_DIR$/GameCharacter/Factories/GameFactory.cpp" />
         <option value="$PROJECT_DIR$/GameCharacter/Watcher/Watcher.h" />
         <option value="$PROJECT_DIR$/GameCharacter/GameCharacter.h" />
         <option value="$PROJECT_DIR$/GameCharacter/GameCharacter.cpp" />
         <option value="$PROJECT_DIR$/GameObjects/Sweet/Sweet.cpp" />
         <option value="$PROJECT_DIR$/GameCharacter/Watcher/Watcher.cpp" />
+        <option value="$PROJECT_DIR$/GameLogic/GameEngine.h" />
+        <option value="$PROJECT_DIR$/GameLogic/GameEngine.cpp" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/GameCharacter/Factories/GameFactory.cpp" />
+        <option value="$PROJECT_DIR$/GameCharacter/Factories/GameFactory.h" />
       </list>
     </option>
   </component>
@@ -245,17 +308,12 @@
             <path>
               <item name="isAngry" type="b2602c69:ProjectViewProjectNode" />
               <item name="isAngry" type="462c0819:PsiDirectoryNode" />
-              <item name="GameObjects" type="462c0819:PsiDirectoryNode" />
+              <item name="GameLogic" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="isAngry" type="b2602c69:ProjectViewProjectNode" />
               <item name="isAngry" type="462c0819:PsiDirectoryNode" />
               <item name="GUI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="isAngry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="isAngry" type="462c0819:PsiDirectoryNode" />
-              <item name="Res" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -310,7 +368,42 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/CMakeLists.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/GameCharacter/Archer/Archer.cpp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/GameCharacter/Archer/Archer.h</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/GameCharacter/Brawler/Brawler.cpp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/GameCharacter/Brawler/Brawler.h</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/GameCharacter/Factories/GameFactory.cpp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/GameCharacter/Factories/GameFactory.h</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/GameCharacter/GameCharacter.cpp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/GameCharacter/GameCharacter.h</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/GameCharacter/Hero/Hero.cpp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/GameCharacter/Hero/Hero.h</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/GameCharacter/Watcher/Watcher.cpp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/GameCharacter/Watcher/Watcher.h</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/GameObjects/Bullet/Bullet.cpp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Res/dino_idle_original.png</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/DependInfo.cmake</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/build.make</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/cmake_clean.cmake</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/depend.make</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/flags.make</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/link.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/cmake-build-debug/CMakeFiles/isAngry.dir/progress.make</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/cmake-build-debug/Makefile</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/cmake-build-debug/isAngry.cbp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/main.cpp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/test/_Menu.cpp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/test/include/gtest/internal/gtest-internal.h</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -318,6 +411,14 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/GameCharacter/Boss/Boss.cpp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/GameCharacter/Boss/Boss.h</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/GameLogic/Context/Context.cpp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/GameLogic/Context/Context.h</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/GameLogic/GameEngine.cpp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/GameLogic/GameEngine.h</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/GameLogic/States/State.cpp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/GameLogic/States/State.h</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -325,6 +426,9 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="true" />
           <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/GUI/GameEngine.cpp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/GUI/GameEngine.h</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Res/spritesheet.png</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Restored" />
@@ -497,7 +601,7 @@
       <workItem from="1568794421464" duration="1606000" />
       <workItem from="1568808684861" duration="309000" />
       <workItem from="1569768375006" duration="6840000" />
-      <workItem from="1570035763540" duration="22869000" />
+      <workItem from="1570035763540" duration="27262000" />
     </task>
     <task id="LOCAL-00001" summary="Aggiunta google framework google test e implementazione test della classe Star">
       <created>1567813414981</created>
@@ -583,11 +687,18 @@
       <option name="project" value="LOCAL" />
       <updated>1570385586580</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="&#10;&#10;add qualcosa">
+      <created>1571064739561</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1571064739561</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53399000" />
+    <option name="totallyTimeSpent" value="57792000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -697,14 +808,11 @@
     <MESSAGE value="add isa animated" />
     <MESSAGE value="add jump" />
     <MESSAGE value="add jump,add watcher" />
-    <option name="LAST_COMMIT_MESSAGE" value="add jump,add watcher" />
+    <MESSAGE value="&#10;&#10;add qualcosa" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;&#10;add qualcosa" />
     <option name="UPDATE_GROUP_BY_PACKAGES" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Res/Dino/Walk (4).png" />
-    <entry file="file://$PROJECT_DIR$/Res/Dino/Walk (5).png" />
-    <entry file="file://$PROJECT_DIR$/Res/Dino/Walk (7).png" />
-    <entry file="file://$PROJECT_DIR$/Res/Dino/Walk (8).png" />
     <entry file="file://$PROJECT_DIR$/Res/Dino/Walk (9).png" />
     <entry file="file://$PROJECT_DIR$/Res/Lantern/Dead (5).png" />
     <entry file="file://$PROJECT_DIR$/Res/Lantern/Dead (6).png" />
@@ -767,13 +875,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="64" column="34" selection-start-line="64" selection-start-column="34" selection-end-line="64" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GUI/GameEngine.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="371">
@@ -784,22 +885,8 @@
     <entry file="file://$PROJECT_DIR$/Res/dino.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/GameObjects/GameObject.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Res/alien.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameCharacter/Factories/GameFactory.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GUI/GameEngine.cpp">
       <provider selected="true" editor-type-id="text-editor">
@@ -844,13 +931,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GameCharacter/GameCharacter.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="55" column="50" selection-start-line="55" selection-start-column="50" selection-end-line="55" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Res/lolly.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -864,6 +944,29 @@
     <entry file="file://$PROJECT_DIR$/Res/enemy_spritesheet.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/Res/dino_walk_original.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Res/merge_dino.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Res/dino_idle_original.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameCharacter/Watcher/Watcher.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameCharacter/Watcher/Watcher.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-188">
+          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/GameCharacter/Hero/Hero.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-61">
@@ -871,36 +974,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Res/dino_walk_original.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Res/merge_dino.png">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/GameCharacter/GameCharacter.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="50" column="50" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GameCharacter/GameCharacter.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
+        <state relative-caret-position="172">
+          <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
           <folding>
             <element signature="e#119#147#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GameCharacter/Watcher/Watcher.cpp">
+    <entry file="file://$PROJECT_DIR$/GameObjects/GameObject.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-203">
-          <caret line="22" column="62" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
+        <state relative-caret-position="110">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Res/dino_idle_original.png">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/GameObjects/GameObject.h">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/GameCharacter/Watcher/Watcher.h">
+    <entry file="file://$PROJECT_DIR$/GameLogic/GameEngine.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        <state relative-caret-position="44">
+          <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+          <folding>
+            <element signature="e#114#133#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameLogic/GameEngine.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="150" column="29" selection-start-line="150" selection-start-column="29" selection-end-line="150" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="49" column="69" selection-start-line="49" selection-start-column="69" selection-end-line="49" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameCharacter/Factories/GameFactory.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameCharacter/Factories/GameFactory.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
         </state>
       </provider>
     </entry>

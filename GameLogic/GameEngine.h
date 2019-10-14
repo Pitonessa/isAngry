@@ -12,6 +12,7 @@
 #include "../GameCharacter/Hero/Hero.h"
 #include "../GUI/Menu/Menu.h"
 #include "../GameObjects/Star/Star.h"
+#include "../GameCharacter/Factories/GameFactory.h"
 
 //TODO ADD STATE PATTERN
 
@@ -27,7 +28,7 @@ public:
     void navigate(sf::Keyboard::Key key);
     void heroJump();
     void moveHero(sf::Vector2f direction);
-    void addEnemy(GameCharacter& enemy);
+    void addEnemy(GameFactory::enemytype type);
     void setHeroPos(float x, float y);
     void heroAttack();
     bool detectCollision(Bullet& bullet);
@@ -38,6 +39,7 @@ public:
     sf::Texture* backgroundTexture;
 
     short int gameState {0};
+    void placeEnemy(GameCharacter&enemy, bool isArcher=false);
 
 
 private:

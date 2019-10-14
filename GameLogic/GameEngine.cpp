@@ -145,8 +145,10 @@ void GameEngine::moveHero(sf::Vector2f direction) {
     hero->fixHeight(1061.5);
 }
 
-void GameEngine::addEnemy(GameCharacter &enemy) {
-    enemies.push_back(&enemy);
+void GameEngine::addEnemy(GameFactory::enemytype type) {
+    GameCharacter* enemy = GameFactory::createEnemy(type);
+    placeEnemy(*enemy, type == GameFactory::ARCHER);
+    enemies.push_back(enemy);
 }
 
 void GameEngine::setHeroPos(float x, float y) {
@@ -224,4 +226,22 @@ void GameEngine::shootUpdate(GameCharacter &character) {
 
 float GameEngine::getGravity() {
     return k;
+}
+
+void GameEngine::placeEnemy(GameCharacter&enemy, bool isArcher) {
+    sf::Vector2f position(gameWindow->getView().getCenter());
+    position.x += gameWindow->getView().getSize().x/2;
+    float offset=(rand()%gameWindow->getSize().x);
+
+    if(isArcher){
+
+    }
+    else{
+        position.y= GroundLevel - enemy.getGlobalBounds().height;
+
+
+    }
+    enemy.setPosition(position.x+offset,position.y);
+
+
 }

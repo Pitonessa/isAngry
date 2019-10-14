@@ -4,22 +4,22 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/manu/CLionProjects/isAngry/GUI/Menu/Menu.cpp" "/Users/manu/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GUI/Menu/Menu.cpp.o"
-  "/Users/manu/CLionProjects/isAngry/GameCharacter/Archer/Archer.cpp" "/Users/manu/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GameCharacter/Archer/Archer.cpp.o"
-  "/Users/manu/CLionProjects/isAngry/GameCharacter/Boss/Boss.cpp" "/Users/manu/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GameCharacter/Boss/Boss.cpp.o"
-  "/Users/manu/CLionProjects/isAngry/GameCharacter/Brawler/Brawler.cpp" "/Users/manu/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GameCharacter/Brawler/Brawler.cpp.o"
-  "/Users/manu/CLionProjects/isAngry/GameCharacter/Factories/GameFactory.cpp" "/Users/manu/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GameCharacter/Factories/GameFactory.cpp.o"
-  "/Users/manu/CLionProjects/isAngry/GameCharacter/GameCharacter.cpp" "/Users/manu/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GameCharacter/GameCharacter.cpp.o"
-  "/Users/manu/CLionProjects/isAngry/GameCharacter/Hero/Hero.cpp" "/Users/manu/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GameCharacter/Hero/Hero.cpp.o"
-  "/Users/manu/CLionProjects/isAngry/GameCharacter/Watcher/Watcher.cpp" "/Users/manu/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GameCharacter/Watcher/Watcher.cpp.o"
-  "/Users/manu/CLionProjects/isAngry/GameLogic/Context/Context.cpp" "/Users/manu/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GameLogic/Context/Context.cpp.o"
-  "/Users/manu/CLionProjects/isAngry/GameLogic/GameEngine.cpp" "/Users/manu/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GameLogic/GameEngine.cpp.o"
-  "/Users/manu/CLionProjects/isAngry/GameLogic/States/State.cpp" "/Users/manu/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GameLogic/States/State.cpp.o"
-  "/Users/manu/CLionProjects/isAngry/GameObjects/Bullet/Bullet.cpp" "/Users/manu/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GameObjects/Bullet/Bullet.cpp.o"
-  "/Users/manu/CLionProjects/isAngry/GameObjects/GameObject.cpp" "/Users/manu/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GameObjects/GameObject.cpp.o"
-  "/Users/manu/CLionProjects/isAngry/GameObjects/Star/Star.cpp" "/Users/manu/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GameObjects/Star/Star.cpp.o"
-  "/Users/manu/CLionProjects/isAngry/GameObjects/Sweet/Sweet.cpp" "/Users/manu/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GameObjects/Sweet/Sweet.cpp.o"
-  "/Users/manu/CLionProjects/isAngry/main.cpp" "/Users/manu/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/main.cpp.o"
+  "/Users/mac/CLionProjects/isAngry/GUI/Menu/Menu.cpp" "/Users/mac/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GUI/Menu/Menu.cpp.o"
+  "/Users/mac/CLionProjects/isAngry/GameCharacter/Archer/Archer.cpp" "/Users/mac/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GameCharacter/Archer/Archer.cpp.o"
+  "/Users/mac/CLionProjects/isAngry/GameCharacter/Boss/Boss.cpp" "/Users/mac/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GameCharacter/Boss/Boss.cpp.o"
+  "/Users/mac/CLionProjects/isAngry/GameCharacter/Brawler/Brawler.cpp" "/Users/mac/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GameCharacter/Brawler/Brawler.cpp.o"
+  "/Users/mac/CLionProjects/isAngry/GameCharacter/Factories/GameFactory.cpp" "/Users/mac/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GameCharacter/Factories/GameFactory.cpp.o"
+  "/Users/mac/CLionProjects/isAngry/GameCharacter/GameCharacter.cpp" "/Users/mac/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GameCharacter/GameCharacter.cpp.o"
+  "/Users/mac/CLionProjects/isAngry/GameCharacter/Hero/Hero.cpp" "/Users/mac/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GameCharacter/Hero/Hero.cpp.o"
+  "/Users/mac/CLionProjects/isAngry/GameCharacter/Watcher/Watcher.cpp" "/Users/mac/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GameCharacter/Watcher/Watcher.cpp.o"
+  "/Users/mac/CLionProjects/isAngry/GameLogic/Context/Context.cpp" "/Users/mac/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GameLogic/Context/Context.cpp.o"
+  "/Users/mac/CLionProjects/isAngry/GameLogic/GameEngine.cpp" "/Users/mac/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GameLogic/GameEngine.cpp.o"
+  "/Users/mac/CLionProjects/isAngry/GameLogic/States/State.cpp" "/Users/mac/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GameLogic/States/State.cpp.o"
+  "/Users/mac/CLionProjects/isAngry/GameObjects/Bullet/Bullet.cpp" "/Users/mac/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GameObjects/Bullet/Bullet.cpp.o"
+  "/Users/mac/CLionProjects/isAngry/GameObjects/GameObject.cpp" "/Users/mac/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GameObjects/GameObject.cpp.o"
+  "/Users/mac/CLionProjects/isAngry/GameObjects/Star/Star.cpp" "/Users/mac/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GameObjects/Star/Star.cpp.o"
+  "/Users/mac/CLionProjects/isAngry/GameObjects/Sweet/Sweet.cpp" "/Users/mac/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/GameObjects/Sweet/Sweet.cpp.o"
+  "/Users/mac/CLionProjects/isAngry/main.cpp" "/Users/mac/CLionProjects/isAngry/cmake-build-debug/CMakeFiles/isAngry.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

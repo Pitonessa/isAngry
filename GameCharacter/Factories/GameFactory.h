@@ -6,16 +6,22 @@
 #define ISANGRY_GAMEFACTORY_H
 
 #include "SFML/Graphics.hpp"
-#include "../../GameLogic/GameEngine.h"
+#include "../GameCharacter.h"
+#include <iostream>
 
 //TODO LOGICA DI CREAZIONE ESTERNA
 
 class GameFactory {
 public:
     ~GameFactory() = delete;
-    static void createEnemy(GameEngine& engine);
     static void createProps();
-
+    static enum enemytype {
+        BRAWLER,
+        WATCHER,
+        ARCHER,
+        BOSS
+    };
+ static GameCharacter* createEnemy(enemytype type);
 };
 
 
