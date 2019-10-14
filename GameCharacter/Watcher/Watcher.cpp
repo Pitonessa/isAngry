@@ -7,7 +7,7 @@
 sf::Texture* Watcher::watcherTexture = nullptr;
 
 Watcher::Watcher(float speed, sf::Vector2f position) : GameCharacter(speed, *Watcher::watcherTexture) {
-    setTextureRect(sf::IntRect(680*actualframe,0,680,472));
+    setTextureRect(sf::IntRect(680* actualframe,0,680,472));
     setPosition(position);
 }
 
@@ -20,7 +20,7 @@ void Watcher::animate() {
         actualframe=0;
     else
         actualframe++;
-    setTextureRect(sf::IntRect(680*actualframe,472*revert,680,472));
+    setTextureRect(sf::IntRect(680*actualframe + 6800 * revert,0,680,472));
 }
 
 void Watcher::action(GameCharacter& hero) {
@@ -30,7 +30,6 @@ void Watcher::action(GameCharacter& hero) {
     if(length<800 && length>200)
         fadeout();
     else
-        if(length<200 )
             fadein();
 }
 
@@ -49,5 +48,5 @@ void Watcher::fadeout() {
 }
 bool Watcher::loadTexture() {
     watcherTexture = new sf::Texture;
-    return watcherTexture->loadFromFile("../Res/dino.png");
+    return watcherTexture->loadFromFile("../Res/dino_idle_original.png");
 }
