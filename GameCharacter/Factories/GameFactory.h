@@ -15,7 +15,7 @@ class GameFactory {
 public:
     ~GameFactory() = delete;
     static void createProps();
-    static enum enemytype {
+    enum enemytype {
         BRAWLER,
         WATCHER,
         ARCHER,

@@ -71,5 +71,5 @@ bool Hero::loadTexture() {
 
 
 Bullet* Hero::action(GameCharacter &hero) {
-
+    return nullptr;
 }

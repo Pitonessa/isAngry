@@ -230,18 +230,14 @@ float GameEngine::getGravity() {
 
 void GameEngine::placeEnemy(GameCharacter&enemy, bool isArcher) {
     sf::Vector2f position(gameWindow->getView().getCenter());
-    position.x += gameWindow->getView().getSize().x/2;
-    float offset=(rand()%gameWindow->getSize().x);
+    position.x -= gameWindow->getView().getSize().x/2;
+    float offset = (rand()%gameWindow->getSize().x);
 
     if(isArcher){
 
     }
     else{
-        position.y= GroundLevel - enemy.getGlobalBounds().height;
-
-
+        position.y = GroundLevel - enemy.getGlobalBounds().height;
     }
     enemy.setPosition(position.x+offset,position.y);
-
-
 }
