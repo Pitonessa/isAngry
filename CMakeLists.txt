@@ -34,7 +34,8 @@ SET(SOURCE_FILES
         GameCharacter/Watcher/Watcher.cpp
         GameCharacter/Brawler/Brawler.cpp
         GameObjects/GameObject.cpp
-        GameCharacter/Factories/GameFactory.cpp GameCharacter/Factories/GameFactory.h GameObjects/Sweet/Sweet.cpp GameObjects/Sweet/Sweet.h GameCharacter/Boss/Boss.cpp GameCharacter/Boss/Boss.h GameLogic/Context/Context.cpp GameLogic/Context/Context.h GameLogic/States/State.cpp GameLogic/States/State.h)
+        GameLogic/States/Screen.cpp GameLogic/States/Screen.h
+        GameCharacter/Factories/GameFactory.cpp GameCharacter/Factories/GameFactory.h GameObjects/Sweet/Sweet.cpp GameObjects/Sweet/Sweet.h GameCharacter/Boss/Boss.cpp GameCharacter/Boss/Boss.h GameLogic/States/Record.cpp GameLogic/States/Record.h GameLogic/States/Pause.cpp GameLogic/States/Pause.h GameLogic/States/Play.cpp GameLogic/States/Play.h GameLogic/States/MainMenu.cpp GameLogic/States/MainMenu.h)
 
 add_library(isAngryTest ${SOURCE_FILES})
 add_executable(isAngry ${SOURCE_FILES} main.cpp)

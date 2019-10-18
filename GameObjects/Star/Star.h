@@ -15,7 +15,7 @@ public:
     unsigned short int brightness;
     bool getGloom() const;
     void updateStar();
-    static std::vector<Star*> createStars(sf::RenderWindow* renderWindow, int number = 300);
+    static std::vector<Star*> createStars(const sf::RenderWindow* renderWindow, int number = 300);
 
 private:
     float speed;

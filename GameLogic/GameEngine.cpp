@@ -74,7 +74,7 @@ void GameEngine::drawWorld() {
                             bullets.push_back(bullet);
                         enemy->move(sf::Vector2f(0, 1));
                         enemy->animate();
-                        enemy->fixHeight(1061.5);
+                        enemy->fixHeight(961.5);
                         gameWindow->draw(*enemy);
                     }
 
@@ -142,7 +142,7 @@ void GameEngine::navigate(sf::Keyboard::Key key) {
 
 void GameEngine::moveHero(sf::Vector2f direction) {
     hero->move(direction);
-    hero->fixHeight(1061.5);
+    hero->fixHeight(961.5);
 }
 
 void GameEngine::addEnemy(GameFactory::enemytype type) {
@@ -240,4 +240,48 @@ void GameEngine::placeEnemy(GameCharacter&enemy, bool isArcher) {
         position.y = GroundLevel - enemy.getGlobalBounds().height;
     }
     enemy.setPosition(position.x+offset,position.y);
+}
+
+ const Hero *GameEngine::getHero() const {
+    return hero;
+}
+
+void GameEngine::setHero(Hero *newHero) {
+    if(hero!= nullptr)
+    delete hero;
+    hero=newHero;
+
+}
+
+void GameEngine::setMenu(Menu *newMenu) {
+    if(gameMenu!= nullptr)
+        delete gameMenu;
+    gameMenu=newMenu;
+
+}
+
+const Menu *GameEngine::getMenu() const {
+    return gameMenu;
+}
+
+void GameEngine::Clear() {
+    for(auto i : enemies) delete i;
+    enemies.clear();
+    for(auto i : props) delete i;
+    props.clear();
+    for(auto i : bullets) delete i;
+    bullets.clear();
+    for(auto i : background) delete i;
+    background.clear();
+}
+
+void GameEngine::setStars(std::vector<Star *> newStar) {
+    for(auto i: stars) delete i;
+    stars.clear();
+    stars=newStar;
+
+}
+
+const std::vector<Star *> GameEngine::getStar() const {
+    return stars;
 }

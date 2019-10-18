@@ -45,7 +45,7 @@ void Star::updateStar() {
     updatePosition();
 }
 
-std::vector<Star*> Star::createStars(sf::RenderWindow* renderWindow, int number) {
+std::vector<Star*> Star::createStars(const sf::RenderWindow* renderWindow, int number) {
     srand(time(NULL));
     std::vector<Star*> stars;
     for(int i = 0; i < number; i++) {

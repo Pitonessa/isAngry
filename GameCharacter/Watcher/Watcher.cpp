@@ -39,7 +39,7 @@ Bullet* Watcher::action(GameCharacter& hero) {
         fadeout();
     else
             fadein();
-        fadein();
+
     return nullptr;
 }
 

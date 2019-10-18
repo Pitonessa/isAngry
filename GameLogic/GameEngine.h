@@ -36,7 +36,17 @@ public:
     static float getGravity();
     static float k;
 
+
     sf::Texture* backgroundTexture;
+    void setHero(Hero* newHero);
+    const  Hero*getHero() const;
+    void setMenu(Menu* newMenu);
+    const  Menu*getMenu() const;
+    void Clear();
+    void setStars(std::vector<Star*> newStar);
+    const std::vector<Star*>getStar() const;
+
+
 
     short int gameState {0};
     void placeEnemy(GameCharacter&enemy, bool isArcher=false);
