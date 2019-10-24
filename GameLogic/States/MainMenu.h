@@ -16,6 +16,8 @@ private:
 public:
     explicit MainMenu(GameEngine* gameEngine);
     void update() override;
+    void handleinput(sf::Keyboard::Key key) override;
+
 
 
 

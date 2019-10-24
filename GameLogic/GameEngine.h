@@ -13,6 +13,7 @@
 #include "../GUI/Menu/Menu.h"
 #include "../GameObjects/Star/Star.h"
 #include "../GameCharacter/Factories/GameFactory.h"
+#include "States/Screen.h"
 
 //TODO ADD STATE PATTERN
 
@@ -32,9 +33,10 @@ public:
     void setHeroPos(float x, float y);
     void heroAttack();
     bool detectCollision(Bullet& bullet);
-    const sf::RenderWindow& getWindow();
+    sf::RenderWindow& getWindow();
     static float getGravity();
     static float k;
+    void setscreen( Screen* screen);
 
 
     sf::Texture* backgroundTexture;
@@ -44,18 +46,18 @@ public:
     const  Menu*getMenu() const;
     void Clear();
     void setStars(std::vector<Star*> newStar);
+    Menu* gameMenu;
+
+
+
     const std::vector<Star*>getStar() const;
-
-
-
     short int gameState {0};
+
+
     void placeEnemy(GameCharacter&enemy, bool isArcher=false);
-
-
 private:
     sf::RenderWindow* gameWindow;
     Hero* hero;
-    Menu* gameMenu;
     std::vector<GameCharacter*> enemies;
     std::vector<GameObject*> props;
     std::vector<Bullet*> bullets;
@@ -67,6 +69,7 @@ private:
     float gameSpeed;
     sf::Clock gameClock;
     float GroundLevel{961.5};
+    Screen* actualscreen;
 
 };
 

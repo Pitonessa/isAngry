@@ -5,6 +5,7 @@
 #include "Record.h"
 
 Record::Record(GameEngine *gameEngine): Screen(),gameEngine(gameEngine){
+
 }
 
 void Record::update() {

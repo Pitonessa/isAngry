@@ -6,12 +6,13 @@
 #define ISANGRY_SCREEN_H
 
 
+#include <SFML/Graphics.hpp>
+
 class Screen {
 public:
     virtual void update() = 0;
-    //virtual void handleInput(...) = 0;
     virtual  ~Screen()= default;
-
+  virtual  void handleinput(sf::Keyboard::Key key) = 0;
 protected:
     Screen()= default;
 

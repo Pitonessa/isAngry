@@ -155,7 +155,7 @@ void GameEngine::setHeroPos(float x, float y) {
     hero->setPosition(x, y);
 }
 
-const sf::RenderWindow& GameEngine::getWindow() {
+ sf::RenderWindow& GameEngine::getWindow() {
     return *gameWindow;
 }
 
@@ -265,6 +265,7 @@ const Menu *GameEngine::getMenu() const {
 }
 
 void GameEngine::Clear() {
+    setHero(nullptr);
     for(auto i : enemies) delete i;
     enemies.clear();
     for(auto i : props) delete i;
@@ -284,4 +285,12 @@ void GameEngine::setStars(std::vector<Star *> newStar) {
 
 const std::vector<Star *> GameEngine::getStar() const {
     return stars;
+}
+
+void GameEngine::setscreen(Screen *newscreen) {
+    if(actualscreen != nullptr)
+        delete actualscreen;
+    actualscreen=newscreen;
+
+
 }
