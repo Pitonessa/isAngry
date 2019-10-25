@@ -15,6 +15,8 @@ private:
 public:
     explicit Play(GameEngine* gameEngine);
     void update() override;
+    void handleinput(sf::Keyboard::Key key) override;
+
 
 };
 #endif //ISANGRY_PLAY_H

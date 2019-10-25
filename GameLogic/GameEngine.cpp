@@ -295,3 +295,85 @@ void GameEngine::setScreen(Screen *newscreen) {
 
 
 }
+
+const std::vector<GameCharacter *> &GameEngine::getEnemies() const {
+    return enemies;
+}
+
+void GameEngine::setEnemies(std::vector<GameCharacter *> newEnemies) {
+    if(enemies.size() != 0)
+        for(auto i : enemies)
+            delete i;
+        enemies.clear();
+        enemies=newEnemies;
+
+
+}
+
+void GameEngine::setProps(std::vector<GameObject *> newProps) {
+    if(props.size() != 0)
+        for(auto i : props)
+            delete i;
+        props.clear();
+        props=newProps;
+
+}
+
+const std::vector<GameObject *> GameEngine::getProps() const {
+    return std::vector<GameObject *>();
+}
+
+const std::vector<Bullet *> GameEngine::getBullet() const {
+    return std::vector<Bullet *>();
+}
+
+void GameEngine::setBullet(std::vector<Bullet *> newBullet) {
+    if(bullets.size() != 0)
+        for(auto i : bullets)
+            delete i;
+        bullets.clear();
+        bullets=newBullet;
+
+}
+
+const std::vector<sf::Sprite *> GameEngine::getBackground() const {
+    return std::vector<sf::Sprite *>();
+}
+
+void GameEngine::setBackground(std::vector<sf::Sprite *> newBackground) {
+    for(auto i: background)
+        delete i;
+    background.clear();
+    background=newBackground;
+
+}
+
+void GameEngine::updateWorld() {
+    for (auto enemy : enemies) {
+        auto bullet = enemy->action(*hero);
+        if(bullet != nullptr)
+            bullets.push_back(bullet);
+        enemy->move(sf::Vector2f(0, 1));
+        enemy->animate();
+        enemy->fixHeight(groundLevel);
+
+    }
+
+    for (auto prop : props){
+        prop->update();
+
+    }
+
+    for (unsigned long i = 0; i < bullets.size(); i++) {
+        bullets[i]->update();
+        if (bullets[i]->isOut(gameWindow->getView(), 1000) || detectCollision(*bullets[i])) {
+            delete bullets[i];
+            bullets.erase(bullets.begin() + i);
+        }
+
+
+    }
+    moveView();
+
+
+}

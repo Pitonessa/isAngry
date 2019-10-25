@@ -47,7 +47,16 @@ public:
     void Clear();
     void setStars(std::vector<Star*> newStar);
     Menu* gameMenu;
+    void setEnemies(std::vector<GameCharacter*> newEnemies);
+    const std::vector<GameObject*> getProps() const;
+    void setProps(std::vector<GameObject*> newProps);
+    const std::vector<Bullet*> getBullet()const;
+    void setBullet(std::vector<Bullet*> newBullet);
+    const std::vector<sf::Sprite*> getBackground() const;
+    void setBackground(std::vector<sf::Sprite*> newBackground);
+    void updateWorld();
 
+    const std::vector<GameCharacter *> &getEnemies() const;
 
 
     const std::vector<Star*>getStar() const;

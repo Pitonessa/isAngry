@@ -14,6 +14,7 @@ MainMenu::MainMenu(GameEngine *gameEngine) : Screen(), gameEngine(gameEngine){
 
 void MainMenu::update() {
    for(auto j : gameEngine->getStar()) j->updateStar();
+
 }
 
 void MainMenu::handleinput(sf::Keyboard::Key key) {

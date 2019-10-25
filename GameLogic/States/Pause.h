@@ -15,6 +15,7 @@ private:
 public:
     explicit Pause(GameEngine*gameEngine);
     void update() override;
+    void handleinput(sf::Keyboard::Key key) override;
 
 };
 
