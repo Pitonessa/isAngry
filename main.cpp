@@ -17,6 +17,7 @@
     srand(time(NULL));
 
     sf::RenderWindow window(sf::VideoMode::getDesktopMode(), "isAngry");
+
     auto cascettoEngine = new GameEngine(window);
 
     while (window.isOpen()) {

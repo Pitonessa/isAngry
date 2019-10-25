@@ -36,14 +36,14 @@ public:
     sf::RenderWindow& getWindow();
     static float getGravity();
     static float k;
-    void setscreen( Screen* screen);
+    void setScreen( Screen* screen);
 
 
     sf::Texture* backgroundTexture;
     void setHero(Hero* newHero);
-    const  Hero*getHero() const;
+    const Hero* getHero() const;
     void setMenu(Menu* newMenu);
-    const  Menu*getMenu() const;
+    const Menu* getMenu() const;
     void Clear();
     void setStars(std::vector<Star*> newStar);
     Menu* gameMenu;
@@ -68,8 +68,8 @@ private:
     void restartClock();
     float gameSpeed;
     sf::Clock gameClock;
-    float GroundLevel{961.5};
-    Screen* actualscreen;
+    float groundLevel{961.5};
+    Screen* actualScreen;
 
 };
 

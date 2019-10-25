@@ -29,6 +29,7 @@ GameEngine::GameEngine(sf::RenderWindow &mainWindow) : gameWindow(&mainWindow), 
     background[1]->setPosition(background[0]->getGlobalBounds().width, 0);
     background[1]->scale(sf::Vector2f(scaleFactor, scaleFactor));
     this->stars = Star::createStars(gameWindow);
+    groundLevel = (7.98f / 11.85f) * background[0]->getGlobalBounds().height;
     /*props.push_back(new Sweet(sf::Vector2f(2000, 1000)));
     props[0]->scale(0.33, 0.33);*/
     //enemies.push_back(new Brawler(5, sf::Vector2f(1000, 300)));
@@ -74,7 +75,7 @@ void GameEngine::drawWorld() {
                             bullets.push_back(bullet);
                         enemy->move(sf::Vector2f(0, 1));
                         enemy->animate();
-                        enemy->fixHeight(961.5);
+                        enemy->fixHeight(groundLevel);
                         gameWindow->draw(*enemy);
                     }
 
@@ -142,7 +143,7 @@ void GameEngine::navigate(sf::Keyboard::Key key) {
 
 void GameEngine::moveHero(sf::Vector2f direction) {
     hero->move(direction);
-    hero->fixHeight(961.5);
+    hero->fixHeight(groundLevel);
 }
 
 void GameEngine::addEnemy(GameFactory::enemytype type) {
@@ -185,7 +186,7 @@ void GameEngine::restartClock() {
 void GameEngine::heroJump() {
     float position=hero->getPosition().y;
     float h= hero->getGlobalBounds().height;
-    if(position + h >= GroundLevel)
+    if(position + h >= groundLevel)
         hero->jump();
 
 }
@@ -231,15 +232,15 @@ float GameEngine::getGravity() {
 void GameEngine::placeEnemy(GameCharacter&enemy, bool isArcher) {
     sf::Vector2f position(gameWindow->getView().getCenter());
     position.x -= gameWindow->getView().getSize().x/2;
-    float offset = (rand()%gameWindow->getSize().x);
+    float offset = (rand() % gameWindow->getSize().x);
 
     if(isArcher){
 
     }
     else{
-        position.y = GroundLevel - enemy.getGlobalBounds().height;
+        position.y = groundLevel - enemy.getGlobalBounds().height;
     }
-    enemy.setPosition(position.x+offset,position.y);
+    enemy.setPosition(position.x + offset, position.y);
 }
 
  const Hero *GameEngine::getHero() const {
@@ -249,14 +250,14 @@ void GameEngine::placeEnemy(GameCharacter&enemy, bool isArcher) {
 void GameEngine::setHero(Hero *newHero) {
     if(hero!= nullptr)
     delete hero;
-    hero=newHero;
+    hero = newHero;
 
 }
 
 void GameEngine::setMenu(Menu *newMenu) {
     if(gameMenu!= nullptr)
         delete gameMenu;
-    gameMenu=newMenu;
+    gameMenu = newMenu;
 
 }
 
@@ -279,7 +280,7 @@ void GameEngine::Clear() {
 void GameEngine::setStars(std::vector<Star *> newStar) {
     for(auto i: stars) delete i;
     stars.clear();
-    stars=newStar;
+    stars = newStar;
 
 }
 
@@ -287,10 +288,10 @@ const std::vector<Star *> GameEngine::getStar() const {
     return stars;
 }
 
-void GameEngine::setscreen(Screen *newscreen) {
-    if(actualscreen != nullptr)
-        delete actualscreen;
-    actualscreen=newscreen;
+void GameEngine::setScreen(Screen *newscreen) {
+    if(actualScreen != nullptr)
+        delete actualScreen;
+    actualScreen=newscreen;
 
 
 }

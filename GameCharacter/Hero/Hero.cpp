@@ -10,7 +10,7 @@
 sf::Texture* Hero::heroTexture = nullptr;
 
 Hero::Hero(float speed, sf::Vector2f position) : GameCharacter(speed, *Hero::heroTexture) {
-    setTextureRect(sf::IntRect(0, 0, 80, 86));
+    setTextureRect(sf::IntRect(0, 0, 80, 65));
     setPosition(position);
     fireClock.restart();
 }
@@ -29,7 +29,6 @@ void Hero::move(sf::Vector2f direction) {
    if(direction.x !=0|| direction.y!=0){
        if(direction.x != 0)
         direction.x < 0 ? revert = 1 : revert = 0;
-    float GroundLevel= 961.5;
     direction /= sqrt(direction.x * direction.x + direction.y * direction.y);
     GameCharacter::speed += GameCharacter::gravity;
     GameCharacter::speed.x = direction.x * speedX;
@@ -54,7 +53,7 @@ void Hero::animate() {
             actualFrame = 0;
         setTextureRect(textureFrame[actualFrame]);*/
         actualFrame < 4 ? actualFrame++ : actualFrame = 0;
-        setTextureRect(sf::IntRect(actualFrame * 80 + revert * 400, 0, 80, 86));
+        setTextureRect(sf::IntRect(actualFrame * 80 + revert * 400, 0, 80, 65));
     }
 }
 
